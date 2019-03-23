@@ -50,3 +50,63 @@ C:\Users\Chancelor\Documents\GitHub\Cpts323Spring2019\RideStalk\RideStalk\obj\De
 C:\Users\Chancelor\Documents\GitHub\Cpts323Spring2019\RideStalk\RideStalk\obj\Debug\RideStalk.csproj.GenerateResource.Cache
 C:\Users\Chancelor\Documents\GitHub\Cpts323Spring2019\RideStalk\RideStalk\obj\Debug\RideStalk.exe
 C:\Users\Chancelor\Documents\GitHub\Cpts323Spring2019\RideStalk\RideStalk\obj\Debug\RideStalk.pdb
+C:\Users\Chancelor\Documents\GitHub\Cpts323Spring2019\RideStalk\RideStalk\obj\Debug\RideStalk.LoginForm.resources
+C:\Users\Chancelor\Documents\GitHub\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\MetroFramework.Design.dll
+C:\Users\Chancelor\Documents\GitHub\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\MetroFramework.dll
+C:\Users\Chancelor\Documents\GitHub\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\Chancelor\Desktop\New folder (16)\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\RideStalk.exe.config
+C:\Users\Chancelor\Desktop\New folder (16)\Cpts323Spring2019\RideStalk\RideStalk\obj\Debug\RideStalk.exe
+C:\Users\Chancelor\Desktop\New folder (16)\Cpts323Spring2019\RideStalk\RideStalk\obj\Debug\RideStalk.pdb
+C:\Users\Chancelor\Desktop\New folder (16)\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\RideStalk.exe
+C:\Users\Chancelor\Desktop\New folder (16)\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\RideStalk.pdb
+C:\Users\Chancelor\Desktop\New folder (16)\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\EntityFramework.dll
+C:\Users\Chancelor\Desktop\New folder (16)\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Chancelor\Desktop\New folder (16)\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\Firebase.dll
+C:\Users\Chancelor\Desktop\New folder (16)\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\GMap.NET.Core.dll
+C:\Users\Chancelor\Desktop\New folder (16)\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\GMap.NET.WindowsForms.dll
+C:\Users\Chancelor\Desktop\New folder (16)\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\GMap.NET.WindowsPresentation.dll
+C:\Users\Chancelor\Desktop\New folder (16)\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\MetroFramework.Design.dll
+C:\Users\Chancelor\Desktop\New folder (16)\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\MetroFramework.dll
+C:\Users\Chancelor\Desktop\New folder (16)\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\Chancelor\Desktop\New folder (16)\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\Microsoft.Win32.Primitives.dll
+C:\Users\Chancelor\Desktop\New folder (16)\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Chancelor\Desktop\New folder (16)\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\System.AppContext.dll
+C:\Users\Chancelor\Desktop\New folder (16)\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\System.Console.dll
+C:\Users\Chancelor\Desktop\New folder (16)\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\System.Data.SQLite.dll
+C:\Users\Chancelor\Desktop\New folder (16)\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\Chancelor\Desktop\New folder (16)\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\Chancelor\Desktop\New folder (16)\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Chancelor\Desktop\New folder (16)\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\System.Diagnostics.Tracing.dll
+C:\Users\Chancelor\Desktop\New folder (16)\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\System.Globalization.Calendars.dll
+C:\Users\Chancelor\Desktop\New folder (16)\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\System.IO.Compression.dll
+C:\Users\Chancelor\Desktop\New folder (16)\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\System.IO.Compression.ZipFile.dll
+C:\Users\Chancelor\Desktop\New folder (16)\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\System.IO.dll
+C:\Users\Chancelor\Desktop\New folder (16)\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\System.IO.FileSystem.dll
+C:\Users\Chancelor\Desktop\New folder (16)\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\System.IO.FileSystem.Primitives.dll
+C:\Users\Chancelor\Desktop\New folder (16)\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\System.Linq.dll
+C:\Users\Chancelor\Desktop\New folder (16)\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\System.Linq.Expressions.dll
+C:\Users\Chancelor\Desktop\New folder (16)\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\System.Net.Http.dll
+C:\Users\Chancelor\Desktop\New folder (16)\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\System.Net.Sockets.dll
+C:\Users\Chancelor\Desktop\New folder (16)\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\System.Reactive.dll
+C:\Users\Chancelor\Desktop\New folder (16)\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\System.Reflection.dll
+C:\Users\Chancelor\Desktop\New folder (16)\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\System.Runtime.dll
+C:\Users\Chancelor\Desktop\New folder (16)\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\System.Runtime.Extensions.dll
+C:\Users\Chancelor\Desktop\New folder (16)\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\System.Runtime.InteropServices.dll
+C:\Users\Chancelor\Desktop\New folder (16)\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Chancelor\Desktop\New folder (16)\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\System.Security.Cryptography.Algorithms.dll
+C:\Users\Chancelor\Desktop\New folder (16)\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\System.Security.Cryptography.Encoding.dll
+C:\Users\Chancelor\Desktop\New folder (16)\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\System.Security.Cryptography.Primitives.dll
+C:\Users\Chancelor\Desktop\New folder (16)\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Chancelor\Desktop\New folder (16)\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\System.Text.RegularExpressions.dll
+C:\Users\Chancelor\Desktop\New folder (16)\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\System.Xml.ReaderWriter.dll
+C:\Users\Chancelor\Desktop\New folder (16)\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\EntityFramework.xml
+C:\Users\Chancelor\Desktop\New folder (16)\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Chancelor\Desktop\New folder (16)\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Chancelor\Desktop\New folder (16)\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\System.Data.SQLite.xml
+C:\Users\Chancelor\Desktop\New folder (16)\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Chancelor\Desktop\New folder (16)\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\System.Reactive.xml
+C:\Users\Chancelor\Desktop\New folder (16)\Cpts323Spring2019\RideStalk\RideStalk\obj\Debug\RideStalk.csprojResolveAssemblyReference.cache
+C:\Users\Chancelor\Desktop\New folder (16)\Cpts323Spring2019\RideStalk\RideStalk\obj\Debug\RideStalk.Interface.resources
+C:\Users\Chancelor\Desktop\New folder (16)\Cpts323Spring2019\RideStalk\RideStalk\obj\Debug\RideStalk.LoginForm.resources
+C:\Users\Chancelor\Desktop\New folder (16)\Cpts323Spring2019\RideStalk\RideStalk\obj\Debug\RideStalk.Properties.Resources.resources
+C:\Users\Chancelor\Desktop\New folder (16)\Cpts323Spring2019\RideStalk\RideStalk\obj\Debug\RideStalk.csproj.GenerateResource.Cache

@@ -28,62 +28,133 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.splitter1 = new System.Windows.Forms.Splitter();
-            this.gMapControl1 = new GMap.NET.WindowsForms.GMapControl();
+            this.metroStyleManager1 = new MetroFramework.Components.MetroStyleManager(this.components);
+            this.navigationTabs = new MetroFramework.Controls.MetroTabControl();
+            this.mapInterface = new System.Windows.Forms.TabPage();
+            this.mapView = new GMap.NET.WindowsForms.GMapControl();
+            this.mainInterface = new System.Windows.Forms.TabPage();
+            ((System.ComponentModel.ISupportInitialize)(this.metroStyleManager1)).BeginInit();
+            this.navigationTabs.SuspendLayout();
+            this.mapInterface.SuspendLayout();
             this.SuspendLayout();
             // 
             // splitter1
             // 
-            this.splitter1.Location = new System.Drawing.Point(0, 0);
+            this.splitter1.Location = new System.Drawing.Point(20, 60);
             this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(715, 582);
-            this.splitter1.TabIndex = 0;
+            this.splitter1.Size = new System.Drawing.Size(1069, 571);
+            this.splitter1.TabIndex = 5;
             this.splitter1.TabStop = false;
             // 
-            // gMapControl1
+            // metroStyleManager1
             // 
-            this.gMapControl1.Bearing = 0F;
-            this.gMapControl1.CanDragMap = true;
-            this.gMapControl1.EmptyTileColor = System.Drawing.Color.Navy;
-            this.gMapControl1.GrayScaleMode = false;
-            this.gMapControl1.HelperLineOption = GMap.NET.WindowsForms.HelperLineOptions.DontShow;
-            this.gMapControl1.LevelsKeepInMemmory = 5;
-            this.gMapControl1.Location = new System.Drawing.Point(0, 0);
-            this.gMapControl1.MarkersEnabled = true;
-            this.gMapControl1.MaxZoom = 2;
-            this.gMapControl1.MinZoom = 2;
-            this.gMapControl1.MouseWheelZoomEnabled = true;
-            this.gMapControl1.MouseWheelZoomType = GMap.NET.MouseWheelZoomType.MousePositionAndCenter;
-            this.gMapControl1.Name = "gMapControl1";
-            this.gMapControl1.NegativeMode = false;
-            this.gMapControl1.PolygonsEnabled = true;
-            this.gMapControl1.RetryLoadTile = 0;
-            this.gMapControl1.RoutesEnabled = true;
-            this.gMapControl1.ScaleMode = GMap.NET.WindowsForms.ScaleModes.Integer;
-            this.gMapControl1.SelectedAreaFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(65)))), ((int)(((byte)(105)))), ((int)(((byte)(225)))));
-            this.gMapControl1.ShowTileGridLines = false;
-            this.gMapControl1.Size = new System.Drawing.Size(715, 582);
-            this.gMapControl1.TabIndex = 1;
-            this.gMapControl1.Zoom = 0D;
+            this.metroStyleManager1.Owner = this;
+            this.metroStyleManager1.Style = MetroFramework.MetroColorStyle.Lime;
+            this.metroStyleManager1.Theme = MetroFramework.MetroThemeStyle.Dark;
+            // 
+            // navigationTabs
+            // 
+            this.navigationTabs.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.navigationTabs.Controls.Add(this.mapInterface);
+            this.navigationTabs.Controls.Add(this.mainInterface);
+            this.navigationTabs.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.navigationTabs.FontSize = MetroFramework.MetroTabControlSize.Tall;
+            this.navigationTabs.ItemSize = new System.Drawing.Size(100, 40);
+            this.navigationTabs.Location = new System.Drawing.Point(20, 60);
+            this.navigationTabs.Name = "navigationTabs";
+            this.navigationTabs.SelectedIndex = 0;
+            this.navigationTabs.Size = new System.Drawing.Size(1069, 571);
+            this.navigationTabs.TabIndex = 10;
+            this.navigationTabs.UseSelectable = true;
+            this.navigationTabs.UseStyleColors = true;
+            // 
+            // mapInterface
+            // 
+            this.mapInterface.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.mapInterface.Controls.Add(this.mapView);
+            this.mapInterface.Font = new System.Drawing.Font("MingLiU-ExtB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mapInterface.Location = new System.Drawing.Point(4, 44);
+            this.mapInterface.Name = "mapInterface";
+            this.mapInterface.Size = new System.Drawing.Size(1061, 523);
+            this.mapInterface.TabIndex = 0;
+            this.mapInterface.Text = "Map View    ";
+            // 
+            // mapView
+            // 
+            this.mapView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.mapView.AutoScroll = true;
+            this.mapView.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.mapView.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.mapView.Bearing = 0F;
+            this.mapView.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.mapView.CanDragMap = false;
+            this.mapView.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.mapView.EmptyTileColor = System.Drawing.Color.Navy;
+            this.mapView.GrayScaleMode = false;
+            this.mapView.HelperLineOption = GMap.NET.WindowsForms.HelperLineOptions.DontShow;
+            this.mapView.LevelsKeepInMemmory = 5;
+            this.mapView.Location = new System.Drawing.Point(0, 0);
+            this.mapView.MarkersEnabled = true;
+            this.mapView.MaxZoom = 100;
+            this.mapView.MinZoom = 5;
+            this.mapView.MouseWheelZoomEnabled = false;
+            this.mapView.MouseWheelZoomType = GMap.NET.MouseWheelZoomType.MousePositionAndCenter;
+            this.mapView.Name = "mapView";
+            this.mapView.NegativeMode = false;
+            this.mapView.PolygonsEnabled = true;
+            this.mapView.RetryLoadTile = 0;
+            this.mapView.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.mapView.RoutesEnabled = true;
+            this.mapView.ScaleMode = GMap.NET.WindowsForms.ScaleModes.Integer;
+            this.mapView.SelectedAreaFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(65)))), ((int)(((byte)(105)))), ((int)(((byte)(225)))));
+            this.mapView.ShowTileGridLines = false;
+            this.mapView.Size = new System.Drawing.Size(1061, 533);
+            this.mapView.TabIndex = 10;
+            this.mapView.Zoom = 0D;
+            // 
+            // mainInterface
+            // 
+            this.mainInterface.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.mainInterface.Location = new System.Drawing.Point(4, 44);
+            this.mainInterface.Name = "mainInterface";
+            this.mainInterface.Size = new System.Drawing.Size(1061, 523);
+            this.mainInterface.TabIndex = 1;
+            this.mainInterface.Text = "Trip Summaries";
             // 
             // Interface
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(903, 582);
-            this.Controls.Add(this.gMapControl1);
+            this.ClientSize = new System.Drawing.Size(1112, 651);
+            this.Controls.Add(this.navigationTabs);
             this.Controls.Add(this.splitter1);
+            this.MinimumSize = new System.Drawing.Size(1112, 651);
             this.Name = "Interface";
-            this.Text = "Form1";
+            this.Style = MetroFramework.MetroColorStyle.Purple;
+            this.Text = "RideStalk";
+            this.Theme = MetroFramework.MetroThemeStyle.Default;
             this.Load += new System.EventHandler(this.Interface_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.metroStyleManager1)).EndInit();
+            this.navigationTabs.ResumeLayout(false);
+            this.mapInterface.ResumeLayout(false);
             this.ResumeLayout(false);
+
 
         }
 
         #endregion
-
         private System.Windows.Forms.Splitter splitter1;
-        private GMap.NET.WindowsForms.GMapControl gMapControl1;
+        private MetroFramework.Components.MetroStyleManager metroStyleManager1;
+        private MetroFramework.Controls.MetroTabControl navigationTabs;
+        private System.Windows.Forms.TabPage mapInterface;
+        private System.Windows.Forms.TabPage mainInterface;
+        private GMap.NET.WindowsForms.GMapControl mapView;
     }
 }
 

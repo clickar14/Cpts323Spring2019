@@ -8,5 +8,6 @@ namespace RideStalk
 {
     class CarData
     {
+
     }
 }
