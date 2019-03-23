@@ -50,4 +50,3 @@ C:\Users\Chancelor\Documents\GitHub\Cpts323Spring2019\RideStalk\RideStalk\obj\De
 C:\Users\Chancelor\Documents\GitHub\Cpts323Spring2019\RideStalk\RideStalk\obj\Debug\RideStalk.csproj.GenerateResource.Cache
 C:\Users\Chancelor\Documents\GitHub\Cpts323Spring2019\RideStalk\RideStalk\obj\Debug\RideStalk.exe
 C:\Users\Chancelor\Documents\GitHub\Cpts323Spring2019\RideStalk\RideStalk\obj\Debug\RideStalk.pdb
-C:\Users\Chancelor\Documents\GitHub\Cpts323Spring2019\RideStalk\RideStalk\obj\Debug\RideStalk.LoginForm.resources
