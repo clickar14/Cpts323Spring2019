@@ -46,10 +46,6 @@ namespace RideStalk
 
         }
 
-        private void mainInterface_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
 
     }
 }
