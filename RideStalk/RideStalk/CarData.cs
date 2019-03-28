@@ -11,6 +11,7 @@ using Newtonsoft.Json;
 
 namespace RideStalk
 {
+    // Below is the main services object for a single car
     public class serviceData
     {
         public object user { get; set; }
@@ -21,12 +22,13 @@ namespace RideStalk
         public object pointList { get; set; }
         public string initialTime { get; set; }
         public string acepted { get; set; }
-        public float travelDistance { get; set; }
+        public double travelDistance { get; set; }
         public int travelTime { get; set; }
         public string payMode { get; set; }
         public int pickupDurationTime { get; set; }
         public string estimatedPrice { get; set; }
         public string finalPrice { get; set; }
+        
     }
     public class user
     {
@@ -79,8 +81,8 @@ namespace RideStalk
     }
     public class point
     {
-        public string lat { set; get; }
-        public string lng { set; get; }
+        public double lat { set; get; }
+        public double lng { set; get; }
         [JsonProperty("time")]
         public ServerTimeStamp TimestampPlaceholder { get; } = new ServerTimeStamp();
     }
@@ -90,4 +92,5 @@ namespace RideStalk
         [JsonProperty(".sv")]
         public string TimestampPlaceholder { get; } = "timestamp";
     }
+
 }

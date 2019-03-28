@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Reactive.Linq;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,6 +17,14 @@ using GMap.NET.Projections;
 using GMap.NET.WindowsForms;
 using GMap.NET.WindowsForms.Markers;
 using System.Threading;
+using Firebase.Database;
+using Firebase.Database.Extensions;
+using Firebase.Database.Query;
+using Firebase.Database.Streaming;
+using Firebase.Database.Http;
+// This allows the console to appear
+using System.Runtime.InteropServices;
+
 
 // Video for routes: https://www.youtube.com/watch?v=FF-PJQxpjOY
 
@@ -23,10 +32,18 @@ namespace RideStalk
 {
     public partial class Interface : MetroFramework.Forms.MetroForm
     {
+        serviceData car1;
+        serviceData car2;
+        serviceData car3;
+        serviceData car4;
+        string key1, key2, key3, key4;
+        
         List<PointLatLng> _points;
         public Interface()
         {
+
             InitializeComponent();
+            
             //Create a single list to be used for routes
             _points = new List<PointLatLng>();
 
@@ -34,6 +51,10 @@ namespace RideStalk
         // On initial interface load, create the map
         private void Interface_Load(object sender, EventArgs e)
         {
+            // Remove this function when you're done utilizing the console
+            AllocConsole();
+
+            // Gmap Setup
             GMapProviders.GoogleMap.ApiKey = @"AIzaSyAdLhafjca3jiLothU5wizd4syyQTYK5jQ";
             GMaps.Instance.Mode = AccessMode.ServerAndCache;
             mapView.CacheLocation = @"cache";
@@ -46,10 +67,14 @@ namespace RideStalk
             mapView.Zoom = 13;
             mapView.ShowCenter = false;
 
+            // Populate car objects and post them to the server.
+            Thread carUpdateThread = new Thread(runCars);
+            carUpdateThread.Start();
+
             // Start an update cars thread, this should be continouse and should never abort.
             // It should update by 5 second itervals
-            Thread carUpdateThread = new Thread(updateCars);
-            carUpdateThread.Start();
+
+
         }
         /* Marker on click event, integrate later to have a form popup when the marker is clicked.
         private void gmap_OnMarkerClick(GMapMarker item, MouseEventArgs e)
@@ -66,27 +91,65 @@ namespace RideStalk
         {
 
         }
-
+        // This is for the test route button
         private void metroButton1_Click(object sender, EventArgs e)
         {
             Thread paintThread = new Thread(paintRoute);
             paintThread.Start();
             
-            // Add route points to overlay
-
-            // YOu can clear the point list by calling the following:
-            // _points.Clear();
         }
 
         // Thread process to handle the updating of cars
-        private void updateCars(object sender)
+        private void runCars()
         {
-            while (true)
-            {
-
-                Thread.Sleep(5000);
-            }
+            updateCars().Wait();
         }
+        private async Task updateCars()
+        {
+            var firebase = new FirebaseClient("https://test-24354.firebaseio.com/");
+            // Creates a child called services
+            var newService = firebase.Child("services");
+            // Clear the list in database for now, get rid of later
+            await newService.DeleteAsync();
+
+            car1 = new CarOperations().genService();
+            car2 = new CarOperations().genService();
+            car3 = new CarOperations().genService();
+            car4 = new CarOperations().genService();
+
+            // Populating the database and assigning keys for patch/pull reference.
+            var post1 = await newService.PostAsync(car1);
+            var post2 = await newService.PostAsync(car2);
+            var post3 = await newService.PostAsync(car3);
+            var post4 = await newService.PostAsync(car4);
+            key1 = post1.Key;
+            key2 = post2.Key;
+            key3 = post3.Key;
+            key4 = post4.Key;
+            // Pull information from database
+            car1 = await newService.Child($"{post1.Key}").OnceSingleAsync<serviceData>();
+            car2 = await newService.Child($"{post2.Key}").OnceSingleAsync<serviceData>();
+            car3 = await newService.Child($"{post3.Key}").OnceSingleAsync<serviceData>();
+            car4 = await newService.Child($"{post4.Key}").OnceSingleAsync<serviceData>();
+            
+           
+            //// In order to change the value of a variable a new object must be made.
+
+            //var retrievePost = new serviceData();
+
+            //await newService.Child($"{post2.Key}").PatchAsync(retrievePost);
+
+            //// Example of retrieving data by referencing the service key of that post.
+            //var retrieveagain = await newService.Child($"{post1.Key}").OnceSingleAsync<serviceData>();
+            //retrieveagain.acepted = "true";
+            //// Posting once again to update driver to bob
+            //await newService.Child($"{post1.Key}").PatchAsync(retrieveagain);
+            //Console.WriteLine($"{retrieveagain.driver}");
+
+            // Testing the creation of a new car
+        }
+
+
         // These must be declared as globals
         GMapOverlay routeOverlay = new GMapOverlay("routeInfo");
         private void paintRoute(object variables)
@@ -149,5 +212,10 @@ namespace RideStalk
         {
 
         }
+
+        // This is the stuff that manages the console delete later
+        [DllImport("kernel32.dll", SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        static extern bool AllocConsole();
     }
 }

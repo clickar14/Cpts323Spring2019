@@ -215,6 +215,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CarData.cs" />
+    <Compile Include="CarOperations.cs" />
     <Compile Include="DatabaseManagement.cs" />
     <Compile Include="Interface.cs">
       <SubType>Form</SubType>
