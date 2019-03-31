@@ -14,12 +14,12 @@ namespace RideStalk
     // Below is the main services object for a single car
     public class serviceData
     {
-        public object user { get; set; }
-        public object driver { get; set; }
-        public object carPosition { get; set; }
-        public object destination { get; set; }
-        public object origin { get; set; }
-        public object pointList { get; set; }
+        public user user { get; set; }
+        public driver driver { get; set; }
+        public carPosition carPosition { get; set; }
+        public destination destination { get; set; }
+        public origin origin { get; set; }
+        public pointList pointList { get; set; }
         public string initialTime { get; set; }
         public string acepted { get; set; }
         public double travelDistance { get; set; }
@@ -43,7 +43,7 @@ namespace RideStalk
         public string Company { get; set; }
         public int did { get; set; }
         public string image { get; set; }
-        public object car { get; set; }
+        public car car { get; set; }
 
     }
     public class car
@@ -77,7 +77,7 @@ namespace RideStalk
     }
     public class pointList
     {
-        public object point { set; get; }
+        public point point { set; get; }
     }
     public class point
     {

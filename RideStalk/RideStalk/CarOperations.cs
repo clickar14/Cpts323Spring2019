@@ -31,9 +31,9 @@ namespace RideStalk
             };
             return newService;
         }
-        public object genUser()
+        public user genUser()
         {
-            object newUser = new user
+            user newUser = new user
             {
                 username = "null",
                 uid = 0,
@@ -43,9 +43,9 @@ namespace RideStalk
             };
             return newUser;
         }
-        public object genDriver()
+        public driver genDriver()
         {
-            object newDriver = new driver
+            driver newDriver = new driver
             {
                 Company = "null",
                 did = 0,
@@ -59,9 +59,9 @@ namespace RideStalk
             return newDriver;
         }
 
-        public object genPosition()
+        public carPosition genPosition()
         {
-            var newPosition = new carPosition
+            carPosition newPosition = new carPosition
             {
                 lat = 0.0,
                 lng = 0.0,
@@ -69,9 +69,9 @@ namespace RideStalk
             return newPosition;
         }
 
-        public object genDestination()
+        public destination genDestination()
         {
-            var newDestination = new destination
+            destination newDestination = new destination
             {
                 lat = 0.0,
                 lng = 0.0,
@@ -80,9 +80,9 @@ namespace RideStalk
             return newDestination;
         }
 
-        public object genOrigin()
+        public origin genOrigin()
         {
-            var newOrigin = new origin
+            origin newOrigin = new origin
             {
                 lat = 0.0,
                 lng = 0.0,
@@ -90,17 +90,17 @@ namespace RideStalk
             };
             return newOrigin;
         }
-        public object genPointList()
+        public pointList genPointList()
         {
-            var newPointList = new pointList
+            pointList newPointList = new pointList
             {
-                point = "null",
+                point = genPoint(),
             };
             return newPointList;
         }
-        public object genPoint()
+        public point genPoint()
         {
-            var newPoint = new point
+            point newPoint = new point
             {
                 lat = 0.0,
                 lng = 0.0,
