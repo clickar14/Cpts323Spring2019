@@ -49,7 +49,7 @@ namespace RideStalk
     public class car
     {
         public string carPlate { get; set; }
-        public string carStars { get; set; }
+        public double carStars { get; set; }
     }
 
     public class carPosition
@@ -57,7 +57,7 @@ namespace RideStalk
         public double lat { get; set; }
         public double lng { get; set; }
         [JsonProperty("time")]
-        public ServerTimeStamp TimestampPlaceholder { get; } = new ServerTimeStamp();
+        public ServerTimeStamp TimestampPlaceholder { get; set; } = new ServerTimeStamp();
     }
     public class destination
     {
@@ -65,7 +65,7 @@ namespace RideStalk
         public double lng { get; set; }
         public string destinationName { get; set; }
         [JsonProperty("time")]
-        public ServerTimeStamp TimestampPlaceholder { get; } = new ServerTimeStamp();
+        public ServerTimeStamp TimestampPlaceholder { get; set; } = new ServerTimeStamp();
     }
     public class origin
     {
@@ -73,7 +73,7 @@ namespace RideStalk
         public double lng { get; set; }
         public string originName { get; set; }
         [JsonProperty("time")]
-        public ServerTimeStamp TimestampPlaceholder { get; } = new ServerTimeStamp();
+        public ServerTimeStamp TimestampPlaceholder { get; set; } = new ServerTimeStamp();
     }
     public class pointList
     {
@@ -84,13 +84,13 @@ namespace RideStalk
         public double lat { set; get; }
         public double lng { set; get; }
         [JsonProperty("time")]
-        public ServerTimeStamp TimestampPlaceholder { get; } = new ServerTimeStamp();
+        public ServerTimeStamp TimestampPlaceholder { get; set; } = new ServerTimeStamp();
     }
 
     public class ServerTimeStamp
     {
         [JsonProperty(".sv")]
-        public string TimestampPlaceholder { get; } = "timestamp";
+        public string TimestampPlaceholder { get; set; } = "timestamp";
     }
 
 }

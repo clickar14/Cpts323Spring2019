@@ -96,6 +96,7 @@ namespace RideStalk
             // Move the below to be executed by the thread above later
             carPopulateThread.Join();
             renderLists();
+            // Creates the service lists for each car
             populateServiceLists();
             this.Size = new Size(1260, 775);
 
@@ -107,86 +108,7 @@ namespace RideStalk
 
 
         }
-        public void populateServiceLists()
-        {
-            serviceLists.Add(metroGrid1);
-            serviceLists.Add(metroGrid2);
-            serviceLists.Add(metroGrid3);
-            serviceLists.Add(metroGrid4);
-            comboBoxNavigation.Add(metroComboBox1);
-            comboBoxNavigation.Add(metroComboBox2);
-            comboBoxNavigation.Add(metroComboBox3);
-            comboBoxNavigation.Add(metroComboBox4);
-            comboBoxNavigation.Add(metroComboBox5);
 
-            for (int x = 0; x < 4; x++)
-            {
-                comboBoxNavigation[x].Items.Add("Car One");
-                comboBoxNavigation[x].Items.Add("Car Two");
-                comboBoxNavigation[x].Items.Add("Car Three");
-                comboBoxNavigation[x].Items.Add("Car Four");
-
-                DataGridViewRow row1 = new DataGridViewRow();
-                DataGridViewRow row2 = new DataGridViewRow();
-                DataGridViewRow row3 = new DataGridViewRow();
-                DataGridViewRow row4 = new DataGridViewRow();
-                DataGridViewRow row5 = new DataGridViewRow();
-                DataGridViewRow row6 = new DataGridViewRow();
-                DataGridViewRow row7 = new DataGridViewRow();
-                DataGridViewRow row8 = new DataGridViewRow();
-                row1.HeaderCell.Value = "Accepted:";
-                row2.HeaderCell.Value = "Date:";
-                row3.HeaderCell.Value = "Estimated Price:";
-                row4.HeaderCell.Value = "Final Price:";
-                row5.HeaderCell.Value = "Pay Mode:";
-                row6.HeaderCell.Value = "Travel Time:";
-                row7.HeaderCell.Value = "Travel Distance:";
-                row8.HeaderCell.Value = "Pick-Up Time:";
-
-                DataGridViewTextBoxCell cell1 = new DataGridViewTextBoxCell();
-                DataGridViewTextBoxCell cell2 = new DataGridViewTextBoxCell();
-                DataGridViewTextBoxCell cell3 = new DataGridViewTextBoxCell();
-                DataGridViewTextBoxCell cell4 = new DataGridViewTextBoxCell();
-                DataGridViewTextBoxCell cell5 = new DataGridViewTextBoxCell();
-                DataGridViewTextBoxCell cell6 = new DataGridViewTextBoxCell();
-                DataGridViewTextBoxCell cell7 = new DataGridViewTextBoxCell();
-                DataGridViewTextBoxCell cell8 = new DataGridViewTextBoxCell();
-
-                cell1.Value = carList[x].acepted;
-                row1.Cells.Add(cell1);
-                cell2.Value = carList[x].initialTime;
-                row2.Cells.Add(cell2);
-                cell3.Value = carList[x].estimatedPrice;
-                row3.Cells.Add(cell3);
-                cell4.Value = carList[x].finalPrice;
-                row4.Cells.Add(cell4);
-                cell5.Value = carList[x].payMode;
-                row5.Cells.Add(cell5);
-                cell6.Value = carList[x].travelTime;
-                row6.Cells.Add(cell6);
-                cell7.Value = carList[x].travelDistance;
-                row7.Cells.Add(cell7);
-                cell8.Value = carList[x].pickupDurationTime;
-                row8.Cells.Add(cell8);
-                serviceLists[x].Rows.Add(row1);
-                serviceLists[x].Rows.Add(row2);
-                serviceLists[x].Rows.Add(row3);
-                serviceLists[x].Rows.Add(row4);
-                serviceLists[x].Rows.Add(row5);
-                serviceLists[x].Rows.Add(row6);
-                serviceLists[x].Rows.Add(row7);
-                serviceLists[x].Rows.Add(row8);
-
-                serviceLists[x].RowTemplate.DefaultHeaderCellType = typeof(CustomHeaderCell);
-                serviceLists[x].RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-                serviceLists[x].SelectionMode = 0;
-            }
-            comboBoxNavigation[4].Items.Add("Car One");
-            comboBoxNavigation[4].Items.Add("Car Two");
-            comboBoxNavigation[4].Items.Add("Car Three");
-            comboBoxNavigation[4].Items.Add("Car Four");
-
-        }
         public void realTimeListUpdate()
         {
             while (true) { 
@@ -204,6 +126,7 @@ namespace RideStalk
                         carSumList.Groups[x].Header = $"Car {x + 1} - Active";
                     }
                 }
+                // Update trip summaries list
                 for (int x = 0; x < carGroups.Count; x++)
                 {
                     int selectedCarNumber = Int32.Parse(carGroups[x].Name);
@@ -212,6 +135,48 @@ namespace RideStalk
                     carSumList.Groups[x].Items[2].SubItems[1].Text = carList[selectedCarNumber].origin.originName;
                     carSumList.Groups[x].Items[3].SubItems[1].Text = carList[selectedCarNumber].destination.destinationName;
                     carSumList.Groups[x].Items[4].SubItems[1].Text = carList[selectedCarNumber].estimatedPrice.ToString();
+                }
+                // Update service item list
+                for (int x = 0; x < 4; x++)
+                {
+                    serviceLists[x].Rows[0].Cells[0].Value = carList[x].acepted;
+                    serviceLists[x].Rows[1].Cells[0].Value = carList[x].initialTime;
+                    serviceLists[x].Rows[2].Cells[0].Value = carList[x].estimatedPrice;
+                    serviceLists[x].Rows[3].Cells[0].Value = carList[x].finalPrice;
+                    serviceLists[x].Rows[4].Cells[0].Value = carList[x].payMode;
+                    serviceLists[x].Rows[5].Cells[0].Value = carList[x].travelTime;
+                    serviceLists[x].Rows[6].Cells[0].Value = carList[x].travelDistance;
+                    serviceLists[x].Rows[7].Cells[0].Value = carList[x].pickupDurationTime;
+                }
+                // Update user information lists
+                for (int x = 4; x < 8; x++)                
+                {
+                    serviceLists[x].Rows[0].Cells[0].Value = carList[x-4].user.username;
+                    serviceLists[x].Rows[1].Cells[0].Value = carList[x-4].user.uid;
+                    serviceLists[x].Rows[2].Cells[0].Value = carList[x-4].user.image;
+                    serviceLists[x].Rows[3].Cells[0].Value = carList[x-4].user.userCellphone;
+                    serviceLists[x].Rows[4].Cells[0].Value = carList[x-4].user.userStar;
+                }
+                // Update driver information lists
+                for (int x = 8; x < 12; x++)                
+                {
+                    serviceLists[x].Rows[0].Cells[0].Value = carList[x - 8].driver.Company;
+                    serviceLists[x].Rows[1].Cells[0].Value = carList[x - 8].driver.did;
+                    serviceLists[x].Rows[2].Cells[0].Value = carList[x - 8].driver.image;
+                    serviceLists[x].Rows[3].Cells[0].Value = carList[x - 8].driver.car.carPlate;
+                    serviceLists[x].Rows[4].Cells[0].Value = carList[x - 8].driver.car.carStars;
+                }
+                // Update trip information lists
+                for (int x = 12; x < 16; x++)
+                {
+                    serviceLists[x].Rows[0].Cells[0].Value = carList[x - 12].carPosition.lat;
+                    serviceLists[x].Rows[1].Cells[0].Value = carList[x - 12].carPosition.lng;
+                    serviceLists[x].Rows[2].Cells[0].Value = carList[x - 12].origin.originName;
+                    serviceLists[x].Rows[3].Cells[0].Value = carList[x - 12].origin.lat;
+                    serviceLists[x].Rows[4].Cells[0].Value = carList[x - 12].origin.lng;
+                    serviceLists[x].Rows[5].Cells[0].Value = carList[x - 12].destination.destinationName;
+                    serviceLists[x].Rows[6].Cells[0].Value = carList[x - 12].destination.lat;
+                    serviceLists[x].Rows[7].Cells[0].Value = carList[x - 12].destination.lng;
                 }
                 Thread carUpdateThread = new Thread(patchCars);
                 carUpdateThread.Start();
@@ -294,10 +259,6 @@ namespace RideStalk
                 ListViewItem item5 = new ListViewItem("Estimated Cost:", $"4car{x+1}", carGroups[x]);
                 item5.SubItems.Add(carList[x].estimatedPrice.ToString());
 
-                // Create columns for the items and subitems.
-                // Width of -2 indicates auto-size.
-
-
                 //Add the items to the ListView.
 
                 carSumList.Items.AddRange(new ListViewItem[] { item1, item2, item3, item4, item5 });
@@ -342,6 +303,32 @@ namespace RideStalk
                 carList.Add(new CarOperations().genService());
                 var post = await newService.PostAsync(carList[x]);
                 carKeys.Add(post.Key);
+                Random ranNum = new Random();
+                int num = 0;
+                num = ranNum.Next(100, 999);
+                carList[x].driver.Company = "RideStalk";
+                carList[x].driver.did = x + 65;
+                carList[x].driver.car.carPlate = $"AWE{num}";
+                if (x == 0)
+                {
+                    carList[0].driver.image = "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Albert_Einstein_Head.jpg/220px-Albert_Einstein_Head.jpg";
+                    carList[0].driver.car.carStars = 4.9;
+                }
+                else if (x == 1)
+                {
+                    carList[1].driver.image = "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Grand_Duchess_Anastasia_Nikolaevna_Crisco_edit_letters_removed.jpg/220px-Grand_Duchess_Anastasia_Nikolaevna_Crisco_edit_letters_removed.jpg";
+                    carList[1].driver.car.carStars = 4.7;
+                }
+                else if (x == 2)
+                {
+                    carList[2].driver.image = "http://www.induslibrary.com/wp-content/uploads/2015/12/Mother-teresa.jpg";
+                    carList[2].driver.car.carStars = 4.0;
+                }
+                else if (x == 3)
+                {
+                    carList[3].driver.image = "https://cdn.britannica.com/s:300x300/92/60892-004-ED605A68.jpg";
+                    carList[3].driver.car.carStars = 5.0;
+                }
             }
 
         }
@@ -499,6 +486,9 @@ namespace RideStalk
                     metroComboBox5.Visible = false;
                     comboBoxNavigation[x].SelectedIndex = navigationTabs.SelectedIndex - 2;
                     serviceLists[x].ClearSelection();
+                    serviceLists[x+4].ClearSelection();
+                    serviceLists[x + 8].ClearSelection();
+                    serviceLists[x + 12].ClearSelection();
                     metroLabel5.Visible = false;
                 }
                 else
@@ -527,6 +517,254 @@ namespace RideStalk
         private void navBoxSelection5(object sender, EventArgs e)
         {
             navigationTabs.SelectedIndex = comboBoxNavigation[4].SelectedIndex + 2;
+        }
+
+
+
+
+        /////////////////////////////////////////////
+        // Creates the service lists for each car ///
+        public void populateServiceLists()
+        {
+            serviceLists.Add(metroGrid1);
+            serviceLists.Add(metroGrid2);
+            serviceLists.Add(metroGrid3);
+            serviceLists.Add(metroGrid4);
+            comboBoxNavigation.Add(metroComboBox1);
+            comboBoxNavigation.Add(metroComboBox2);
+            comboBoxNavigation.Add(metroComboBox3);
+            comboBoxNavigation.Add(metroComboBox4);
+            comboBoxNavigation.Add(metroComboBox5);
+
+            for (int x = 0; x < 4; x++)
+            {
+                comboBoxNavigation[x].Items.Add("Car One");
+                comboBoxNavigation[x].Items.Add("Car Two");
+                comboBoxNavigation[x].Items.Add("Car Three");
+                comboBoxNavigation[x].Items.Add("Car Four");
+
+                DataGridViewRow row1 = new DataGridViewRow();
+                DataGridViewRow row2 = new DataGridViewRow();
+                DataGridViewRow row3 = new DataGridViewRow();
+                DataGridViewRow row4 = new DataGridViewRow();
+                DataGridViewRow row5 = new DataGridViewRow();
+                DataGridViewRow row6 = new DataGridViewRow();
+                DataGridViewRow row7 = new DataGridViewRow();
+                DataGridViewRow row8 = new DataGridViewRow();
+                row1.HeaderCell.Value = "Accepted:";
+                row2.HeaderCell.Value = "Date:";
+                row3.HeaderCell.Value = "Estimated Price:";
+                row4.HeaderCell.Value = "Final Price:";
+                row5.HeaderCell.Value = "Pay Mode:";
+                row6.HeaderCell.Value = "Travel Time:";
+                row7.HeaderCell.Value = "Travel Distance:";
+                row8.HeaderCell.Value = "Pick-Up Time:";
+
+                DataGridViewTextBoxCell cell1 = new DataGridViewTextBoxCell();
+                DataGridViewTextBoxCell cell2 = new DataGridViewTextBoxCell();
+                DataGridViewTextBoxCell cell3 = new DataGridViewTextBoxCell();
+                DataGridViewTextBoxCell cell4 = new DataGridViewTextBoxCell();
+                DataGridViewTextBoxCell cell5 = new DataGridViewTextBoxCell();
+                DataGridViewTextBoxCell cell6 = new DataGridViewTextBoxCell();
+                DataGridViewTextBoxCell cell7 = new DataGridViewTextBoxCell();
+                DataGridViewTextBoxCell cell8 = new DataGridViewTextBoxCell();
+
+                cell1.Value = carList[x].acepted;
+                row1.Cells.Add(cell1);
+                cell2.Value = carList[x].initialTime;
+                row2.Cells.Add(cell2);
+                cell3.Value = carList[x].estimatedPrice;
+                row3.Cells.Add(cell3);
+                cell4.Value = carList[x].finalPrice;
+                row4.Cells.Add(cell4);
+                cell5.Value = carList[x].payMode;
+                row5.Cells.Add(cell5);
+                cell6.Value = carList[x].travelTime;
+                row6.Cells.Add(cell6);
+                cell7.Value = carList[x].travelDistance;
+                row7.Cells.Add(cell7);
+                cell8.Value = carList[x].pickupDurationTime;
+                row8.Cells.Add(cell8);
+                serviceLists[x].Rows.Add(row1);
+                serviceLists[x].Rows.Add(row2);
+                serviceLists[x].Rows.Add(row3);
+                serviceLists[x].Rows.Add(row4);
+                serviceLists[x].Rows.Add(row5);
+                serviceLists[x].Rows.Add(row6);
+                serviceLists[x].Rows.Add(row7);
+                serviceLists[x].Rows.Add(row8);
+
+                serviceLists[x].RowTemplate.DefaultHeaderCellType = typeof(CustomHeaderCell);
+                serviceLists[x].RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+                serviceLists[x].SelectionMode = 0;
+            }
+            serviceLists.Add(metroGrid5);
+            serviceLists.Add(metroGrid6);
+            serviceLists.Add(metroGrid7);
+            serviceLists.Add(metroGrid8);
+            for (int x = 4; x < 8; x++)
+            {
+
+                DataGridViewRow row1 = new DataGridViewRow();
+                DataGridViewRow row2 = new DataGridViewRow();
+                DataGridViewRow row3 = new DataGridViewRow();
+                DataGridViewRow row4 = new DataGridViewRow();
+                DataGridViewRow row5 = new DataGridViewRow();
+                row1.HeaderCell.Value = "User Name:";
+                row2.HeaderCell.Value = "User ID:";
+                row3.HeaderCell.Value = "Image: ";
+                row4.HeaderCell.Value = "Phone Number:";
+                row5.HeaderCell.Value = "User Rating:";
+
+                DataGridViewTextBoxCell cell1 = new DataGridViewTextBoxCell();
+                DataGridViewTextBoxCell cell2 = new DataGridViewTextBoxCell();
+                DataGridViewTextBoxCell cell3 = new DataGridViewTextBoxCell();
+                DataGridViewTextBoxCell cell4 = new DataGridViewTextBoxCell();
+                DataGridViewTextBoxCell cell5 = new DataGridViewTextBoxCell();
+
+                cell1.Value = carList[x-4].user.username;
+                row1.Cells.Add(cell1);
+                cell2.Value = carList[x-4].user.uid;
+                row2.Cells.Add(cell2);
+                cell3.Value = carList[x-4].user.image;
+                row3.Cells.Add(cell3);
+                cell4.Value = carList[x-4].user.userCellphone;
+                row4.Cells.Add(cell4);
+                cell5.Value = carList[x-4].user.userStar;
+                row5.Cells.Add(cell5);
+
+                serviceLists[x].Rows.Add(row1);
+                serviceLists[x].Rows.Add(row2);
+                serviceLists[x].Rows.Add(row3);
+                serviceLists[x].Rows.Add(row4);
+                serviceLists[x].Rows.Add(row5);
+
+                serviceLists[x].RowTemplate.DefaultHeaderCellType = typeof(CustomHeaderCell);
+                serviceLists[x].RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+                serviceLists[x].SelectionMode = 0;
+            }
+            serviceLists.Add(metroGrid9);
+            serviceLists.Add(metroGrid10);
+            serviceLists.Add(metroGrid11);
+            serviceLists.Add(metroGrid12);
+            for (int x = 8; x < 12; x++)
+            {
+
+                DataGridViewRow row1 = new DataGridViewRow();
+                DataGridViewRow row2 = new DataGridViewRow();
+                DataGridViewRow row3 = new DataGridViewRow();
+                DataGridViewRow row4 = new DataGridViewRow();
+                DataGridViewRow row5 = new DataGridViewRow();
+                row1.HeaderCell.Value = "Company:";
+                row2.HeaderCell.Value = "Driver ID:";
+                row3.HeaderCell.Value = "Image:";
+                row4.HeaderCell.Value = "Car Plate:";
+                row5.HeaderCell.Value = "Car Rating:";
+
+                DataGridViewTextBoxCell cell1 = new DataGridViewTextBoxCell();
+                DataGridViewTextBoxCell cell2 = new DataGridViewTextBoxCell();
+                DataGridViewTextBoxCell cell3 = new DataGridViewTextBoxCell();
+                DataGridViewTextBoxCell cell4 = new DataGridViewTextBoxCell();
+                DataGridViewTextBoxCell cell5 = new DataGridViewTextBoxCell();
+
+                cell1.Value = carList[x - 8].driver.Company;
+                row1.Cells.Add(cell1);
+                cell2.Value = carList[x - 8].driver.did;
+                row2.Cells.Add(cell2);
+                cell3.Value = carList[x - 8].driver.image;
+                row3.Cells.Add(cell3);
+                cell4.Value = carList[x - 8].driver.car.carPlate;
+                row4.Cells.Add(cell4);
+                cell5.Value = carList[x - 8].driver.car.carStars;
+                row5.Cells.Add(cell5);
+
+                serviceLists[x].Rows.Add(row1);
+                serviceLists[x].Rows.Add(row2);
+                serviceLists[x].Rows.Add(row3);
+                serviceLists[x].Rows.Add(row4);
+                serviceLists[x].Rows.Add(row5);
+
+                serviceLists[x].RowTemplate.DefaultHeaderCellType = typeof(CustomHeaderCell);
+                serviceLists[x].RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+                serviceLists[x].SelectionMode = 0;
+            }
+            serviceLists.Add(metroGrid13);
+            serviceLists.Add(metroGrid14);
+            serviceLists.Add(metroGrid15);
+            serviceLists.Add(metroGrid16);
+            for (int x = 12; x < 16; x++)
+            {
+
+                DataGridViewRow row1 = new DataGridViewRow();
+                DataGridViewRow row2 = new DataGridViewRow();
+                DataGridViewRow row3 = new DataGridViewRow();
+                DataGridViewRow row4 = new DataGridViewRow();
+                DataGridViewRow row5 = new DataGridViewRow();
+                DataGridViewRow row6 = new DataGridViewRow();
+                DataGridViewRow row7 = new DataGridViewRow();
+                DataGridViewRow row8 = new DataGridViewRow();
+                row1.HeaderCell.Value = "Current Lat:";
+                row2.HeaderCell.Value = "Current Lng:";
+                row3.HeaderCell.Value = "Origin:";
+                row4.HeaderCell.Value = "Origin Lat:";
+                row5.HeaderCell.Value = "Origin Lng:";
+                row6.HeaderCell.Value = "Destination:";
+                row7.HeaderCell.Value = "Dest Lat:";
+                row8.HeaderCell.Value = "Dest Lng:";
+
+                DataGridViewTextBoxCell cell1 = new DataGridViewTextBoxCell();
+                DataGridViewTextBoxCell cell2 = new DataGridViewTextBoxCell();
+                DataGridViewTextBoxCell cell3 = new DataGridViewTextBoxCell();
+                DataGridViewTextBoxCell cell4 = new DataGridViewTextBoxCell();
+                DataGridViewTextBoxCell cell5 = new DataGridViewTextBoxCell();
+                DataGridViewTextBoxCell cell6 = new DataGridViewTextBoxCell();
+                DataGridViewTextBoxCell cell7 = new DataGridViewTextBoxCell();
+                DataGridViewTextBoxCell cell8 = new DataGridViewTextBoxCell();
+
+                cell1.Value = carList[x - 12].carPosition.lat;
+                row1.Cells.Add(cell1);
+                cell2.Value = carList[x - 12].carPosition.lng;
+                row2.Cells.Add(cell2);
+                cell3.Value = carList[x - 12].origin.originName;
+                row3.Cells.Add(cell3);
+                cell4.Value = carList[x - 12].origin.lat;
+                row4.Cells.Add(cell4);
+                cell5.Value = carList[x - 12].origin.lng;
+                row5.Cells.Add(cell5);
+                cell6.Value = carList[x - 12].destination.destinationName;
+                row6.Cells.Add(cell6);
+                cell7.Value = carList[x - 12].destination.lat;
+                row7.Cells.Add(cell7);
+                cell8.Value = carList[x - 12].destination.lng;
+                row8.Cells.Add(cell8);
+
+                serviceLists[x].Rows.Add(row1);
+                serviceLists[x].Rows.Add(row2);
+                serviceLists[x].Rows.Add(row3);
+                serviceLists[x].Rows.Add(row4);
+                serviceLists[x].Rows.Add(row5);
+                serviceLists[x].Rows.Add(row6);
+                serviceLists[x].Rows.Add(row7);
+                serviceLists[x].Rows.Add(row8);
+
+                serviceLists[x].RowTemplate.DefaultHeaderCellType = typeof(CustomHeaderCell);
+                serviceLists[x].RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+                serviceLists[x].SelectionMode = 0;
+            }
+            comboBoxNavigation[4].Items.Add("Car One");
+            comboBoxNavigation[4].Items.Add("Car Two");
+            comboBoxNavigation[4].Items.Add("Car Three");
+            comboBoxNavigation[4].Items.Add("Car Four");
+
+        }
+        // Clears the position information after a trip is completed
+        void clearCarTrip(int carToClear)
+        {
+            carList[carToClear].acepted = "false";
+            carList[carToClear].user = new CarOperations().genUser();
+            carList[carToClear].destination = new CarOperations().genDestination();
+            carList[carToClear].origin = new CarOperations().genOrigin();
+            carList[carToClear].pointList = new CarOperations().genPointList();
         }
     }
 
