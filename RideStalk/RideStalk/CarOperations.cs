@@ -7,6 +7,7 @@ using GMap.NET;
 
 namespace RideStalk
 {
+    
     class CarOperations
     {
         // Change the call to have the ability to have paramters passed.
@@ -53,7 +54,7 @@ namespace RideStalk
                 car = new car
                 {
                     carPlate = "null",
-                    carStars = "null",
+                    carStars = 0,
                 }
             };
             return newDriver;
