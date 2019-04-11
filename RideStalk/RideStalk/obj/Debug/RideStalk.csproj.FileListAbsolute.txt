@@ -44,7 +44,6 @@ C:\Users\Chancelor\Documents\GitHub\Cpts323Spring2019\RideStalk\RideStalk\bin\De
 C:\Users\Chancelor\Documents\GitHub\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\System.Data.SQLite.xml
 C:\Users\Chancelor\Documents\GitHub\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\System.Diagnostics.DiagnosticSource.xml
 C:\Users\Chancelor\Documents\GitHub\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\System.Reactive.xml
-C:\Users\Chancelor\Documents\GitHub\Cpts323Spring2019\RideStalk\RideStalk\obj\Debug\RideStalk.csprojResolveAssemblyReference.cache
 C:\Users\Chancelor\Documents\GitHub\Cpts323Spring2019\RideStalk\RideStalk\obj\Debug\RideStalk.Interface.resources
 C:\Users\Chancelor\Documents\GitHub\Cpts323Spring2019\RideStalk\RideStalk\obj\Debug\RideStalk.Properties.Resources.resources
 C:\Users\Chancelor\Documents\GitHub\Cpts323Spring2019\RideStalk\RideStalk\obj\Debug\RideStalk.csproj.GenerateResource.Cache

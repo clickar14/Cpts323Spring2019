@@ -72,8 +72,6 @@ namespace RideStalk
         // On initial interface load, create the map
         private void Interface_Load(object sender, EventArgs e)
         {
-            // Remove this function when you're done utilizing the console
-            AllocConsole();
 
             // Gmap Setup
             GMapProviders.GoogleMap.ApiKey = @"AIzaSyAdLhafjca3jiLothU5wizd4syyQTYK5jQ";
@@ -87,26 +85,20 @@ namespace RideStalk
             mapView.Position = new GMap.NET.PointLatLng(lat, lng);
             mapView.Zoom = 13;
             mapView.ShowCenter = false;
-
+            carList = new CarOperations().generateCars(carList);
             // Populate car objects and post them to the server.
-            Thread carPopulateThread = new Thread(runCars);
-            carPopulateThread.Start();
 
             tripSummariesList.Add(carSumList);
             // Move the below to be executed by the thread above later
-            carPopulateThread.Join();
             renderLists();
             // Creates the service lists for each car
             populateServiceLists();
             this.Size = new Size(1260, 775);
-
+            navigationTabs.SelectedIndex = 0;
 
             // Start the thread that manages updating of the list and server values
-            updateList = new System.Threading.Thread(realTimeListUpdate);
-            updateList.Start();
-            
 
-
+                       
         }
 
         public void realTimeListUpdate()
@@ -178,6 +170,7 @@ namespace RideStalk
                     serviceLists[x].Rows[6].Cells[0].Value = carList[x - 12].destination.lat;
                     serviceLists[x].Rows[7].Cells[0].Value = carList[x - 12].destination.lng;
                 }
+                // Sends information to the server
                 Thread carUpdateThread = new Thread(patchCars);
                 carUpdateThread.Start();
                 carUpdateThread.Join();
@@ -200,9 +193,12 @@ namespace RideStalk
             var newService = firebase.Child("services");
             // Clear the list in database for now, get rid of later
                         
-            for (int x = 0; x < carList.Count; ++x)
+            for (int x = 0; x < 4; ++x)
             {
-                await newService.Child($"{carKeys[x]}").PatchAsync(carList[x]);
+                if (carKeys[x] != "null")
+                {
+                    await newService.Child($"{carKeys[x]}").PatchAsync(carList[x]);
+                }
             }
 
         }
@@ -262,6 +258,7 @@ namespace RideStalk
                 //Add the items to the ListView.
 
                 carSumList.Items.AddRange(new ListViewItem[] { item1, item2, item3, item4, item5 });
+                carKeys.Add("null");
 
             }
             
@@ -277,57 +274,82 @@ namespace RideStalk
         // This is for the test route button
         private void metroButton1_Click(object sender, EventArgs e)
         {
-            Thread paintThread = new Thread(paintRoute);
-            paintThread.Start();
-
-            carList[1].destination.destinationName = "Jerrrryyrrr";
-            carList[3].acepted = "true";
+            Thread tripRetrieveThread = new Thread(getCars);
+            tripRetrieveThread.Start();
+            //Thread paintThread = new Thread(paintRoute);
+            // paintThread.Start();
+            tripRetrieveThread.Join();
         }
 
-        // Thread process to handle the updating of cars
-        private void runCars()
+        // Thread process to handle the initial grabbing of trips
+        private void getCars()
         {
-            updateCars().Wait();
+            initialRetrieveTrip().Wait();
+            updateList = new System.Threading.Thread(realTimeListUpdate);
+            updateList.Start();
 
         }
-        private async Task updateCars()
+        private async Task initialRetrieveTrip()
         {
-            var firebase = new FirebaseClient("https://test-24354.firebaseio.com/");
-            // Creates a child called services
-            var newService = firebase.Child("services");
-            // Clear the list in database for now, get rid of later
-            await newService.DeleteAsync();
-
-            for (int x = 0; x < 4; ++x)
+            while (true)
             {
-                carList.Add(new CarOperations().genService());
-                var post = await newService.PostAsync(carList[x]);
-                carKeys.Add(post.Key);
-                Random ranNum = new Random();
-                int num = 0;
-                num = ranNum.Next(100, 999);
-                carList[x].driver.Company = "RideStalk";
-                carList[x].driver.did = x + 65;
-                carList[x].driver.car.carPlate = $"AWE{num}";
-                if (x == 0)
+                var firebase = new FirebaseClient("https://test-24354.firebaseio.com/");
+                // Create a list of every service in the database
+                var patchService = firebase.Child("services");
+                var services = await patchService.OnceAsync<serverData>();
+
+                foreach (var serviceItem in services)
                 {
-                    carList[0].driver.image = "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Albert_Einstein_Head.jpg/220px-Albert_Einstein_Head.jpg";
-                    carList[0].driver.car.carStars = 4.9;
+
+                    if (serviceItem.Object.acepted == "false")
+                    {
+                        for (int x = 0; x < 4; ++x)
+                        {
+                            if (carList[x].acepted == "false")
+                            {
+                                // Attempt to patch the car information to the service item
+                                try
+                                {
+                                    carList[x].acepted = "true";
+                                    await patchService.Child($"{serviceItem.Key}").PatchAsync(carList[x]);
+                                }
+                                // If the service has been claimed by another, break and go to the next service item 
+                                catch
+                                {
+                                    carList[x].acepted = "false";
+                                    break;
+                                }
+                                // If an exception wasn't raised, add the trip information to the carList
+                                // and add the key to the key list.
+                                carKeys[x] = $"{serviceItem.Key}";
+                                carList[x].destination = serviceItem.Object.destination;
+                                carList[x].origin = serviceItem.Object.origin;
+                                carList[x].user = serviceItem.Object.user;
+                                carList[x].estimatedPrice = serviceItem.Object.estimatedPrice;
+                                carList[x].finalPrice = serviceItem.Object.finalPrice;
+                                carList[x].payMode = serviceItem.Object.payMode;
+                                carList[x].initialTime = serviceItem.Object.initialTime;
+                                carList[x].pickupDurationTime = serviceItem.Object.pickupDurationTime;
+                                carList[x].travelTime = serviceItem.Object.travelTime;
+                                break;
+                            }
+                        }
+                    }
+
                 }
-                else if (x == 1)
+
+                //await newService.DeleteAsync();
+                int acceptanceCheck = 0;
+                for(int x = 0; x < 4; ++x)
                 {
-                    carList[1].driver.image = "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Grand_Duchess_Anastasia_Nikolaevna_Crisco_edit_letters_removed.jpg/220px-Grand_Duchess_Anastasia_Nikolaevna_Crisco_edit_letters_removed.jpg";
-                    carList[1].driver.car.carStars = 4.7;
+                    if(carList[x].acepted == "true")
+                    {
+                        acceptanceCheck++;
+                    }
                 }
-                else if (x == 2)
+                if(acceptanceCheck == 4)
                 {
-                    carList[2].driver.image = "http://www.induslibrary.com/wp-content/uploads/2015/12/Mother-teresa.jpg";
-                    carList[2].driver.car.carStars = 4.0;
-                }
-                else if (x == 3)
-                {
-                    carList[3].driver.image = "https://cdn.britannica.com/s:300x300/92/60892-004-ED605A68.jpg";
-                    carList[3].driver.car.carStars = 5.0;
+                    break;
                 }
             }
 
@@ -394,10 +416,6 @@ namespace RideStalk
            
         }
 
-        // This is the stuff that manages the console delete later
-        [DllImport("kernel32.dll", SetLastError = true)]
-        [return: MarshalAs(UnmanagedType.Bool)]
-        static extern bool AllocConsole();
         
 
         //** Sizing Management for car lists **//
@@ -764,7 +782,7 @@ namespace RideStalk
             carList[carToClear].user = new CarOperations().genUser();
             carList[carToClear].destination = new CarOperations().genDestination();
             carList[carToClear].origin = new CarOperations().genOrigin();
-            carList[carToClear].pointList = new CarOperations().genPointList();
+            carList[carToClear].pointList = new List<point>();
         }
     }
 

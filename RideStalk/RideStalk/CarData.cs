@@ -19,7 +19,7 @@ namespace RideStalk
         public carPosition carPosition { get; set; }
         public destination destination { get; set; }
         public origin origin { get; set; }
-        public pointList pointList { get; set; }
+        public object pointList { get; set; }
         public string initialTime { get; set; }
         public string acepted { get; set; }
         public double travelDistance { get; set; }
@@ -29,6 +29,10 @@ namespace RideStalk
         public string estimatedPrice { get; set; }
         public string finalPrice { get; set; }
         
+    }
+    public class serverData : serviceData
+    { 
+
     }
     public class user
     {
@@ -57,7 +61,7 @@ namespace RideStalk
         public double lat { get; set; }
         public double lng { get; set; }
         [JsonProperty("time")]
-        public ServerTimeStamp TimestampPlaceholder { get; set; } = new ServerTimeStamp();
+        public ServerTimeStamp TimestampPlaceholder { get; } = new ServerTimeStamp();
     }
     public class destination
     {
@@ -65,7 +69,7 @@ namespace RideStalk
         public double lng { get; set; }
         public string destinationName { get; set; }
         [JsonProperty("time")]
-        public ServerTimeStamp TimestampPlaceholder { get; set; } = new ServerTimeStamp();
+        public ServerTimeStamp TimestampPlaceholder { get; } = new ServerTimeStamp();
     }
     public class origin
     {
@@ -73,24 +77,20 @@ namespace RideStalk
         public double lng { get; set; }
         public string originName { get; set; }
         [JsonProperty("time")]
-        public ServerTimeStamp TimestampPlaceholder { get; set; } = new ServerTimeStamp();
-    }
-    public class pointList
-    {
-        public point point { set; get; }
+        public ServerTimeStamp TimestampPlaceholder { get; } = new ServerTimeStamp();
     }
     public class point
     {
         public double lat { set; get; }
         public double lng { set; get; }
         [JsonProperty("time")]
-        public ServerTimeStamp TimestampPlaceholder { get; set; } = new ServerTimeStamp();
+        public ServerTimeStamp TimestampPlaceholder { get; } = new ServerTimeStamp();
     }
 
     public class ServerTimeStamp
     {
         [JsonProperty(".sv")]
-        public string TimestampPlaceholder { get; set; } = "timestamp";
+        public string TimestampPlaceholder { get; } = "timestamp";
     }
 
 }
