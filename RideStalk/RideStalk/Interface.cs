@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Imaging;
 using System.Reactive.Linq;
 using System.Linq;
 using System.Text;
@@ -33,8 +34,7 @@ using MetroFramework.Fonts;
 using MetroFramework.Animation;
 using MetroFramework.Forms;
 
-// This allows the console to appear
-using System.Runtime.InteropServices;
+using System.Diagnostics;
 
 
 // Video for routes: https://www.youtube.com/watch?v=FF-PJQxpjOY
@@ -43,6 +43,8 @@ namespace RideStalk
 {
     public partial class Interface : MetroFramework.Forms.MetroForm
     {
+        // Used to measure time elapsed for speed accuracy.
+        Stopwatch triptime;
         List<serviceData> carList;
         List<MetroListView> tripSummariesList;
         List<string> carKeys;
@@ -50,6 +52,7 @@ namespace RideStalk
         List<MetroGrid> serviceLists;
         List<MetroComboBox> comboBoxNavigation;
         List<PointLatLng> _points;
+        List<GMapRoute> routeList;
         int updateTime;
         System.Threading.Thread updateList;
         public Interface()
@@ -64,15 +67,17 @@ namespace RideStalk
             serviceLists = new List<MetroGrid>();
             tripSummariesList = new List<MetroListView>();
             comboBoxNavigation = new List<MetroComboBox>();
+            routeList = new List<GMapRoute>();
             //Create a single list to be used for routes
             _points = new List<PointLatLng>();
             updateTime = 5000;
 
         }
+
         // On initial interface load, create the map
         private void Interface_Load(object sender, EventArgs e)
         {
-
+           
             // Gmap Setup
             GMapProviders.GoogleMap.ApiKey = @"AIzaSyAdLhafjca3jiLothU5wizd4syyQTYK5jQ";
             GMaps.Instance.Mode = AccessMode.ServerAndCache;
@@ -265,20 +270,14 @@ namespace RideStalk
             
         }
 
-        private void gmap_OnMarkerClick(GMapMarker item, MouseEventArgs e)
-        {
-            Console.WriteLine(String.Format("Marker {0} was clicked.", item.Tag));
-        }
-
-
         // This is for the test route button
         private void metroButton1_Click(object sender, EventArgs e)
         {
-            Thread tripRetrieveThread = new Thread(getCars);
-            tripRetrieveThread.Start();
-            //Thread paintThread = new Thread(paintRoute);
-            // paintThread.Start();
-            tripRetrieveThread.Join();
+            //Thread tripRetrieveThread = new Thread(getCars);
+            //tripRetrieveThread.Start();
+            Thread paintThread = new Thread(paintRoute);
+            paintThread.Start();
+           // tripRetrieveThread.Join();
         }
 
         // Thread process to handle the initial grabbing of trips
@@ -361,62 +360,137 @@ namespace RideStalk
         private void paintRoute(object variables)
         {
             // Remove the route overlay if it exists
-            MethodInvoker routeManage = delegate ()
-            {
+
 
                 // Starting location
-                _points.Add(new PointLatLng(46.289428, -119.291793));
+                _points.Add(new PointLatLng(46.293070, -119.290000));
                 // Ending Location
-                _points.Add(new PointLatLng(46.221432, -119.277332));
+                _points.Add(new PointLatLng(46.275019, -119.289959));
+                // Load image
+                Bitmap carImage = new Bitmap("car-icon-top-view-1.png");
 
                 // Create marker
-                GMapMarker car = new GMarkerGoogle(
-                    new PointLatLng(_points[0].Lat, _points[1].Lng),
-                    GMarkerGoogleType.lightblue);
+                GMarkerGoogle car = new GMarkerGoogle(
+                    _points[0], carImage);
                 routeOverlay.Markers.Add(car);
-                car.ToolTipText = $"{_points[0].Lat},{_points[0].Lng}";
-
+                car.Tag = 1;
 
                 var route = GoogleMapProvider.Instance
                 .GetRoute(_points[0], _points[1], false, false, 15);
-
+                
 
                 // For the my route, make it unique
-                var newRoute = new GMapRoute(route.Points, "My route");
+                GMapRoute newRoute = new GMapRoute(route.Points, "My route");
+                
 
                 int pointCount = newRoute.Points.Count();
-                var tempPoints = new List<PointLatLng>();
-                var referencePoints = new List<PointLatLng>();
-                referencePoints = newRoute.Points;
+                
+                double distance = new CarOperations().getDistance(_points[0], _points[1]);
+                routeOverlay.Routes.Add(newRoute);
+                mapView.Overlays.Add(routeOverlay);
+                newRoute.Stroke.Width = 4;
+                newRoute.Stroke.Color = Color.BlueViolet;
+                mapView.Invalidate();
+                mapView.UpdateRouteLocalPosition(newRoute);
+                List<PointLatLng> extendedPointList = expandPoints(newRoute);
+                
                 // Animate painting
-                for (int x = 0; x < pointCount; x++)
+                animateTimer.Enabled = true;
+                long totalticks = 0;
+                triptime = Stopwatch.StartNew();
+                for (int x = 0; x < extendedPointList.Count(); x++)
                 {
-                    tempPoints.Add(referencePoints[x]);
-                    var currentRoute = new GMapRoute(tempPoints, $"progress{x}");
-                    routeOverlay.Routes.Clear();
-                    routeOverlay.Routes.Add(currentRoute);
-
-                    // Add the overlay to the map
-
-                    car.Position = tempPoints[x];
-                    routeOverlay.Markers.Clear();
-                    routeOverlay.Markers.Add(car);
-                    car.ToolTipText = $"{tempPoints[x].Lat},{tempPoints[x].Lng}";
-
-                    // Find a better way to add these to the overlay, maybe creating an index for each trip?
-                    mapView.Overlays.Add(routeOverlay);
-
-                    currentRoute.Stroke.Width = 4;
-                    currentRoute.Stroke.Color = Color.BlueViolet;
-                    mapView.Invalidate();
-                    mapView.UpdateRouteLocalPosition(currentRoute);
+                    float heading;
+                    
+                    car.Position = extendedPointList[x];
+                    if(x+1 != extendedPointList.Count())
+                {
+                    heading = bearing(extendedPointList[x], extendedPointList[x + 1]);
+                    car.Bitmap = RotateImage(carImage, heading);
                 }
-            };
-            this.Invoke(routeManage);
-           
+                        
+                    // Add the overlay to the map
+                    mapView.UpdateMarkerLocalPosition(car);
+                                    
+                Thread.Sleep(100);
+                }
+                triptime.Stop();
+                totalticks = triptime.ElapsedMilliseconds;
         }
-
+        private void mapView_OnMarkerClick(GMapMarker item, MouseEventArgs e)
+        {
+            navigationTabs.SelectedIndex = (int)item.Tag + 1;
+        }
         
+
+        // Rotates the car image
+        private Bitmap RotateImage(Bitmap bmp, float angle)
+        {
+            Bitmap rotatedImage = new Bitmap(bmp.Width, bmp.Height);
+            using (Graphics g = Graphics.FromImage(rotatedImage))
+            {
+                // Set the rotation point to the center in the matrix
+                g.TranslateTransform(bmp.Width / 2, bmp.Height / 2);
+                // Rotate
+                g.RotateTransform(angle);
+                // Restore rotation point in the matrix
+                g.TranslateTransform(-bmp.Width / 2, -bmp.Height / 2);
+                // Draw the image on the bitmap
+                g.DrawImage(bmp, new Point(0, 0));
+            }
+
+            return rotatedImage;
+        }
+        // Returns the angle to be used to rotate the marker.
+        public static float bearing(PointLatLng cur, PointLatLng dest)
+        {
+            double lon1, lon2, lat1, lat2;
+            double conversion = Math.PI / 180;
+            lon1 = conversion*(cur.Lng);
+            lon2 = conversion * dest.Lng;
+            lat1 = conversion * cur.Lat;
+            lat2 = conversion * dest.Lat;
+            double longDiff = lon2 - lon1;
+            double y = Math.Sin(longDiff) * Math.Cos(lat2);
+            double x = Math.Cos(lat1) * Math.Sin(lat2) - Math.Sin(lat1) * Math.Cos(lat2) * Math.Cos(longDiff);
+
+            return (float)((180/Math.PI)*(Math.Atan2(y, x)) + 360) % 360;
+        }
+        // This function create a new point list for the animation.
+        public List<PointLatLng> expandPoints(GMapRoute route)
+        {
+            List<PointLatLng> extendedPointList = new List<PointLatLng>();
+            for(int x = 0; x < route.Points.Count(); ++x)
+            {
+                if ((x+1) != route.Points.Count())
+                {
+                    PointLatLng currentPoint = route.Points[x];
+                    PointLatLng nextPoint = route.Points[x + 1];
+                    double distance = new CarOperations().getDistance(currentPoint, nextPoint);
+                    if (distance > 0.00097222222)
+                    {
+                        int numberOfNewPoints = (int)(distance / 0.00097222222);
+                        extendedPointList.Add(currentPoint);
+                        double newPointDistance = 0.00097222222;
+                        for (int y = 0; y < numberOfNewPoints; ++y)
+                        {
+                            double lat, lng;
+                            lng = (currentPoint.Lng + ((newPointDistance / distance) * (nextPoint.Lng - currentPoint.Lng)));
+                            lat = (currentPoint.Lat + ((newPointDistance / distance) * (nextPoint.Lat - currentPoint.Lat)));
+                            PointLatLng newPoint = new PointLatLng(lat, lng);
+                            extendedPointList.Add(newPoint);
+                            newPointDistance += 0.00097222222;
+                        }
+                    }
+                }
+                else
+                {
+                    extendedPointList.Add(route.Points[x]);
+                }
+
+            }
+            return extendedPointList;
+        }
 
         //** Sizing Management for car lists **//
 
@@ -784,6 +858,8 @@ namespace RideStalk
             carList[carToClear].origin = new CarOperations().genOrigin();
             carList[carToClear].pointList = new List<point>();
         }
+
+
     }
 
 }

@@ -109,3 +109,4 @@ C:\Users\Chancelor\Desktop\New folder (16)\Cpts323Spring2019\RideStalk\RideStalk
 C:\Users\Chancelor\Desktop\New folder (16)\Cpts323Spring2019\RideStalk\RideStalk\obj\Debug\RideStalk.LoginForm.resources
 C:\Users\Chancelor\Desktop\New folder (16)\Cpts323Spring2019\RideStalk\RideStalk\obj\Debug\RideStalk.Properties.Resources.resources
 C:\Users\Chancelor\Desktop\New folder (16)\Cpts323Spring2019\RideStalk\RideStalk\obj\Debug\RideStalk.csproj.GenerateResource.Cache
+C:\Users\Chancelor\Documents\GitHub\Cpts323Spring2019\RideStalk\RideStalk\obj\Debug\RideStalk.csprojResolveAssemblyReference.cache

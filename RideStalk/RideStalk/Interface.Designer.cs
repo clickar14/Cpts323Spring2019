@@ -150,6 +150,7 @@
             this.splitter11 = new System.Windows.Forms.Splitter();
             this.splitter12 = new System.Windows.Forms.Splitter();
             this.metroButton1 = new MetroFramework.Controls.MetroButton();
+            this.animateTimer = new System.Windows.Forms.Timer(this.components);
             this.interfaceBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.interfaceBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.serviceDataBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -299,6 +300,7 @@
             this.mapView.Size = new System.Drawing.Size(1199, 651);
             this.mapView.TabIndex = 10;
             this.mapView.Zoom = 0D;
+            this.mapView.OnMarkerClick += new GMap.NET.WindowsForms.MarkerClick(this.mapView_OnMarkerClick);
             // 
             // mainInterface
             // 
@@ -1809,6 +1811,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn14;
         private MetroFramework.Controls.MetroGrid metroGrid16;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn15;
+        private System.Windows.Forms.Timer animateTimer;
     }
 }
 

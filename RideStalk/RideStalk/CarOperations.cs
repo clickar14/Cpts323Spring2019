@@ -148,5 +148,12 @@ namespace RideStalk
             };
             return carUser;
         }
+        public double getDistance(PointLatLng start, PointLatLng end)
+        {
+            
+            double conversion = Math.PI / 180;
+            double radians = ((Math.Cos(start.Lat * conversion) ) * (Math.Cos(end.Lat * conversion)) * (Math.Cos((end.Lng * conversion) - (start.Lng * conversion)))) + ((Math.Sin(start.Lat * conversion)) * (Math.Sin(end.Lat * conversion)));
+            return Math.Acos(radians)* 3963.1676;
+        }
     }
 }
