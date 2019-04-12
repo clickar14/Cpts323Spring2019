@@ -83,6 +83,7 @@ namespace RideStalk
             GMaps.Instance.Mode = AccessMode.ServerAndCache;
             mapView.CacheLocation = @"cache";
             this.StyleManager = metroStyleManager1;
+            
             //Loading map
             mapView.MapProvider = GMapProviders.GoogleMap;
             double lat = 46.289428;
@@ -365,12 +366,12 @@ namespace RideStalk
                 // Starting location
                 _points.Add(new PointLatLng(46.293070, -119.290000));
                 // Ending Location
-                _points.Add(new PointLatLng(46.275019, -119.289959));
+                _points.Add(new PointLatLng(46.241025, -119.258580));
                 // Load image
                 Bitmap carImage = new Bitmap("car-icon-top-view-1.png");
 
                 // Create marker
-                GMarkerGoogle car = new GMarkerGoogle(
+                customImageMarker car = new customImageMarker(
                     _points[0], carImage);
                 routeOverlay.Markers.Add(car);
                 car.Tag = 1;
@@ -412,7 +413,7 @@ namespace RideStalk
                     // Add the overlay to the map
                     mapView.UpdateMarkerLocalPosition(car);
                                     
-                Thread.Sleep(100);
+                Thread.Sleep(25);
                 }
                 triptime.Stop();
                 totalticks = triptime.ElapsedMilliseconds;
@@ -435,6 +436,7 @@ namespace RideStalk
                 g.RotateTransform(angle);
                 // Restore rotation point in the matrix
                 g.TranslateTransform(-bmp.Width / 2, -bmp.Height / 2);
+                
                 // Draw the image on the bitmap
                 g.DrawImage(bmp, new Point(0, 0));
             }
@@ -859,7 +861,18 @@ namespace RideStalk
             carList[carToClear].pointList = new List<point>();
         }
 
+        class customImageMarker : GMarkerGoogle
+        {
+            Bitmap Bitmap;
 
+            public customImageMarker(PointLatLng p, Bitmap Bitmap)
+             : base(p, Bitmap)
+            {
+                this.Bitmap = Bitmap;
+                Size = new System.Drawing.Size(Bitmap.Width, Bitmap.Height);
+                Offset = new Point(-Size.Width / 2, -Size.Height / 2);
+            }
+        }
     }
 
 }

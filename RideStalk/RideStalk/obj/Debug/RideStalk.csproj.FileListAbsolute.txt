@@ -110,3 +110,37 @@ C:\Users\Chancelor\Desktop\New folder (16)\Cpts323Spring2019\RideStalk\RideStalk
 C:\Users\Chancelor\Desktop\New folder (16)\Cpts323Spring2019\RideStalk\RideStalk\obj\Debug\RideStalk.Properties.Resources.resources
 C:\Users\Chancelor\Desktop\New folder (16)\Cpts323Spring2019\RideStalk\RideStalk\obj\Debug\RideStalk.csproj.GenerateResource.Cache
 C:\Users\Chancelor\Documents\GitHub\Cpts323Spring2019\RideStalk\RideStalk\obj\Debug\RideStalk.csprojResolveAssemblyReference.cache
+C:\Users\chancelor.lickar\Documents\GitHub\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\RideStalk.exe.config
+C:\Users\chancelor.lickar\Documents\GitHub\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\RideStalk.exe
+C:\Users\chancelor.lickar\Documents\GitHub\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\RideStalk.pdb
+C:\Users\chancelor.lickar\Documents\GitHub\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\EntityFramework.dll
+C:\Users\chancelor.lickar\Documents\GitHub\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\chancelor.lickar\Documents\GitHub\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\Firebase.dll
+C:\Users\chancelor.lickar\Documents\GitHub\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\GMap.NET.Core.dll
+C:\Users\chancelor.lickar\Documents\GitHub\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\GMap.NET.WindowsForms.dll
+C:\Users\chancelor.lickar\Documents\GitHub\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\GMap.NET.WindowsPresentation.dll
+C:\Users\chancelor.lickar\Documents\GitHub\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\MetroFramework.Design.dll
+C:\Users\chancelor.lickar\Documents\GitHub\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\MetroFramework.dll
+C:\Users\chancelor.lickar\Documents\GitHub\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\chancelor.lickar\Documents\GitHub\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\Newtonsoft.Json.dll
+C:\Users\chancelor.lickar\Documents\GitHub\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\System.Data.SQLite.dll
+C:\Users\chancelor.lickar\Documents\GitHub\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\chancelor.lickar\Documents\GitHub\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\chancelor.lickar\Documents\GitHub\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\chancelor.lickar\Documents\GitHub\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\System.Reactive.dll
+C:\Users\chancelor.lickar\Documents\GitHub\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\EntityFramework.xml
+C:\Users\chancelor.lickar\Documents\GitHub\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\chancelor.lickar\Documents\GitHub\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\Newtonsoft.Json.xml
+C:\Users\chancelor.lickar\Documents\GitHub\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\System.Data.SQLite.xml
+C:\Users\chancelor.lickar\Documents\GitHub\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\System.Data.SQLite.dll.config
+C:\Users\chancelor.lickar\Documents\GitHub\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\chancelor.lickar\Documents\GitHub\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\System.Reactive.xml
+C:\Users\chancelor.lickar\Documents\GitHub\Cpts323Spring2019\RideStalk\RideStalk\obj\Debug\RideStalk.csprojAssemblyReference.cache
+C:\Users\chancelor.lickar\Documents\GitHub\Cpts323Spring2019\RideStalk\RideStalk\obj\Debug\RideStalk.Interface.resources
+C:\Users\chancelor.lickar\Documents\GitHub\Cpts323Spring2019\RideStalk\RideStalk\obj\Debug\RideStalk.LoginForm.resources
+C:\Users\chancelor.lickar\Documents\GitHub\Cpts323Spring2019\RideStalk\RideStalk\obj\Debug\RideStalk.Properties.Resources.resources
+C:\Users\chancelor.lickar\Documents\GitHub\Cpts323Spring2019\RideStalk\RideStalk\obj\Debug\RideStalk.csproj.GenerateResource.cache
+C:\Users\chancelor.lickar\Documents\GitHub\Cpts323Spring2019\RideStalk\RideStalk\obj\Debug\RideStalk.csproj.CoreCompileInputs.cache
+C:\Users\chancelor.lickar\Documents\GitHub\Cpts323Spring2019\RideStalk\RideStalk\obj\Debug\RideStalk.csproj.CopyComplete
+C:\Users\chancelor.lickar\Documents\GitHub\Cpts323Spring2019\RideStalk\RideStalk\obj\Debug\RideStalk.exe
+C:\Users\chancelor.lickar\Documents\GitHub\Cpts323Spring2019\RideStalk\RideStalk\obj\Debug\RideStalk.pdb

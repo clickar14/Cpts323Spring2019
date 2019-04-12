@@ -201,7 +201,7 @@
             tabHiderPanel63.HorizontalScrollbarBarColor = true;
             tabHiderPanel63.HorizontalScrollbarHighlightOnWheel = false;
             tabHiderPanel63.HorizontalScrollbarSize = 10;
-            tabHiderPanel63.Location = new System.Drawing.Point(240, 49);
+            tabHiderPanel63.Location = new System.Drawing.Point(242, 49);
             tabHiderPanel63.Name = "tabHiderPanel63";
             tabHiderPanel63.Size = new System.Drawing.Size(1006, 58);
             tabHiderPanel63.Style = MetroFramework.MetroColorStyle.Black;
@@ -233,14 +233,13 @@
             // metroStyleManager1
             // 
             this.metroStyleManager1.Owner = this;
-            this.metroStyleManager1.Style = MetroFramework.MetroColorStyle.Lime;
+            this.metroStyleManager1.Style = MetroFramework.MetroColorStyle.Teal;
             this.metroStyleManager1.Theme = MetroFramework.MetroThemeStyle.Dark;
             // 
             // navigationTabs
             // 
-            this.navigationTabs.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.navigationTabs.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.navigationTabs.Controls.Add(this.mapInterface);
             this.navigationTabs.Controls.Add(this.mainInterface);
             this.navigationTabs.Controls.Add(this.serviceOne);
@@ -252,7 +251,7 @@
             this.navigationTabs.ItemSize = new System.Drawing.Size(100, 40);
             this.navigationTabs.Location = new System.Drawing.Point(23, 63);
             this.navigationTabs.Name = "navigationTabs";
-            this.navigationTabs.SelectedIndex = 0;
+            this.navigationTabs.SelectedIndex = 5;
             this.navigationTabs.Size = new System.Drawing.Size(1207, 699);
             this.navigationTabs.TabIndex = 10;
             this.navigationTabs.UseSelectable = true;
@@ -286,7 +285,7 @@
             this.mapView.MarkersEnabled = true;
             this.mapView.MaxZoom = 100;
             this.mapView.MinZoom = 5;
-            this.mapView.MouseWheelZoomEnabled = false;
+            this.mapView.MouseWheelZoomEnabled = true;
             this.mapView.MouseWheelZoomType = GMap.NET.MouseWheelZoomType.MousePositionAndCenter;
             this.mapView.Name = "mapView";
             this.mapView.NegativeMode = false;
@@ -633,9 +632,8 @@
             // 
             // metroComboBox1
             // 
-            this.metroComboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.metroComboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.metroComboBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.metroComboBox1.FormattingEnabled = true;
             this.metroComboBox1.ItemHeight = 23;
@@ -895,9 +893,8 @@
             // 
             // metroComboBox2
             // 
-            this.metroComboBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.metroComboBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.metroComboBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.metroComboBox2.FormattingEnabled = true;
             this.metroComboBox2.ItemHeight = 23;
@@ -1226,9 +1223,8 @@
             // 
             // metroComboBox3
             // 
-            this.metroComboBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.metroComboBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.metroComboBox3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.metroComboBox3.FormattingEnabled = true;
             this.metroComboBox3.ItemHeight = 23;
@@ -1683,11 +1679,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1250, 775);
+            this.ClientSize = new System.Drawing.Size(584, 371);
             this.Controls.Add(tabHiderPanel63);
             this.Controls.Add(this.metroButton1);
             this.Controls.Add(this.navigationTabs);
-            this.MinimumSize = new System.Drawing.Size(1250, 775);
+            this.MinimumSize = new System.Drawing.Size(575, 345);
             this.Name = "Interface";
             this.Style = MetroFramework.MetroColorStyle.Purple;
             this.Text = "RideStalk";
