@@ -276,9 +276,10 @@ namespace RideStalk
         {
             //Thread tripRetrieveThread = new Thread(getCars);
             //tripRetrieveThread.Start();
+            // tripRetrieveThread.Join();
             Thread paintThread = new Thread(paintRoute);
             paintThread.Start();
-           // tripRetrieveThread.Join();
+           
         }
 
         // Thread process to handle the initial grabbing of trips
@@ -357,16 +358,16 @@ namespace RideStalk
 
 
         // These must be declared as globals
-        GMapOverlay routeOverlay = new GMapOverlay("routeInfo");
-        private void paintRoute(object variables)
+        
+        private void paintRoute()
         {
             // Remove the route overlay if it exists
 
-
+                GMapOverlay routeOverlay = new GMapOverlay("routeInfo");
                 // Starting location
                 _points.Add(new PointLatLng(46.293070, -119.290000));
                 // Ending Location
-                _points.Add(new PointLatLng(46.241025, -119.258580));
+                _points.Add(new PointLatLng(46.275117, -119.290226));
                 // Load image
                 Bitmap carImage = new Bitmap("car-icon-top-view-1.png");
 
@@ -389,14 +390,12 @@ namespace RideStalk
                 double distance = new CarOperations().getDistance(_points[0], _points[1]);
                 routeOverlay.Routes.Add(newRoute);
                 mapView.Overlays.Add(routeOverlay);
-                newRoute.Stroke.Width = 4;
+                newRoute.Stroke.Width = 3;
                 newRoute.Stroke.Color = Color.BlueViolet;
-                mapView.Invalidate();
                 mapView.UpdateRouteLocalPosition(newRoute);
                 List<PointLatLng> extendedPointList = expandPoints(newRoute);
                 
                 // Animate painting
-                animateTimer.Enabled = true;
                 long totalticks = 0;
                 triptime = Stopwatch.StartNew();
                 for (int x = 0; x < extendedPointList.Count(); x++)
@@ -404,17 +403,20 @@ namespace RideStalk
                     float heading;
                     
                     car.Position = extendedPointList[x];
-                    if(x+1 != extendedPointList.Count())
+                    if((x+1 != extendedPointList.Count()) && (x != 0))
                 {
-                    heading = bearing(extendedPointList[x], extendedPointList[x + 1]);
+                    heading = bearing(extendedPointList[x], extendedPointList[x + 1], extendedPointList[x - 1]);
                     car.Bitmap = RotateImage(carImage, heading);
                 }
                         
                     // Add the overlay to the map
                     mapView.UpdateMarkerLocalPosition(car);
-                                    
-                Thread.Sleep(25);
+                
+                // 100 is equivalant to running this at 1 sec,
+                // Was changed to 18 to accelerate the time by 5 times.
+                Thread.Sleep(17);
                 }
+
                 triptime.Stop();
                 totalticks = triptime.ElapsedMilliseconds;
         }
@@ -444,19 +446,26 @@ namespace RideStalk
             return rotatedImage;
         }
         // Returns the angle to be used to rotate the marker.
-        public static float bearing(PointLatLng cur, PointLatLng dest)
+        public static float bearing(PointLatLng cur, PointLatLng dest, PointLatLng prev)
         {
-            double lon1, lon2, lat1, lat2;
+            double lon1, lon2, lon3, lat1, lat2, lat3;
             double conversion = Math.PI / 180;
             lon1 = conversion*(cur.Lng);
             lon2 = conversion * dest.Lng;
+            lon3 = conversion * prev.Lng;
+
             lat1 = conversion * cur.Lat;
             lat2 = conversion * dest.Lat;
-            double longDiff = lon2 - lon1;
-            double y = Math.Sin(longDiff) * Math.Cos(lat2);
-            double x = Math.Cos(lat1) * Math.Sin(lat2) - Math.Sin(lat1) * Math.Cos(lat2) * Math.Cos(longDiff);
-
-            return (float)((180/Math.PI)*(Math.Atan2(y, x)) + 360) % 360;
+            lat3 = conversion * prev.Lat;
+            double longDiffCurDest = lon2 - lon1;
+            double longDiffPrevCur = lon1 - lon3;
+            double y1 = Math.Sin(longDiffCurDest) * Math.Cos(lat2);
+            double x1 = Math.Cos(lat1) * Math.Sin(lat2) - Math.Sin(lat1) * Math.Cos(lat2) * Math.Cos(longDiffCurDest);
+            double y2 = Math.Sin(longDiffPrevCur) * Math.Cos(lat1);
+            double x2 = Math.Cos(lat3) * Math.Sin(lat1) - Math.Sin(lat3) * Math.Cos(lat1) * Math.Cos(longDiffPrevCur);
+            double curDest = ((180 / Math.PI) * (Math.Atan2(y1, x1)) + 360) % 360;
+            double PrevCur = ((180 / Math.PI) * (Math.Atan2(y2, x2)) + 360) % 360;
+            return (float)((curDest + PrevCur)/2);
         }
         // This function create a new point list for the animation.
         public List<PointLatLng> expandPoints(GMapRoute route)

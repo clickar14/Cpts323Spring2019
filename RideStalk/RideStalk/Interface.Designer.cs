@@ -13,7 +13,6 @@
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
-            this.routeOverlay.Dispose();
             if (disposing && (components != null))
             {
                 components.Dispose();
@@ -150,7 +149,6 @@
             this.splitter11 = new System.Windows.Forms.Splitter();
             this.splitter12 = new System.Windows.Forms.Splitter();
             this.metroButton1 = new MetroFramework.Controls.MetroButton();
-            this.animateTimer = new System.Windows.Forms.Timer(this.components);
             this.interfaceBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.interfaceBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.serviceDataBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -213,7 +211,7 @@
             // metroLabel5
             // 
             this.metroLabel5.AutoSize = true;
-            this.metroLabel5.Location = new System.Drawing.Point(0, 6);
+            this.metroLabel5.Location = new System.Drawing.Point(0, 10);
             this.metroLabel5.Name = "metroLabel5";
             this.metroLabel5.Size = new System.Drawing.Size(59, 19);
             this.metroLabel5.TabIndex = 3;
@@ -223,7 +221,7 @@
             // 
             this.metroComboBox5.FormattingEnabled = true;
             this.metroComboBox5.ItemHeight = 23;
-            this.metroComboBox5.Location = new System.Drawing.Point(0, 26);
+            this.metroComboBox5.Location = new System.Drawing.Point(0, 29);
             this.metroComboBox5.Name = "metroComboBox5";
             this.metroComboBox5.Size = new System.Drawing.Size(129, 29);
             this.metroComboBox5.TabIndex = 2;
@@ -1655,11 +1653,11 @@
             // 
             // metroButton1
             // 
-            this.metroButton1.Location = new System.Drawing.Point(137, 20);
+            this.metroButton1.Location = new System.Drawing.Point(137, 21);
             this.metroButton1.Name = "metroButton1";
-            this.metroButton1.Size = new System.Drawing.Size(75, 26);
+            this.metroButton1.Size = new System.Drawing.Size(94, 26);
             this.metroButton1.TabIndex = 11;
-            this.metroButton1.Text = "Test Trip";
+            this.metroButton1.Text = "Start Trips";
             this.metroButton1.UseSelectable = true;
             this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
             // 
@@ -1807,7 +1805,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn14;
         private MetroFramework.Controls.MetroGrid metroGrid16;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn15;
-        private System.Windows.Forms.Timer animateTimer;
     }
 }
 

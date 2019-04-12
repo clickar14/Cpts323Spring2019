@@ -19,7 +19,7 @@ namespace RideStalk
         public carPosition carPosition { get; set; }
         public destination destination { get; set; }
         public origin origin { get; set; }
-        public object pointList { get; set; }
+        public List<point> pointList { get; set; }
         public string initialTime { get; set; }
         public string acepted { get; set; }
         public double travelDistance { get; set; }
