@@ -63,7 +63,7 @@ namespace RideStalk
                 travelTime = 0,
                 payMode = "null",
                 pickupDurationTime = 0,
-                estimatedPrice = "null",
+                stimatedPrice = "null",
                 finalPrice = "null",
             };
             return newService;

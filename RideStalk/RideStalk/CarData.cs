@@ -26,7 +26,7 @@ namespace RideStalk
         public int travelTime { get; set; }
         public string payMode { get; set; }
         public int pickupDurationTime { get; set; }
-        public string estimatedPrice { get; set; }
+        public string stimatedPrice { get; set; }
         public string finalPrice { get; set; }
         
     }

@@ -33,6 +33,7 @@ using MetroFramework.Interfaces;
 using MetroFramework.Fonts;
 using MetroFramework.Animation;
 using MetroFramework.Forms;
+using System.Net.Http;
 
 using System.Diagnostics;
 
@@ -53,6 +54,7 @@ namespace RideStalk
         List<MetroComboBox> comboBoxNavigation;
         List<PointLatLng> _points;
         List<GMapRoute> routeList;
+        string companyId;
         int updateTime;
         System.Threading.Thread updateList;
         public Interface()
@@ -132,14 +134,14 @@ namespace RideStalk
                     carSumList.Groups[x].Items[1].SubItems[1].Text = carList[selectedCarNumber].driver.did.ToString();
                     carSumList.Groups[x].Items[2].SubItems[1].Text = carList[selectedCarNumber].origin.originName;
                     carSumList.Groups[x].Items[3].SubItems[1].Text = carList[selectedCarNumber].destination.destinationName;
-                    carSumList.Groups[x].Items[4].SubItems[1].Text = carList[selectedCarNumber].estimatedPrice.ToString();
+                    carSumList.Groups[x].Items[4].SubItems[1].Text = carList[selectedCarNumber].stimatedPrice.ToString();
                 }
                 // Update service item list
                 for (int x = 0; x < 4; x++)
                 {
                     serviceLists[x].Rows[0].Cells[0].Value = carList[x].acepted;
                     serviceLists[x].Rows[1].Cells[0].Value = carList[x].initialTime;
-                    serviceLists[x].Rows[2].Cells[0].Value = carList[x].estimatedPrice;
+                    serviceLists[x].Rows[2].Cells[0].Value = carList[x].stimatedPrice;
                     serviceLists[x].Rows[3].Cells[0].Value = carList[x].finalPrice;
                     serviceLists[x].Rows[4].Cells[0].Value = carList[x].payMode;
                     serviceLists[x].Rows[5].Cells[0].Value = carList[x].travelTime;
@@ -259,7 +261,7 @@ namespace RideStalk
                 item4.SubItems.Add(carList[x].destination.destinationName);
 
                 ListViewItem item5 = new ListViewItem("Estimated Cost:", $"4car{x+1}", carGroups[x]);
-                item5.SubItems.Add(carList[x].estimatedPrice.ToString());
+                item5.SubItems.Add(carList[x].stimatedPrice.ToString());
 
                 //Add the items to the ListView.
 
@@ -274,17 +276,21 @@ namespace RideStalk
         // This is for the test route button
         private void metroButton1_Click(object sender, EventArgs e)
         {
-            //Thread tripRetrieveThread = new Thread(getCars);
-            //tripRetrieveThread.Start();
-            // tripRetrieveThread.Join();
-            Thread paintThread = new Thread(paintRoute);
-            paintThread.Start();
+            // Initial grabbing and subscription to firebase.
+            Thread tripRetrieveThread = new Thread(getCars);
+            tripRetrieveThread.Start();
+            tripRetrieveThread.Join();
+
+
+            //Thread paintThread = new Thread(paintRoute);
+            //paintThread.Start();
            
         }
 
         // Thread process to handle the initial grabbing of trips
         private void getCars()
         {
+
             initialRetrieveTrip().Wait();
             updateList = new System.Threading.Thread(realTimeListUpdate);
             updateList.Start();
@@ -292,9 +298,22 @@ namespace RideStalk
         }
         private async Task initialRetrieveTrip()
         {
+            /* Finish this later, the response is currently broken.
+            var subscribeCompany = new Dictionary<string, string>
+            {
+                { "companyName","TheLastTwo" },
+                { "status","active" },
+            };
+            HttpClient httpclient = new HttpClient();
+            FormUrlEncodedContent uploadCompany = new FormUrlEncodedContent(subscribeCompany);
+            HttpResponseMessage serverResponse = await httpclient.PostAsync("https://us-central1-cpts323battle.cloudfunctions.net/reportCompany", uploadCompany);
+            string responseString = await serverResponse.Content.ReadAsStringAsync();
+
+            */
             while (true)
             {
-                var firebase = new FirebaseClient("https://test-24354.firebaseio.com/");
+               
+                var firebase = new FirebaseClient("https://cpts323battle.firebaseio.com/");
                 // Create a list of every service in the database
                 var patchService = firebase.Child("services");
                 var services = await patchService.OnceAsync<serverData>();
@@ -326,7 +345,7 @@ namespace RideStalk
                                 carList[x].destination = serviceItem.Object.destination;
                                 carList[x].origin = serviceItem.Object.origin;
                                 carList[x].user = serviceItem.Object.user;
-                                carList[x].estimatedPrice = serviceItem.Object.estimatedPrice;
+                                carList[x].stimatedPrice = serviceItem.Object.stimatedPrice;
                                 carList[x].finalPrice = serviceItem.Object.finalPrice;
                                 carList[x].payMode = serviceItem.Object.payMode;
                                 carList[x].initialTime = serviceItem.Object.initialTime;
@@ -357,7 +376,6 @@ namespace RideStalk
         }
 
 
-        // These must be declared as globals
         
         private void paintRoute()
         {
@@ -676,7 +694,7 @@ namespace RideStalk
                 row1.Cells.Add(cell1);
                 cell2.Value = carList[x].initialTime;
                 row2.Cells.Add(cell2);
-                cell3.Value = carList[x].estimatedPrice;
+                cell3.Value = carList[x].stimatedPrice;
                 row3.Cells.Add(cell3);
                 cell4.Value = carList[x].finalPrice;
                 row4.Cells.Add(cell4);

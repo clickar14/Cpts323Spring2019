@@ -250,7 +250,7 @@
             this.navigationTabs.Location = new System.Drawing.Point(23, 63);
             this.navigationTabs.Name = "navigationTabs";
             this.navigationTabs.SelectedIndex = 5;
-            this.navigationTabs.Size = new System.Drawing.Size(1207, 699);
+            this.navigationTabs.Size = new System.Drawing.Size(1207, 779);
             this.navigationTabs.TabIndex = 10;
             this.navigationTabs.UseSelectable = true;
             this.navigationTabs.UseStyleColors = true;
@@ -1327,7 +1327,7 @@
             this.serviceFour.Controls.Add(this.splitter12);
             this.serviceFour.Location = new System.Drawing.Point(4, 44);
             this.serviceFour.Name = "serviceFour";
-            this.serviceFour.Size = new System.Drawing.Size(1199, 651);
+            this.serviceFour.Size = new System.Drawing.Size(1199, 731);
             this.serviceFour.TabIndex = 5;
             this.serviceFour.Text = "Service Four";
             // 
@@ -1343,7 +1343,7 @@
             this.metroPanel8.HorizontalScrollbarSize = 10;
             this.metroPanel8.Location = new System.Drawing.Point(589, 0);
             this.metroPanel8.Name = "metroPanel8";
-            this.metroPanel8.Size = new System.Drawing.Size(611, 655);
+            this.metroPanel8.Size = new System.Drawing.Size(611, 735);
             this.metroPanel8.TabIndex = 9;
             this.metroPanel8.VerticalScrollbarBarColor = true;
             this.metroPanel8.VerticalScrollbarHighlightOnWheel = false;
@@ -1401,7 +1401,7 @@
             this.metroGrid16.RowHeadersDefaultCellStyle = dataGridViewCellStyle39;
             this.metroGrid16.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.metroGrid16.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.metroGrid16.Size = new System.Drawing.Size(606, 369);
+            this.metroGrid16.Size = new System.Drawing.Size(606, 449);
             this.metroGrid16.TabIndex = 7;
             // 
             // dataGridViewTextBoxColumn15
@@ -1461,7 +1461,7 @@
             this.metroGrid12.RowHeadersDefaultCellStyle = dataGridViewCellStyle42;
             this.metroGrid12.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.metroGrid12.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.metroGrid12.Size = new System.Drawing.Size(622, 324);
+            this.metroGrid12.Size = new System.Drawing.Size(622, 404);
             this.metroGrid12.TabIndex = 6;
             // 
             // dataGridViewTextBoxColumn11
@@ -1484,7 +1484,7 @@
             this.metroPanel4.HorizontalScrollbarSize = 10;
             this.metroPanel4.Location = new System.Drawing.Point(0, 0);
             this.metroPanel4.Name = "metroPanel4";
-            this.metroPanel4.Size = new System.Drawing.Size(600, 651);
+            this.metroPanel4.Size = new System.Drawing.Size(600, 731);
             this.metroPanel4.TabIndex = 8;
             this.metroPanel4.VerticalScrollbarBarColor = true;
             this.metroPanel4.VerticalScrollbarHighlightOnWheel = false;
@@ -1542,7 +1542,7 @@
             this.metroGrid8.RowHeadersDefaultCellStyle = dataGridViewCellStyle45;
             this.metroGrid8.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.metroGrid8.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.metroGrid8.Size = new System.Drawing.Size(597, 264);
+            this.metroGrid8.Size = new System.Drawing.Size(597, 344);
             this.metroGrid8.TabIndex = 12;
             // 
             // dataGridViewTextBoxColumn7
@@ -1626,7 +1626,7 @@
             this.metroGrid4.RowHeadersDefaultCellStyle = dataGridViewCellStyle48;
             this.metroGrid4.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.metroGrid4.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.metroGrid4.Size = new System.Drawing.Size(600, 326);
+            this.metroGrid4.Size = new System.Drawing.Size(600, 406);
             this.metroGrid4.TabIndex = 6;
             // 
             // dataGridViewTextBoxColumn3
@@ -1639,7 +1639,7 @@
             this.splitter11.Dock = System.Windows.Forms.DockStyle.Right;
             this.splitter11.Location = new System.Drawing.Point(598, 0);
             this.splitter11.Name = "splitter11";
-            this.splitter11.Size = new System.Drawing.Size(601, 651);
+            this.splitter11.Size = new System.Drawing.Size(601, 731);
             this.splitter11.TabIndex = 7;
             this.splitter11.TabStop = false;
             // 
@@ -1647,7 +1647,7 @@
             // 
             this.splitter12.Location = new System.Drawing.Point(0, 0);
             this.splitter12.Name = "splitter12";
-            this.splitter12.Size = new System.Drawing.Size(600, 651);
+            this.splitter12.Size = new System.Drawing.Size(600, 731);
             this.splitter12.TabIndex = 6;
             this.splitter12.TabStop = false;
             // 
@@ -1677,7 +1677,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(584, 371);
+            this.ClientSize = new System.Drawing.Size(584, 451);
             this.Controls.Add(tabHiderPanel63);
             this.Controls.Add(this.metroButton1);
             this.Controls.Add(this.navigationTabs);
