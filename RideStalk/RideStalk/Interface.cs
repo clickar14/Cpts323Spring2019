@@ -33,6 +33,10 @@ using MetroFramework.Interfaces;
 using MetroFramework.Fonts;
 using MetroFramework.Animation;
 using MetroFramework.Forms;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Schema;
+using Newtonsoft.Json.Converters;
+using Newtonsoft.Json.Linq;
 using System.Net.Http;
 
 using System.Diagnostics;
@@ -296,9 +300,9 @@ namespace RideStalk
             updateList.Start();
 
         }
+        // This is the initial grabbing of trips, afterwards postRetrieveTrip should be used.
         private async Task initialRetrieveTrip()
         {
-            /* Finish this later, the response is currently broken.
             var subscribeCompany = new Dictionary<string, string>
             {
                 { "companyName","TheLastTwo" },
@@ -308,8 +312,8 @@ namespace RideStalk
             FormUrlEncodedContent uploadCompany = new FormUrlEncodedContent(subscribeCompany);
             HttpResponseMessage serverResponse = await httpclient.PostAsync("https://us-central1-cpts323battle.cloudfunctions.net/reportCompany", uploadCompany);
             string responseString = await serverResponse.Content.ReadAsStringAsync();
-
-            */
+            companyResponse deserializedResponse = JsonConvert.DeserializeObject<companyResponse>(responseString);
+            companyId = deserializedResponse.companyId;
             while (true)
             {
                
@@ -317,28 +321,43 @@ namespace RideStalk
                 // Create a list of every service in the database
                 var patchService = firebase.Child("services");
                 var services = await patchService.OnceAsync<serverData>();
+                
+                List<Firebase.Database.FirebaseObject<serverData>> serviceList = new List<Firebase.Database.FirebaseObject<serverData>>();
 
+                // Loop through the services and add them to a list for algorithm selection.
                 foreach (var serviceItem in services)
                 {
-
+                    // add to list
+                    serviceList.Add(serviceItem);
+                    // TODO: ALTER THIS STUFF
+                    // Add a way to read
                     if (serviceItem.Object.acepted == "false")
                     {
                         for (int x = 0; x < 4; ++x)
                         {
                             if (carList[x].acepted == "false")
                             {
+                                carPost carUpload = new carPost
+                                {
+                                    carPlate = carList[x].driver.car.carPlate,
+                                    carStars = carList[x].driver.car.carStars,
+                                    company = carList[x].driver.Company,
+                                    image = carList[x].driver.image,
+                                    companyId = companyId,
+                                    did = carList[x].driver.did,
+                                    key = "",
+                                };
+
                                 // Attempt to patch the car information to the service item
-                                try
-                                {
-                                    carList[x].acepted = "true";
-                                    await patchService.Child($"{serviceItem.Key}").PatchAsync(carList[x]);
-                                }
+                                carList[x].acepted = "true";
+                                await patchService.Child($"{serviceItem.Key}").PatchAsync(carList[x]);
+
+                                
                                 // If the service has been claimed by another, break and go to the next service item 
-                                catch
-                                {
+
                                     carList[x].acepted = "false";
                                     break;
-                                }
+
                                 // If an exception wasn't raised, add the trip information to the carList
                                 // and add the key to the key list.
                                 carKeys[x] = $"{serviceItem.Key}";

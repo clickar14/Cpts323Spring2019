@@ -92,5 +92,21 @@ namespace RideStalk
         [JsonProperty(".sv")]
         public string TimestampPlaceholder { get; } = "timestamp";
     }
+    public class companyResponse
+    {
+        public string success { get; set; }
+        public string companyId { get; set; }
+        public string message { get; set; }
+    }
+    public class carPost
+    {
+        public string key { get; set; }
+        public int did { get; set; }
+        public string carPlate { get; set; }
+        public string companyId { get; set; }
+        public string company { get; set; }
+        public double carStars { get; set; }
+        public string image { get; set; }
+    }
 
 }
