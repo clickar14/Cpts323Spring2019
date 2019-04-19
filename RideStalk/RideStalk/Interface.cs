@@ -58,6 +58,7 @@ namespace RideStalk
         List<MetroComboBox> comboBoxNavigation;
         List<PointLatLng> _points;
         List<GMapRoute> routeList;
+        int tripsActive;
         string companyId;
         int updateTime;
         System.Threading.Thread updateList;
@@ -77,6 +78,7 @@ namespace RideStalk
             //Create a single list to be used for routes
             _points = new List<PointLatLng>();
             updateTime = 5000;
+            tripsActive = 0;
 
         }
 
@@ -209,7 +211,15 @@ namespace RideStalk
             {
                 if (carKeys[x] != "null")
                 {
-                    await newService.Child($"{carKeys[x]}").PatchAsync(carList[x]);
+                    carList[x].pointList.Add(new point
+                    {
+                        lat = carList[x].carPosition.lat,
+                        lng = carList[x].carPosition.lng,
+                    });
+                    // TODO: FIX PATCHING
+                    var serviceToPatch = newService.Child($"{carKeys[x]}" + "/carPosition");
+
+                    await serviceToPatch.PatchAsync(carKeys[x].Object.carPosition);
                 }
             }
 
@@ -286,7 +296,7 @@ namespace RideStalk
             tripRetrieveThread.Join();
 
 
-            //Thread paintThread = new Thread(paintRoute);
+            //Thread paintThread = new Thread(runTrip);
             //paintThread.Start();
            
         }
@@ -314,92 +324,91 @@ namespace RideStalk
             string responseString = await serverResponse.Content.ReadAsStringAsync();
             companyResponse deserializedResponse = JsonConvert.DeserializeObject<companyResponse>(responseString);
             companyId = deserializedResponse.companyId;
-            while (true)
+            var firebase = new FirebaseClient("https://cpts323battle.firebaseio.com/");
+            
+            // Create a list of every service in the database
+            var patchService = firebase.Child("services");
+            var services = await patchService.OnceAsync<serverData>();
+            
+            List<Firebase.Database.FirebaseObject<serverData>> serviceList = new List<Firebase.Database.FirebaseObject<serverData>>();
+            List<tripGeo> tripGeoList = new List<tripGeo>();
+            PointLatLng carPos = new PointLatLng(carList[0].carPosition.lat, carList[0].carPosition.lng);
+            PointLatLng carPickup = new PointLatLng();
+            // Loop through the services and add them to a list for algorithm selection.
+            foreach (var serviceItem in services)
             {
-               
-                var firebase = new FirebaseClient("https://cpts323battle.firebaseio.com/");
-                // Create a list of every service in the database
-                var patchService = firebase.Child("services");
-                var services = await patchService.OnceAsync<serverData>();
-                
-                List<Firebase.Database.FirebaseObject<serverData>> serviceList = new List<Firebase.Database.FirebaseObject<serverData>>();
 
-                // Loop through the services and add them to a list for algorithm selection.
-                foreach (var serviceItem in services)
-                {
-                    // add to list
+                    carPickup.Lat = serviceItem.Object.origin.lat;
+                    carPickup.Lng = serviceItem.Object.origin.lng;
+                    double distanceTo = new CarOperations().getDistance(carPos, carPickup);
                     serviceList.Add(serviceItem);
-                    // TODO: ALTER THIS STUFF
-                    // Add a way to read
-                    if (serviceItem.Object.acepted == "false")
+                    tripGeoList.Add(new tripGeo
                     {
-                        for (int x = 0; x < 4; ++x)
-                        {
-                            if (carList[x].acepted == "false")
-                            {
-                                carPost carUpload = new carPost
-                                {
-                                    carPlate = carList[x].driver.car.carPlate,
-                                    carStars = carList[x].driver.car.carStars,
-                                    company = carList[x].driver.Company,
-                                    image = carList[x].driver.image,
-                                    companyId = companyId,
-                                    did = carList[x].driver.did,
-                                    key = "",
-                                };
+                        Key = serviceItem.Key,
+                        distance = distanceTo,
+                    });
 
-                                // Attempt to patch the car information to the service item
-                                carList[x].acepted = "true";
-                                await patchService.Child($"{serviceItem.Key}").PatchAsync(carList[x]);
-
-                                
-                                // If the service has been claimed by another, break and go to the next service item 
-
-                                    carList[x].acepted = "false";
-                                    break;
-
-                                // If an exception wasn't raised, add the trip information to the carList
-                                // and add the key to the key list.
-                                carKeys[x] = $"{serviceItem.Key}";
-                                carList[x].destination = serviceItem.Object.destination;
-                                carList[x].origin = serviceItem.Object.origin;
-                                carList[x].user = serviceItem.Object.user;
-                                carList[x].stimatedPrice = serviceItem.Object.stimatedPrice;
-                                carList[x].finalPrice = serviceItem.Object.finalPrice;
-                                carList[x].payMode = serviceItem.Object.payMode;
-                                carList[x].initialTime = serviceItem.Object.initialTime;
-                                carList[x].pickupDurationTime = serviceItem.Object.pickupDurationTime;
-                                carList[x].travelTime = serviceItem.Object.travelTime;
-                                break;
-                            }
-                        }
-                    }
-
-                }
-
-                //await newService.DeleteAsync();
-                int acceptanceCheck = 0;
-                for(int x = 0; x < 4; ++x)
-                {
-                    if(carList[x].acepted == "true")
-                    {
-                        acceptanceCheck++;
-                    }
-                }
-                if(acceptanceCheck == 4)
-                {
-                    break;
-                }
+                
+                
             }
-
+            // Sort in ascending order the distance of each trip from the car.
+            tripGeoList.Sort(distanceCompare);
+            // For each car assign it to a trip
+            for(int x = 0; x < 4; ++x)
+            {
+                bool carNotUploaded = true;
+                while (carNotUploaded)
+                {
+                    Dictionary<string, string> carUpload = new Dictionary<string, string>
+                    {
+                        { "key", tripGeoList[0].Key },
+                        { "carPlate", carList[x].driver.car.carPlate },
+                        { "did", $"{carList[x].driver.did}" },
+                        { "company", carList[x].driver.Company },
+                        { "companyId", companyId},
+                        { "carStars", $"{carList[x].driver.car.carStars}" },
+                        { "image", carList[x].driver.image }
+                    };
+                    
+                    uploadCompany = new FormUrlEncodedContent(carUpload);
+                    serverResponse = await httpclient.PostAsync("https://us-central1-cpts323battle.cloudfunctions.net/selectServiceById", uploadCompany);
+                    responseString = await serverResponse.Content.ReadAsStringAsync();
+                    serviceSelectionResponse tripResponse = JsonConvert.DeserializeObject<serviceSelectionResponse>(responseString);
+                    // If the selection was successful, break out of the loop.
+                    if(tripResponse.success == "true")
+                    {
+                        carKeys[x] = (tripGeoList[0].Key);
+                        carNotUploaded = false;
+                    }
+                    // Remove the key from the list
+                    tripGeoList.RemoveAt(0);
+                }
+                // Pull the trip information from the selected service and store it in the car list
+                Firebase.Database.FirebaseObject<serverData> servicePull = serviceList.Where(i => i.Key == $"{carKeys[x]}").FirstOrDefault(); 
+                carList[x].destination = servicePull.Object.destination;
+                carList[x].origin = servicePull.Object.origin;
+                carList[x].user = servicePull.Object.user;
+                carList[x].stimatedPrice = servicePull.Object.stimatedPrice;
+                carList[x].finalPrice = servicePull.Object.finalPrice;
+                carList[x].payMode =  servicePull.Object.payMode;
+                carList[x].initialTime = servicePull.Object.initialTime;
+                carList[x].pickupDurationTime = servicePull.Object.pickupDurationTime;
+                carList[x].travelTime = servicePull.Object.travelTime;
+                // BEGIN TRIP THREAD
+                Thread paintThread = new Thread(() => runTrip(x)); 
+            }
+            
         }
-
-
+        // Comparison that is used to sort by trip distance.
+        static int distanceCompare(tripGeo a, tripGeo b)
+        {
+            return a.distance.CompareTo(b.distance);
+        }
         
-        private void paintRoute()
+        public void runTrip(int carNum)
         {
             // Remove the route overlay if it exists
-
+            PointLatLng 
                 GMapOverlay routeOverlay = new GMapOverlay("routeInfo");
                 // Starting location
                 _points.Add(new PointLatLng(46.293070, -119.290000));

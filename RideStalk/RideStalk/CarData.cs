@@ -108,5 +108,19 @@ namespace RideStalk
         public double carStars { get; set; }
         public string image { get; set; }
     }
-
+    public class tripGeo
+    {
+        public string Key { get; set; }
+        public double distance { get; set; }
+    }
+    public class serviceSelectionResponse
+    {
+        public string success { get; set; }
+        public string message { get; set; }
+    }
+    public class serviceObject
+    {
+        public string Key { get; set; }
+        public serviceData Object { get; set; }
+    }
 }
