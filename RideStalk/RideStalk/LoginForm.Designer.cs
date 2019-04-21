@@ -30,6 +30,7 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.registerPanal = new System.Windows.Forms.Panel();
+            this.back_login_button = new System.Windows.Forms.Button();
             this.registerButton = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -70,6 +71,7 @@
             // 
             // registerPanal
             // 
+            this.registerPanal.Controls.Add(this.back_login_button);
             this.registerPanal.Controls.Add(this.registerButton);
             this.registerPanal.Controls.Add(this.label10);
             this.registerPanal.Controls.Add(this.label9);
@@ -89,6 +91,16 @@
             this.registerPanal.Size = new System.Drawing.Size(412, 364);
             this.registerPanal.TabIndex = 5;
             this.registerPanal.Visible = false;
+            // 
+            // back_login_button
+            // 
+            this.back_login_button.Location = new System.Drawing.Point(41, 20);
+            this.back_login_button.Name = "back_login_button";
+            this.back_login_button.Size = new System.Drawing.Size(75, 23);
+            this.back_login_button.TabIndex = 15;
+            this.back_login_button.Text = "Login Page";
+            this.back_login_button.UseVisualStyleBackColor = true;
+            this.back_login_button.Click += new System.EventHandler(this.back_login_button_Click);
             // 
             // registerButton
             // 
@@ -297,5 +309,6 @@
         private System.Windows.Forms.TextBox emailEntry;
         private System.Windows.Forms.TextBox passwordEntry;
         private System.Windows.Forms.TextBox nameEntry;
+        private System.Windows.Forms.Button back_login_button;
     }
 }

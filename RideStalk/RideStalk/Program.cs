@@ -19,8 +19,8 @@ namespace RideStalk
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Interface());
             Application.Run(new LoginForm());
+            Application.Run(new Interface());
         }
     }
 }
