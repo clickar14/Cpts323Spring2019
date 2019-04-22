@@ -102,8 +102,9 @@ namespace RideStalk
         {
             carPosition newPosition = new carPosition
             {
-                lat = 0.0,
-                lng = 0.0,
+                lat = 46.2778,
+                
+                lng = -119.2723
             };
             return newPosition;
         }

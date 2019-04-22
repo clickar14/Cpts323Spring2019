@@ -200,7 +200,7 @@
             tabHiderPanel63.HorizontalScrollbarBarColor = true;
             tabHiderPanel63.HorizontalScrollbarHighlightOnWheel = false;
             tabHiderPanel63.HorizontalScrollbarSize = 10;
-            tabHiderPanel63.Location = new System.Drawing.Point(242, 49);
+            tabHiderPanel63.Location = new System.Drawing.Point(240, 49);
             tabHiderPanel63.Name = "tabHiderPanel63";
             tabHiderPanel63.Size = new System.Drawing.Size(1006, 58);
             tabHiderPanel63.Style = MetroFramework.MetroColorStyle.Black;
@@ -250,7 +250,7 @@
             this.navigationTabs.ItemSize = new System.Drawing.Size(100, 40);
             this.navigationTabs.Location = new System.Drawing.Point(23, 63);
             this.navigationTabs.Name = "navigationTabs";
-            this.navigationTabs.SelectedIndex = 5;
+            this.navigationTabs.SelectedIndex = 1;
             this.navigationTabs.Size = new System.Drawing.Size(1207, 779);
             this.navigationTabs.TabIndex = 10;
             this.navigationTabs.UseSelectable = true;
@@ -635,10 +635,10 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.metroComboBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.metroComboBox1.FormattingEnabled = true;
-            this.metroComboBox1.ItemHeight = 23;
+            this.metroComboBox1.ItemHeight = 24;
             this.metroComboBox1.Location = new System.Drawing.Point(110, 3);
             this.metroComboBox1.Name = "metroComboBox1";
-            this.metroComboBox1.Size = new System.Drawing.Size(234, 29);
+            this.metroComboBox1.Size = new System.Drawing.Size(234, 30);
             this.metroComboBox1.TabIndex = 3;
             this.metroComboBox1.UseSelectable = true;
             this.metroComboBox1.SelectedIndexChanged += new System.EventHandler(this.navBoxSelection1);
@@ -896,10 +896,10 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.metroComboBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.metroComboBox2.FormattingEnabled = true;
-            this.metroComboBox2.ItemHeight = 23;
+            this.metroComboBox2.ItemHeight = 24;
             this.metroComboBox2.Location = new System.Drawing.Point(110, 3);
             this.metroComboBox2.Name = "metroComboBox2";
-            this.metroComboBox2.Size = new System.Drawing.Size(234, 29);
+            this.metroComboBox2.Size = new System.Drawing.Size(234, 30);
             this.metroComboBox2.TabIndex = 7;
             this.metroComboBox2.UseSelectable = true;
             this.metroComboBox2.SelectedIndexChanged += new System.EventHandler(this.navBoxSelection2);
@@ -1558,10 +1558,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.metroComboBox4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.metroComboBox4.FormattingEnabled = true;
-            this.metroComboBox4.ItemHeight = 23;
+            this.metroComboBox4.ItemHeight = 24;
             this.metroComboBox4.Location = new System.Drawing.Point(110, 3);
             this.metroComboBox4.Name = "metroComboBox4";
-            this.metroComboBox4.Size = new System.Drawing.Size(234, 29);
+            this.metroComboBox4.Size = new System.Drawing.Size(234, 30);
             this.metroComboBox4.TabIndex = 11;
             this.metroComboBox4.UseSelectable = true;
             this.metroComboBox4.SelectedIndexChanged += new System.EventHandler(this.navBoxSelection4);
@@ -1688,7 +1688,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(584, 451);
+            this.ClientSize = new System.Drawing.Size(584, 371);
             this.Controls.Add(this.metroButton2);
             this.Controls.Add(tabHiderPanel63);
             this.Controls.Add(this.metroButton1);

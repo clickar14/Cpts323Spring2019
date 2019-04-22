@@ -1,0 +1,300 @@
+﻿{
+   "geocoded_waypoints" : [
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJgcReW_12mFQR0-Vp6UNVdEY",
+         "types" : [ "premise" ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJ-29Fnbp6mFQRboJ1xHjn_Nk",
+         "types" : [ "street_address" ]
+      }
+   ],
+   "routes" : [
+      {
+         "bounds" : {
+            "northeast" : {
+               "lat" : 46.2789691,
+               "lng" : -119.2402823
+            },
+            "southwest" : {
+               "lat" : 46.1799427,
+               "lng" : -119.3064387
+            }
+         },
+         "copyrights" : "Map data ©2019 Google",
+         "legs" : [
+            {
+               "distance" : {
+                  "text" : "10.5 mi",
+                  "value" : 16842
+               },
+               "duration" : {
+                  "text" : "16 mins",
+                  "value" : 936
+               },
+               "end_address" : "2302 Swift Blvd, Richland, WA 99352, USA",
+               "end_location" : {
+                  "lat" : 46.2789592,
+                  "lng" : -119.300413
+               },
+               "start_address" : "104603 1045 PR SE, Kennewick, WA 99338, USA",
+               "start_location" : {
+                  "lat" : 46.1799427,
+                  "lng" : -119.279691
+               },
+               "steps" : [
+                  {
+                     "distance" : {
+                        "text" : "1.3 mi",
+                        "value" : 2082
+                     },
+                     "duration" : {
+                        "text" : "2 mins",
+                        "value" : 111
+                     },
+                     "end_location" : {
+                        "lat" : 46.1960156,
+                        "lng" : -119.2658981
+                     },
+                     "html_instructions" : "Head \u003cb\u003enortheast\u003c/b\u003e on \u003cb\u003eE Badger Rd\u003c/b\u003e toward \u003cb\u003e1045 PR SE\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "sozxG`y_wUKMgBiBGIOO_A{@cAy@YUm@e@_Aw@wAgAs@k@s@i@wAiAiA}@a@Y{BgB{FuE{IaHmAaAuEqDuAgA{AoAcDgC{BgBw@m@}AmAKGqB}A_DeC}@q@{@s@a@]{CeCIGgA_AIUACEC_@U[SECEGCGEKGK"
+                     },
+                     "start_location" : {
+                        "lat" : 46.1799427,
+                        "lng" : -119.279691
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.5 mi",
+                        "value" : 797
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 54
+                     },
+                     "end_location" : {
+                        "lat" : 46.2011176,
+                        "lng" : -119.2591949
+                     },
+                     "html_instructions" : "At the traffic circle, take the \u003cb\u003e2nd\u003c/b\u003e exit onto \u003cb\u003eW Clearwater Ave\u003c/b\u003e",
+                     "maneuver" : "roundabout-right",
+                     "polyline" : {
+                        "points" : "ct}xGzb}vU?C?E?CAC?CACACACAEACCAACAACCCAA?CAC?A?A?A?A?A?A?A@A?YAGAGCIGe@_@c@][G}@u@c@]c@]qAgAi@c@EC_Ay@w@}@AAk@u@y@mA[k@Uc@Sa@[w@[y@{@wC[cAu@eC?Aw@eC"
+                     },
+                     "start_location" : {
+                        "lat" : 46.1960156,
+                        "lng" : -119.2658981
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "1.0 mi",
+                        "value" : 1540
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 89
+                     },
+                     "end_location" : {
+                        "lat" : 46.2074866,
+                        "lng" : -119.2416599
+                     },
+                     "html_instructions" : "Continue straight to stay on \u003cb\u003eW Clearwater Ave\u003c/b\u003e",
+                     "maneuver" : "straight",
+                     "polyline" : {
+                        "points" : "_t~xG|x{vUg@eB[cAK[_@qAUs@Wo@CIWm@M[O[KWKUYi@MWe@_AQ]q@mAcAkBe@_ASa@Qa@Wq@M[KUSq@[gAMe@Mi@Mg@Kg@Mu@AKKi@Kq@McAGc@[gCWqBK{@eA{Ie@qCKq@_@oBq@aDCIo@kCCI_AkDiAeEq@gCSs@"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2011176,
+                        "lng" : -119.2591949
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "2.2 mi",
+                        "value" : 3590
+                     },
+                     "duration" : {
+                        "text" : "5 mins",
+                        "value" : 273
+                     },
+                     "end_location" : {
+                        "lat" : 46.23870040000001,
+                        "lng" : -119.2453896
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eN Steptoe St\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003ePass by McDonald's (on the right in 1.5&nbsp;mi)\u003c/div\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "y{_yGjkxvUKa@eAt@A@i@Vk@Nq@N_@Je@NA@i@PWHQHq@RWHWJUFcA\\eBj@q@TUF_@Jc@No@Xe@Vg@X{@^i@h@EFi@VOBOBa@Da@HQ@O?a@@kA?iAAiCAK?kAAkA?oHKsDEsEGaB?_HGmDEmACkBEiBCoACsDGqDEkAAa@?gAAoACeA?u@C_BA_B?uA@uA?uACkBAsDEc@?qBCgBA_DEWAsAAgA@gACgCCk@@O@O@QFi@X_@VSPUTEFGFMVOXIRA@e@dAIVA@Wl@MPMPONWPQFYF[@QAE?_@K_@OIEIUSOIGIG"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2074866,
+                        "lng" : -119.2416599
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.2 mi",
+                        "value" : 285
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 23
+                     },
+                     "end_location" : {
+                        "lat" : 46.2382914,
+                        "lng" : -119.2418063
+                     },
+                     "html_instructions" : "At the traffic circle, take the \u003cb\u003e1st\u003c/b\u003e exit onto \u003cb\u003eColumbia Park Trail\u003c/b\u003e",
+                     "maneuver" : "roundabout-right",
+                     "polyline" : {
+                        "points" : "{~eyGtbyvUCKCKEKDk@Bc@Da@Dc@Fa@R}AFm@LqAJ_AEYPwD"
+                     },
+                     "start_location" : {
+                        "lat" : 46.23870040000001,
+                        "lng" : -119.2453896
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "1.5 mi",
+                        "value" : 2367
+                     },
+                     "duration" : {
+                        "text" : "2 mins",
+                        "value" : 100
+                     },
+                     "end_location" : {
+                        "lat" : 46.2526775,
+                        "lng" : -119.2566483
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e to merge onto \u003cb\u003eWA-240 W\u003c/b\u003e toward \u003cb\u003eYakima\u003c/b\u003e/\u003cb\u003eI-182\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "i|eyGhlxvUJG@A@A@A?A?A@AD_AFcABS?K@C@KBKBKBK?ABGBG@EDGBEBC@ADCDEDCJEDAFADAF?F?D?@@B?D@D@DBDBDDBBDBFHBDBFBDBFBL@D@D@D@F?L@H?D?D?H?JAD?FAHAFADAFCDAFEHIRMVCBUb@Wd@e@t@?@A@AXcApAMN}@bA_BfB{@x@gDfD_@^{AvAuAnAqAnAiD`DoDdDa@`@qBhBcB~AaFvEaAx@yDrDw@r@iBdBiAfAaCxBkAhAiBbB}ArAiCxB_Ax@mA`Ac@\\sAdAcAz@a@Z"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2382914,
+                        "lng" : -119.2418063
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.2 mi",
+                        "value" : 288
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 11
+                     },
+                     "end_location" : {
+                        "lat" : 46.2549477,
+                        "lng" : -119.2584115
+                     },
+                     "html_instructions" : "Take the \u003cb\u003eI-182 E\u003c/b\u003e exit toward \u003cb\u003ePasco\u003c/b\u003e",
+                     "maneuver" : "ramp-right",
+                     "polyline" : {
+                        "points" : "gvhyG`i{vUW@A?A@m@f@{BjBuAbA_BhAiAx@"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2526775,
+                        "lng" : -119.2566483
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "1.3 mi",
+                        "value" : 2083
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 80
+                     },
+                     "end_location" : {
+                        "lat" : 46.2590216,
+                        "lng" : -119.2803866
+                     },
+                     "html_instructions" : "Keep \u003cb\u003eleft\u003c/b\u003e at the fork, follow signs for \u003cb\u003eI-182 W\u003c/b\u003e/\u003cb\u003eWA-240 W\u003c/b\u003e/\u003cb\u003eYakima\u003c/b\u003e and merge onto \u003cb\u003eI-182 W\u003c/b\u003e/\u003cb\u003eWA-240 W\u003c/b\u003e",
+                     "maneuver" : "fork-left",
+                     "polyline" : {
+                        "points" : "mdiyG`t{vU]T[TaB|@g@RCBi@R_Bl@A@sA`@_@Le@Pu@VaAXMDUHKDMFEBIDUPUNMHMJSPKHONq@p@UZW^OVSZQZOZSf@Wr@Kb@K^Kf@Kj@EZCXA@Gt@Er@Ab@Ab@AV?R?R@`@@h@@V?BBR@VFj@BTDZ@J@NTpA@FN|@Nr@DVLf@TpAVvAF\\DNN`AL|@PnAHr@Fr@Fv@Fx@Dt@?DDl@DnA@Z?B@d@@|@@zCBrE?|D@F?D@FDTBpCClHAvGA`J"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2549477,
+                        "lng" : -119.2584115
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "2.1 mi",
+                        "value" : 3347
+                     },
+                     "duration" : {
+                        "text" : "3 mins",
+                        "value" : 153
+                     },
+                     "end_location" : {
+                        "lat" : 46.2789691,
+                        "lng" : -119.3064387
+                     },
+                     "html_instructions" : "Take exit \u003cb\u003e4\u003c/b\u003e to merge onto \u003cb\u003eWA-240 W\u003c/b\u003e toward \u003cb\u003eVantage\u003c/b\u003e",
+                     "maneuver" : "ramp-right",
+                     "polyline" : {
+                        "points" : "{}iyGl}_wUK`@A^Ah@C~BCzAEzDC|BC`AAp@?NEx@C\\C^C`@Kz@Kx@Ov@AFGXG\\a@jBYfAWhA[tASx@I\\Qt@M\\GVWv@CHQh@Ul@MZM^[p@[p@GRI^gBrD_AnBa@|@eA|BeDdHoGdNiHlOeCnFs@|AiBxDa@|@aAvB[n@]n@k@`Ao@~@W^ONILe@h@s@p@o@h@A@aAr@q@`@]P]N]Ng@P[Js@P[HMBUBYFYBQBQ@YBS@wC@wB?gB?iF?}A?_B?sA?{A?}C?cB?W@"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2590216,
+                        "lng" : -119.2803866
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.3 mi",
+                        "value" : 463
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 42
+                     },
+                     "end_location" : {
+                        "lat" : 46.2789592,
+                        "lng" : -119.300413
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eSwift Blvd\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eDestination will be on the left\u003c/div\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "qzmyGf`ewU@c@?cA?oC?wI?oE?gF?mD"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2789691,
+                        "lng" : -119.3064387
+                     },
+                     "travel_mode" : "DRIVING"
+                  }
+               ],
+               "traffic_speed_entry" : [],
+               "via_waypoint" : []
+            }
+         ],
+         "overview_polyline" : {
+            "points" : "sozxG`y_wUkCqCkEqD_Q_NwQwNcHsFqMgKsGaF{HiGeDmCgA_AIUGG{@i@KKISGO?IEOIOKKKAG?_@?OEo@g@c@][GaBsAeDmC_Ay@w@}@m@w@uAyBi@eAw@qBwA{EuCsJ}AeFaAcCaAsBwBcEiBkDe@cAeAuCi@mB[qAg@sC}@aHc@mDeA{Ie@qCk@aDu@kD}DgOeA{DKa@eAt@k@X}A^qBn@kInCkCx@yDjBo@p@y@ZeBTgE?mHCyWYgSW_PUeGG{HEkD@aEEqLKwDG{C?oEG{@Ba@HiAp@w@v@i@fAiAlC[b@g@`@k@Nm@?e@Ki@UIUSOSOGWEKDk@HeALeAZkCXqCEYPwDLIBGRyCFg@Ja@N[PO^MZAPDTPTZL`@D`@AbAIZ_@|@wAdCA@AXcApAkArA{C`DyJnJmMxLuEhEcHpGeLtKmEbEgEvD{HrGwC`Ca@ZW@A?o@h@qEnDiDbCy@j@iCpAoCfAoExAqBn@s@b@eAv@[XgAlAmAnBc@bAc@vAWfAQfASdCErBDvBLzALlAv@jE`AhFj@lDj@nFRbDHtCFjRHj@?~LCxRK`@A^EhDQvMKxCG`AWtBa@vBoBrI}@jDu@bCmAzCc@dAI^gBrDaBlDkFbLsV`i@iF~KiApBgA~AY\\yAzAq@j@sBtA{@`@eA`@oA\\i@L{ARk@DkDBgP?mL?{B@@gB?_\\?mD"
+         },
+         "summary" : "N Steptoe St",
+         "warnings" : [],
+         "waypoint_order" : []
+      }
+   ],
+   "status" : "OK"
+}

@@ -57,7 +57,6 @@ namespace RideStalk
         List<MetroGrid> serviceLists;
         List<MetroComboBox> comboBoxNavigation;
         List<GMapRoute> routeList;
-        List<bool> carTravelingList;
         List<int> carActivityFlags;
         List<double> runningProfit;
         bool tripsRunning;
@@ -87,7 +86,7 @@ namespace RideStalk
             //Create a single list to be used for routes
 
             carActivityFlags = new List<int>(){ 0, 0, 0, 0 };
-            updateTime = 4000;
+            updateTime = 2500;
 
 
         }
@@ -95,7 +94,7 @@ namespace RideStalk
         // On initial interface load, create the map
         private void Interface_Load(object sender, EventArgs e)
         {
-           
+            // MAP CORNERS: 46.2729, -119.3177 and 46.2906, -119.277  
             // Gmap Setup
             GMapProviders.GoogleMap.ApiKey = @"AIzaSyAdLhafjca3jiLothU5wizd4syyQTYK5jQ";
             GMaps.Instance.Mode = AccessMode.ServerAndCache;
@@ -240,8 +239,6 @@ namespace RideStalk
                         HttpClient httpclient = new HttpClient();
                         FormUrlEncodedContent uploadPosition = new FormUrlEncodedContent(positionPost);
                         HttpResponseMessage serverResponse = await httpclient.PostAsync("https://us-central1-cpts323battle.cloudfunctions.net/updatePosition", uploadPosition);
-                        //string responseString = await serverResponse.Content.ReadAsStringAsync();
-                        //companyResponse deserializedResponse = JsonConvert.DeserializeObject<companyResponse>(responseString);
                         // TODO: FIX PATCHING
                         var serviceToPatch = newService.Child($"{carKeys[x]}").Child("carPosition");
                         await serviceToPatch.PutAsync(carList[x].carPosition);
@@ -376,7 +373,7 @@ namespace RideStalk
             // Sort in ascending order the distance of each trip from the car.
             tripGeoList.Sort(distanceCompare);
             // For each car assign it to a trip
-            for(int x = 0; x < 4; ++x)
+            for(int x = 0; x < 2; ++x)
             {
                 bool carNotUploaded = true;
                 while (carNotUploaded)
@@ -502,6 +499,7 @@ namespace RideStalk
                 List<PointLatLng> extendedPointList = expandPoints(newRoute);
 
                 // Animate painting
+                // TODO: Verify the speed to ensure it's accurate
                 long totalticks = 0;
                 triptime = Stopwatch.StartNew();
                 for (int x = 0; x < extendedPointList.Count(); x++)
@@ -522,7 +520,7 @@ namespace RideStalk
 
                     // 100 is equivalant to running this at 1 sec,
                     // Was changed to 18 to accelerate the time by 5 times.
-                    Thread.Sleep(17);
+                    Thread.Sleep(19);
                 }
                 // For time checking
                 totalticks = triptime.ElapsedMilliseconds;
