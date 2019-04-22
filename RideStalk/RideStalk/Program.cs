@@ -19,8 +19,10 @@ namespace RideStalk
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LoginForm());
-            Application.Run(new Interface());
+            LoginForm login = new LoginForm();
+            Application.Run(login);
+            if (login.is_valid()) // only goes to interface if there is a valid login
+                Application.Run(new Interface());
         }
     }
 }

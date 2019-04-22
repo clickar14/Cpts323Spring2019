@@ -12,12 +12,21 @@ namespace RideStalk
 {
     public partial class LoginForm : MetroFramework.Forms.MetroForm
     {
+        // valid denotes the validity of the current login
+        private bool valid;
         // initialize login panel
         public LoginForm()
         {
+            // initially no valid login
+            valid = false;
             InitializeComponent();
+            this.StyleManager = metroStyleManager1;
         }
 
+        public bool is_valid()
+        {
+            return valid;
+        }
 
         private void LoginForm_Load(object sender, EventArgs e)
         {
@@ -29,6 +38,8 @@ namespace RideStalk
         {
             if (usernameField.Text == "admin" && passwordField.Text == "password")
             {
+                // treated as valid login
+                valid = true;
                 // close the current window and move to the interface
                 this.Close();
             }
@@ -50,6 +61,8 @@ namespace RideStalk
                 (addressEntry.Text.Length > 0) &&
                 (urlEntry.Text.Length > 0))
             {
+                // treated as valid login
+                valid = true;
                 // close the current window and move to the interface
                 this.Close();
             }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.registerPanal = new System.Windows.Forms.Panel();
             this.back_login_button = new System.Windows.Forms.Button();
@@ -51,8 +52,10 @@
             this.passwordField = new System.Windows.Forms.TextBox();
             this.loginButton = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
+            this.metroStyleManager1 = new MetroFramework.Components.MetroStyleManager(this.components);
             this.panel1.SuspendLayout();
             this.registerPanal.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.metroStyleManager1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -268,6 +271,11 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "Welcome to RideStalk, please login below.";
             // 
+            // metroStyleManager1
+            // 
+            this.metroStyleManager1.Owner = this;
+            this.metroStyleManager1.Style = MetroFramework.MetroColorStyle.Lime;
+            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -281,6 +289,7 @@
             this.panel1.PerformLayout();
             this.registerPanal.ResumeLayout(false);
             this.registerPanal.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.metroStyleManager1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -310,5 +319,6 @@
         private System.Windows.Forms.TextBox passwordEntry;
         private System.Windows.Forms.TextBox nameEntry;
         private System.Windows.Forms.Button back_login_button;
+        private MetroFramework.Components.MetroStyleManager metroStyleManager1;
     }
 }
