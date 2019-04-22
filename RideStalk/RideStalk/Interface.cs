@@ -56,9 +56,11 @@ namespace RideStalk
         List<ListViewGroup> carGroups;
         List<MetroGrid> serviceLists;
         List<MetroComboBox> comboBoxNavigation;
-        List<PointLatLng> _points;
         List<GMapRoute> routeList;
-        int tripsActive;
+        List<bool> carTravelingList;
+        List<int> carActivityFlags;
+        List<double> runningProfit;
+        bool tripsRunning;
         string companyId;
         int updateTime;
         System.Threading.Thread updateList;
@@ -75,10 +77,18 @@ namespace RideStalk
             tripSummariesList = new List<MetroListView>();
             comboBoxNavigation = new List<MetroComboBox>();
             routeList = new List<GMapRoute>();
+            runningProfit = new List<double>()
+            {
+                0.00, 0.00, 0.00 ,0.00
+            };
+            tripsRunning = false;
+            //So the update doesn't send information to the server if the car isn't running.
+
             //Create a single list to be used for routes
-            _points = new List<PointLatLng>();
-            updateTime = 5000;
-            tripsActive = 0;
+
+            carActivityFlags = new List<int>(){ 0, 0, 0, 0 };
+            updateTime = 4000;
+
 
         }
 
@@ -202,7 +212,7 @@ namespace RideStalk
         }
         private async Task runPatch()
         {
-            var firebase = new FirebaseClient("https://test-24354.firebaseio.com/");
+            var firebase = new FirebaseClient("https://cpts323battle.firebaseio.com/");
             // Creates a child called services
             var newService = firebase.Child("services");
             // Clear the list in database for now, get rid of later
@@ -211,15 +221,31 @@ namespace RideStalk
             {
                 if (carKeys[x] != "null")
                 {
-                    carList[x].pointList.Add(new point
+                    // Check if the activity flag is active
+                    if (carActivityFlags[x] != 0)
                     {
-                        lat = carList[x].carPosition.lat,
-                        lng = carList[x].carPosition.lng,
-                    });
-                    // TODO: FIX PATCHING
-                    var serviceToPatch = newService.Child($"{carKeys[x]}" + "/carPosition");
-
-                    await serviceToPatch.PatchAsync(carKeys[x].Object.carPosition);
+                        carList[x].pointList.Add(new point
+                        {
+                            lat = carList[x].carPosition.lat,
+                            lng = carList[x].carPosition.lng,
+                        });
+                        var positionPost = new Dictionary<string, string>
+                        {
+                            { "key", carKeys[x] },
+                            { "did", $"{carList[x].driver.did}" },
+                            { "companyId", companyId },
+                            { "lat", $"{carList[x].carPosition.lat}" },
+                            { "lng", $"{carList[x].carPosition.lng}" }
+                        };
+                        HttpClient httpclient = new HttpClient();
+                        FormUrlEncodedContent uploadPosition = new FormUrlEncodedContent(positionPost);
+                        HttpResponseMessage serverResponse = await httpclient.PostAsync("https://us-central1-cpts323battle.cloudfunctions.net/updatePosition", uploadPosition);
+                        //string responseString = await serverResponse.Content.ReadAsStringAsync();
+                        //companyResponse deserializedResponse = JsonConvert.DeserializeObject<companyResponse>(responseString);
+                        // TODO: FIX PATCHING
+                        var serviceToPatch = newService.Child($"{carKeys[x]}").Child("carPosition");
+                        await serviceToPatch.PutAsync(carList[x].carPosition);
+                    }
                 }
             }
 
@@ -293,12 +319,7 @@ namespace RideStalk
             // Initial grabbing and subscription to firebase.
             Thread tripRetrieveThread = new Thread(getCars);
             tripRetrieveThread.Start();
-            tripRetrieveThread.Join();
-
-
-            //Thread paintThread = new Thread(runTrip);
-            //paintThread.Start();
-           
+            
         }
 
         // Thread process to handle the initial grabbing of trips
@@ -313,6 +334,7 @@ namespace RideStalk
         // This is the initial grabbing of trips, afterwards postRetrieveTrip should be used.
         private async Task initialRetrieveTrip()
         {
+            tripsRunning = true;
             var subscribeCompany = new Dictionary<string, string>
             {
                 { "companyName","TheLastTwo" },
@@ -384,7 +406,8 @@ namespace RideStalk
                     tripGeoList.RemoveAt(0);
                 }
                 // Pull the trip information from the selected service and store it in the car list
-                Firebase.Database.FirebaseObject<serverData> servicePull = serviceList.Where(i => i.Key == $"{carKeys[x]}").FirstOrDefault(); 
+                Firebase.Database.FirebaseObject<serverData> servicePull = serviceList.Where(i => i.Key == $"{carKeys[x]}").FirstOrDefault();
+                carList[x].acepted = "true";
                 carList[x].destination = servicePull.Object.destination;
                 carList[x].origin = servicePull.Object.origin;
                 carList[x].user = servicePull.Object.user;
@@ -395,9 +418,19 @@ namespace RideStalk
                 carList[x].pickupDurationTime = servicePull.Object.pickupDurationTime;
                 carList[x].travelTime = servicePull.Object.travelTime;
                 // BEGIN TRIP THREAD
-                Thread paintThread = new Thread(() => runTrip(x)); 
+                carActivityFlags[x] = 1;
+                tripStart(x);
             }
             
+        }
+        private void tripStart(int carNum)
+        {
+            MethodInvoker trip = delegate ()
+            {
+                Thread paintThread = new Thread(() => runTrip(carNum));
+                paintThread.Start();
+            };
+            this.Invoke(trip);
         }
         // Comparison that is used to sort by trip distance.
         static int distanceCompare(tripGeo a, tripGeo b)
@@ -407,65 +440,279 @@ namespace RideStalk
         
         public void runTrip(int carNum)
         {
-            // Remove the route overlay if it exists
-            PointLatLng 
-                GMapOverlay routeOverlay = new GMapOverlay("routeInfo");
+            while (tripsRunning)
+            {
+
+                // CarActivityFlags
+                // 0 = inactive
+                // 1 = traveling to user
+                // 2 = transporting user
+                initialPost(carNum).Wait();
+                GMapOverlay routeOverlay = new GMapOverlay($"routeInfo{carNum}");
+
                 // Starting location
-                _points.Add(new PointLatLng(46.293070, -119.290000));
+                //PointLatLng startPoint = new PointLatLng(46.275117, -119.290000);
+                PointLatLng startPoint = new PointLatLng(carList[carNum].carPosition.lat, carList[carNum].carPosition.lng);
                 // Ending Location
-                _points.Add(new PointLatLng(46.275117, -119.290226));
+                PointLatLng endPoint = new PointLatLng();
+                if (carActivityFlags[carNum] == 1)
+                {
+
+                    endPoint.Lat = carList[carNum].origin.lat;
+                    endPoint.Lng = carList[carNum].origin.lng;
+                }
+                else if (carActivityFlags[carNum] == 2)
+                {
+                    endPoint.Lat = carList[carNum].destination.lat;
+                    endPoint.Lng = carList[carNum].destination.lng;
+                }
                 // Load image
                 Bitmap carImage = new Bitmap("car-icon-top-view-1.png");
 
                 // Create marker
                 customImageMarker car = new customImageMarker(
-                    _points[0], carImage);
+                    startPoint, carImage);
                 routeOverlay.Markers.Add(car);
-                car.Tag = 1;
+                car.Tag = carNum + 1;
 
                 var route = GoogleMapProvider.Instance
-                .GetRoute(_points[0], _points[1], false, false, 15);
+                .GetRoute(startPoint, endPoint, false, false, 15);
                 
-
                 // For the my route, make it unique
-                GMapRoute newRoute = new GMapRoute(route.Points, "My route");
-                
+                GMapRoute newRoute = new GMapRoute(route.Points, $"My route{carNum}");
+
 
                 int pointCount = newRoute.Points.Count();
-                
-                double distance = new CarOperations().getDistance(_points[0], _points[1]);
+
+                double distance = new CarOperations().getDistance(startPoint, endPoint);
                 routeOverlay.Routes.Add(newRoute);
                 mapView.Overlays.Add(routeOverlay);
                 newRoute.Stroke.Width = 3;
-                newRoute.Stroke.Color = Color.BlueViolet;
+                car.ToolTipText = $"Car {car.Tag}";
+                if (carActivityFlags[carNum] == 1)
+                {
+                    newRoute.Stroke.Color = Color.BlueViolet;
+                }
+                else
+                {
+                    newRoute.Stroke.Color = Color.Green;
+                }
+
                 mapView.UpdateRouteLocalPosition(newRoute);
                 List<PointLatLng> extendedPointList = expandPoints(newRoute);
-                
+
                 // Animate painting
                 long totalticks = 0;
                 triptime = Stopwatch.StartNew();
                 for (int x = 0; x < extendedPointList.Count(); x++)
                 {
                     float heading;
-                    
+
+                    carList[carNum].carPosition.lat = extendedPointList[x].Lat;
+                    carList[carNum].carPosition.lng = extendedPointList[x].Lng;
                     car.Position = extendedPointList[x];
-                    if((x+1 != extendedPointList.Count()) && (x != 0))
-                {
-                    heading = bearing(extendedPointList[x], extendedPointList[x + 1], extendedPointList[x - 1]);
-                    car.Bitmap = RotateImage(carImage, heading);
-                }
-                        
+                    if ((x + 1 != extendedPointList.Count()) && (x != 0))
+                    {
+                        heading = bearing(extendedPointList[x], extendedPointList[x + 1], extendedPointList[x - 1]);
+                        car.Bitmap = RotateImage(carImage, heading);
+                    }
+
                     // Add the overlay to the map
                     mapView.UpdateMarkerLocalPosition(car);
-                
-                // 100 is equivalant to running this at 1 sec,
-                // Was changed to 18 to accelerate the time by 5 times.
-                Thread.Sleep(17);
-                }
 
-                triptime.Stop();
+                    // 100 is equivalant to running this at 1 sec,
+                    // Was changed to 18 to accelerate the time by 5 times.
+                    Thread.Sleep(17);
+                }
+                // For time checking
                 totalticks = triptime.ElapsedMilliseconds;
+                triptime.Stop();
+                // Clear the overlay
+                mapView.Overlays.Remove(routeOverlay);
+                GMapOverlay idleOverlay = new GMapOverlay($"markerIdle{carNum}");
+                idleOverlay.Markers.Add(car);
+                mapView.Overlays.Add(idleOverlay);
+                mapView.UpdateMarkerLocalPosition(car);
+                
+                // If the car is currently going to retrieve a user
+                if (carActivityFlags[carNum] == 1)
+                {
+                    carActivityFlags[carNum] = 2;
+                }
+                // If the car has completed transporting the user
+                else if (carActivityFlags[carNum] == 2)
+                {
+                    carActivityFlags[carNum] = 0;
+                    finalPost(carNum).Wait();
+                }
+                mapView.Overlays.Remove(idleOverlay);
+            }
         }
+        private async Task initialPost(int carNum)
+        {
+            var firebase = new FirebaseClient("https://cpts323battle.firebaseio.com/");
+            // Creates a child called services
+            var newService = firebase.Child("services");
+            // Post the final information once the trip has completed
+            carList[carNum].pointList.Add(new point
+            {
+                lat = carList[carNum].carPosition.lat,
+                lng = carList[carNum].carPosition.lng,
+            });
+            var positionPost = new Dictionary<string, string>
+                        {
+                            { "key", carKeys[carNum] },
+                            { "did", $"{carList[carNum].driver.did}" },
+                            { "companyId", companyId },
+                            { "lat", $"{carList[carNum].carPosition.lat}" },
+                            { "lng", $"{carList[carNum].carPosition.lng}" }
+                        };
+            HttpClient httpclient = new HttpClient();
+            FormUrlEncodedContent uploadPosition = new FormUrlEncodedContent(positionPost);
+            HttpResponseMessage serverResponse = await httpclient.PostAsync("https://us-central1-cpts323battle.cloudfunctions.net/updatePosition", uploadPosition);
+
+            // Post the current position
+            var serviceToPatch = newService.Child($"{carKeys[carNum]}").Child("carPosition");
+            await serviceToPatch.PutAsync(carList[carNum].carPosition);
+
+            // Post the status that the car is trasnporting the user.
+            if (carActivityFlags[carNum] == 2)
+            {
+                carList[carNum].status.Add(new status
+                {
+                    code = "100"
+                });
+                var serviceToPut = newService.Child($"{carKeys[carNum]}").Child("status").Child("0");
+                await serviceToPut.PutAsync(carList[carNum].status[0]);
+            }
+        }
+        private async Task finalPost(int carNum)
+        {
+            carActivityFlags[carNum] = 0;
+            var firebase = new FirebaseClient("https://cpts323battle.firebaseio.com/");
+            // Creates a child called services
+            var newService = firebase.Child("services");
+            // Post the final information once the trip has completed
+            carList[carNum].pointList.Add(new point
+            {
+                lat = carList[carNum].carPosition.lat,
+                lng = carList[carNum].carPosition.lng,
+            });
+            var positionPost = new Dictionary<string, string>
+                        {
+                            { "key", carKeys[carNum] },
+                            { "did", $"{carList[carNum].driver.did}" },
+                            { "companyId", companyId },
+                            { "lat", $"{carList[carNum].carPosition.lat}" },
+                            { "lng", $"{carList[carNum].carPosition.lng}" }
+                        };
+            HttpClient httpclient = new HttpClient();
+            FormUrlEncodedContent uploadPosition = new FormUrlEncodedContent(positionPost);
+            HttpResponseMessage serverResponse = await httpclient.PostAsync("https://us-central1-cpts323battle.cloudfunctions.net/updatePosition", uploadPosition);
+
+            // Post the current position
+            var serviceToPatch = newService.Child($"{carKeys[carNum]}").Child("carPosition");
+            await serviceToPatch.PutAsync(carList[carNum].carPosition);
+            // Post the status completed
+            carList[carNum].status.Add(new status
+            {
+                code = "101"
+            });
+            var serviceToPut = newService.Child($"{carKeys[carNum]}").Child("status").Child("1");
+            await serviceToPut.PutAsync(carList[carNum].status[1]);
+
+            // Get the fare cost and add it to the running totals.
+            var fareRetrieve = new Dictionary<string, string>
+                        {
+                            { "key", carKeys[carNum] },
+                            { "did", $"{carList[carNum].driver.did}" },
+                            { "companyId", companyId }
+                        };
+            httpclient = new HttpClient();
+            FormUrlEncodedContent getFare = new FormUrlEncodedContent(fareRetrieve);
+            serverResponse = await httpclient.PostAsync("https://us-central1-cpts323battle.cloudfunctions.net/getFareCost", getFare);
+            string responseString = await serverResponse.Content.ReadAsStringAsync();
+            serviceFareResponse fareResponse = JsonConvert.DeserializeObject<serviceFareResponse>(responseString);
+
+            if (fareResponse.success == "true")
+            {
+                runningProfit[carNum] += Convert.ToDouble(fareResponse.fareCost);
+            }
+            /* FINAL POSTS COMPLETED, BEGIN NEW SERVICE TRIP*/
+            //Get new service for car, make sure to set the activity flag again
+            // TODO: Add better trip selection algorithm.
+            var services = await newService.OnceAsync<serverData>();
+
+            List<Firebase.Database.FirebaseObject<serverData>> serviceList = new List<Firebase.Database.FirebaseObject<serverData>>();
+            List<tripGeo> tripGeoList = new List<tripGeo>();
+            PointLatLng carPos = new PointLatLng(carList[carNum].carPosition.lat, carList[carNum].carPosition.lng);
+            PointLatLng carPickup = new PointLatLng();
+            // Loop through the services and add them to a list for algorithm selection.
+            // TODO: Improve this method
+            foreach (var serviceItem in services)
+            {
+                if (serviceItem.Object.acepted == "false")
+                {
+                    carPickup.Lat = serviceItem.Object.origin.lat;
+                    carPickup.Lng = serviceItem.Object.origin.lng;
+                    double distanceTo = new CarOperations().getDistance(carPos, carPickup);
+                    serviceList.Add(serviceItem);
+                    tripGeoList.Add(new tripGeo
+                    {
+                        Key = serviceItem.Key,
+                        distance = distanceTo,
+                    });
+                }
+            }
+            // Sort in ascending order the distance of each trip from the car.
+            tripGeoList.Sort(distanceCompare);
+            // Attempt to assign the car to a service
+            Dictionary<string, string> carUpload = new Dictionary<string, string>
+                {
+                    { "key", tripGeoList[0].Key },
+                    { "carPlate", carList[carNum].driver.car.carPlate },
+                    { "did", $"{carList[carNum].driver.did}" },
+                    { "company", carList[carNum].driver.Company },
+                    { "companyId", companyId},
+                    { "carStars", $"{carList[carNum].driver.car.carStars}" },
+                    { "image", carList[carNum].driver.image }
+                };
+            bool carNotUploaded = true;
+            while (carNotUploaded)
+            {
+                carUpload["key"] = tripGeoList[0].Key;
+
+                FormUrlEncodedContent uploadService = new FormUrlEncodedContent(carUpload);
+                serverResponse = await httpclient.PostAsync("https://us-central1-cpts323battle.cloudfunctions.net/selectServiceById", uploadService);
+                responseString = await serverResponse.Content.ReadAsStringAsync();
+                serviceSelectionResponse tripResponse = JsonConvert.DeserializeObject<serviceSelectionResponse>(responseString);
+                // If the selection was successful, break out of the loop.
+                if (tripResponse.success == "true")
+                {
+                    carKeys[carNum] = (tripGeoList[0].Key);
+                    carNotUploaded = false;
+                }
+                // Remove the key from the list
+                tripGeoList.RemoveAt(0);
+            }
+            // Pull the trip information from the selected service and store it in the car list
+            Firebase.Database.FirebaseObject<serverData> servicePull = serviceList.Where(i => i.Key == $"{carKeys[carNum]}").FirstOrDefault();
+            carList[carNum].acepted = "true";
+            carList[carNum].destination = servicePull.Object.destination;
+            carList[carNum].origin = servicePull.Object.origin;
+            carList[carNum].user = servicePull.Object.user;
+            carList[carNum].stimatedPrice = servicePull.Object.stimatedPrice;
+            carList[carNum].finalPrice = servicePull.Object.finalPrice;
+            carList[carNum].payMode = servicePull.Object.payMode;
+            carList[carNum].initialTime = servicePull.Object.initialTime;
+            carList[carNum].pickupDurationTime = servicePull.Object.pickupDurationTime;
+            carList[carNum].travelTime = servicePull.Object.travelTime;
+            carList[carNum].pointList = new List<point>();
+            carList[carNum].status = new List<status>();
+            // BEGIN TRIP THREAD
+            carActivityFlags[carNum] = 1;
+        }
+        // Navigates to that cars information page.
         private void mapView_OnMarkerClick(GMapMarker item, MouseEventArgs e)
         {
             navigationTabs.SelectedIndex = (int)item.Tag + 1;
@@ -927,6 +1174,11 @@ namespace RideStalk
                 Size = new System.Drawing.Size(Bitmap.Width, Bitmap.Height);
                 Offset = new Point(-Size.Width / 2, -Size.Height / 2);
             }
+        }
+
+        private void metroButton2_Click(object sender, EventArgs e)
+        {
+            tripsRunning = false;
         }
     }
 

@@ -22,7 +22,9 @@ namespace RideStalk
                 num = ranNum.Next(100, 999);
                 carList[x].driver.Company = "RideStalk";
                 carList[x].driver.did = x + 65;
-                carList[x].driver.car.carPlate = $"AWE{num}";
+                carList[x].driver.car.carPlate = $"AWE{num+x}";
+                carList[x].pointList = new List<point>();
+                carList[x].status = new List<status>();
                 if (x == 0)
                 {
                     carList[0].driver.image = "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Albert_Einstein_Head.jpg/220px-Albert_Einstein_Head.jpg";

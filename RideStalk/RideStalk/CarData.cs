@@ -15,6 +15,7 @@ namespace RideStalk
     public class serviceData
     {
         public user user { get; set; }
+        public List<status> status { get; set; }
         public driver driver { get; set; }
         public carPosition carPosition { get; set; }
         public destination destination { get; set; }
@@ -28,10 +29,17 @@ namespace RideStalk
         public int pickupDurationTime { get; set; }
         public string stimatedPrice { get; set; }
         public string finalPrice { get; set; }
-        
+
     }
+    public class status
+    {
+        public string code { get; set; }
+        [JsonProperty("time")]
+        public ServerTimeStamp TimestampPlaceholder { get; } = new ServerTimeStamp();
+    }
+
     public class serverData : serviceData
-    { 
+    {
 
     }
     public class user
@@ -116,6 +124,12 @@ namespace RideStalk
     public class serviceSelectionResponse
     {
         public string success { get; set; }
+        public string message { get; set; }
+    }
+    public class serviceFareResponse
+    {
+        public string success { get; set; }
+        public string fareCost { get; set; }
         public string message { get; set; }
     }
     public class serviceObject

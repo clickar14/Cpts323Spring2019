@@ -152,6 +152,7 @@
             this.interfaceBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.interfaceBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.serviceDataBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.metroButton2 = new MetroFramework.Controls.MetroButton();
             tabHiderPanel63 = new MetroFramework.Controls.MetroPanel();
             tabHiderPanel63.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.metroStyleManager1)).BeginInit();
@@ -263,7 +264,7 @@
             this.mapInterface.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mapInterface.Location = new System.Drawing.Point(4, 44);
             this.mapInterface.Name = "mapInterface";
-            this.mapInterface.Size = new System.Drawing.Size(1199, 651);
+            this.mapInterface.Size = new System.Drawing.Size(1199, 731);
             this.mapInterface.TabIndex = 0;
             this.mapInterface.Text = "Map View";
             // 
@@ -294,7 +295,7 @@
             this.mapView.ScaleMode = GMap.NET.WindowsForms.ScaleModes.Integer;
             this.mapView.SelectedAreaFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(65)))), ((int)(((byte)(105)))), ((int)(((byte)(225)))));
             this.mapView.ShowTileGridLines = false;
-            this.mapView.Size = new System.Drawing.Size(1199, 651);
+            this.mapView.Size = new System.Drawing.Size(1199, 731);
             this.mapView.TabIndex = 10;
             this.mapView.Zoom = 0D;
             this.mapView.OnMarkerClick += new GMap.NET.WindowsForms.MarkerClick(this.mapView_OnMarkerClick);
@@ -306,7 +307,7 @@
             this.mainInterface.Cursor = System.Windows.Forms.Cursors.Hand;
             this.mainInterface.Location = new System.Drawing.Point(4, 44);
             this.mainInterface.Name = "mainInterface";
-            this.mainInterface.Size = new System.Drawing.Size(1199, 651);
+            this.mainInterface.Size = new System.Drawing.Size(1199, 731);
             this.mainInterface.TabIndex = 1;
             this.mainInterface.Text = "Trip Summaries";
             // 
@@ -320,7 +321,7 @@
             this.carSumList.Name = "carSumList";
             this.carSumList.OwnerDraw = true;
             this.carSumList.Scrollable = false;
-            this.carSumList.Size = new System.Drawing.Size(1199, 651);
+            this.carSumList.Size = new System.Drawing.Size(1199, 731);
             this.carSumList.TabIndex = 0;
             this.carSumList.UseCompatibleStateImageBehavior = false;
             this.carSumList.UseSelectable = true;
@@ -336,7 +337,7 @@
             this.serviceOne.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.serviceOne.Location = new System.Drawing.Point(4, 44);
             this.serviceOne.Name = "serviceOne";
-            this.serviceOne.Size = new System.Drawing.Size(1199, 651);
+            this.serviceOne.Size = new System.Drawing.Size(1199, 731);
             this.serviceOne.TabIndex = 2;
             this.serviceOne.Text = "Service One";
             // 
@@ -483,7 +484,7 @@
             this.splitter2.Dock = System.Windows.Forms.DockStyle.Right;
             this.splitter2.Location = new System.Drawing.Point(595, 0);
             this.splitter2.Name = "splitter2";
-            this.splitter2.Size = new System.Drawing.Size(604, 651);
+            this.splitter2.Size = new System.Drawing.Size(604, 731);
             this.splitter2.TabIndex = 4;
             this.splitter2.TabStop = false;
             // 
@@ -655,7 +656,7 @@
             // 
             this.splitter1.Location = new System.Drawing.Point(0, 0);
             this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(597, 651);
+            this.splitter1.Size = new System.Drawing.Size(597, 731);
             this.splitter1.TabIndex = 0;
             this.splitter1.TabStop = false;
             // 
@@ -667,7 +668,7 @@
             this.serviceTwo.Controls.Add(this.splitter6);
             this.serviceTwo.Location = new System.Drawing.Point(4, 44);
             this.serviceTwo.Name = "serviceTwo";
-            this.serviceTwo.Size = new System.Drawing.Size(1199, 651);
+            this.serviceTwo.Size = new System.Drawing.Size(1199, 731);
             this.serviceTwo.TabIndex = 3;
             this.serviceTwo.Text = "Service Two";
             // 
@@ -977,7 +978,7 @@
             this.splitter4.Dock = System.Windows.Forms.DockStyle.Right;
             this.splitter4.Location = new System.Drawing.Point(599, 0);
             this.splitter4.Name = "splitter4";
-            this.splitter4.Size = new System.Drawing.Size(600, 651);
+            this.splitter4.Size = new System.Drawing.Size(600, 731);
             this.splitter4.TabIndex = 5;
             this.splitter4.TabStop = false;
             // 
@@ -985,7 +986,7 @@
             // 
             this.splitter6.Location = new System.Drawing.Point(0, 0);
             this.splitter6.Name = "splitter6";
-            this.splitter6.Size = new System.Drawing.Size(600, 651);
+            this.splitter6.Size = new System.Drawing.Size(600, 731);
             this.splitter6.TabIndex = 3;
             this.splitter6.TabStop = false;
             // 
@@ -997,7 +998,7 @@
             this.serviceThree.Controls.Add(this.splitter9);
             this.serviceThree.Location = new System.Drawing.Point(4, 44);
             this.serviceThree.Name = "serviceThree";
-            this.serviceThree.Size = new System.Drawing.Size(1199, 651);
+            this.serviceThree.Size = new System.Drawing.Size(1199, 731);
             this.serviceThree.TabIndex = 4;
             this.serviceThree.Text = "Service Three";
             // 
@@ -1307,7 +1308,7 @@
             this.splitter8.Dock = System.Windows.Forms.DockStyle.Right;
             this.splitter8.Location = new System.Drawing.Point(599, 0);
             this.splitter8.Name = "splitter8";
-            this.splitter8.Size = new System.Drawing.Size(600, 651);
+            this.splitter8.Size = new System.Drawing.Size(600, 731);
             this.splitter8.TabIndex = 4;
             this.splitter8.TabStop = false;
             // 
@@ -1315,7 +1316,7 @@
             // 
             this.splitter9.Location = new System.Drawing.Point(0, 0);
             this.splitter9.Name = "splitter9";
-            this.splitter9.Size = new System.Drawing.Size(600, 651);
+            this.splitter9.Size = new System.Drawing.Size(600, 731);
             this.splitter9.TabIndex = 3;
             this.splitter9.TabStop = false;
             // 
@@ -1673,11 +1674,22 @@
             // 
             this.serviceDataBindingSource.DataSource = typeof(RideStalk.serviceData);
             // 
+            // metroButton2
+            // 
+            this.metroButton2.Location = new System.Drawing.Point(242, 21);
+            this.metroButton2.Name = "metroButton2";
+            this.metroButton2.Size = new System.Drawing.Size(98, 26);
+            this.metroButton2.TabIndex = 13;
+            this.metroButton2.Text = "Stop Trips";
+            this.metroButton2.UseSelectable = true;
+            this.metroButton2.Click += new System.EventHandler(this.metroButton2_Click);
+            // 
             // Interface
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 451);
+            this.Controls.Add(this.metroButton2);
             this.Controls.Add(tabHiderPanel63);
             this.Controls.Add(this.metroButton1);
             this.Controls.Add(this.navigationTabs);
@@ -1805,6 +1817,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn14;
         private MetroFramework.Controls.MetroGrid metroGrid16;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn15;
+        private MetroFramework.Controls.MetroButton metroButton2;
     }
 }
 

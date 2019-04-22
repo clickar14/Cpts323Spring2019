@@ -1,0 +1,346 @@
+﻿{
+   "geocoded_waypoints" : [
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJvYiaZ8RfmFQRcGqb4EshMqw",
+         "types" : [ "route" ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJkRl-9p17mFQRvGWNB70OlTw",
+         "types" : [ "premise" ]
+      }
+   ],
+   "routes" : [
+      {
+         "bounds" : {
+            "northeast" : {
+               "lat" : 46.4706103,
+               "lng" : -119.202225
+            },
+            "southwest" : {
+               "lat" : 46.2571356,
+               "lng" : -119.332892
+            }
+         },
+         "copyrights" : "Map data ©2019 Google",
+         "legs" : [
+            {
+               "distance" : {
+                  "text" : "23.3 mi",
+                  "value" : 37434
+               },
+               "duration" : {
+                  "text" : "35 mins",
+                  "value" : 2117
+               },
+               "end_address" : "5307 Bakerloo Ln, Pasco, WA 99301, USA",
+               "end_location" : {
+                  "lat" : 46.2750034,
+                  "lng" : -119.202225
+               },
+               "start_address" : "N Power Plant Loop, Mesa, WA 99343, USA",
+               "start_location" : {
+                  "lat" : 46.46684459999999,
+                  "lng" : -119.2837805
+               },
+               "steps" : [
+                  {
+                     "distance" : {
+                        "text" : "0.3 mi",
+                        "value" : 518
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 49
+                     },
+                     "end_location" : {
+                        "lat" : 46.4700118,
+                        "lng" : -119.28853
+                     },
+                     "html_instructions" : "Head \u003cb\u003enorthwest\u003c/b\u003e toward \u003cb\u003eN Power Plant Loop\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "wprzGrr`wUiA|AgArAQTo@r@{@nAqAdBKJi@p@s@bAQNYX]f@A@Qj@Mh@ABGp@?@Gr@Mr@O\\CDMR"
+                     },
+                     "start_location" : {
+                        "lat" : 46.46684459999999,
+                        "lng" : -119.2837805
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "3.7 mi",
+                        "value" : 5910
+                     },
+                     "duration" : {
+                        "text" : "8 mins",
+                        "value" : 465
+                     },
+                     "end_location" : {
+                        "lat" : 46.4393135,
+                        "lng" : -119.3316077
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eN Power Plant Loop\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "qdszGhpawUMtEEpEEz@MjCW|EUlG?h@CfEIvGI|EIhEDpBDjATtEp@hMb@fJDj@VvEDt@DxA?HEdT?d@ArJEfMAlEBzEHlADd@dc@d@jKLjPPt@@dI?hA?`A@~@F|CXpDp@lAXnA^l@RlAb@xAr@TJlCvA~@l@~@t@z@n@fA`AvClCbB|ApCdClBfBb@`@jClC~C`DxAxAbB~A~A|ATTFDzAtABDpDjD`C~BzDnD~A~AfIzHzA|A"
+                     },
+                     "start_location" : {
+                        "lat" : 46.4700118,
+                        "lng" : -119.28853
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "5.5 mi",
+                        "value" : 8930
+                     },
+                     "duration" : {
+                        "text" : "7 mins",
+                        "value" : 412
+                     },
+                     "end_location" : {
+                        "lat" : 46.3727994,
+                        "lng" : -119.2836078
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "udmzGp}iwUnAfBnAhBJLP^tBcD|BuDtA{B~BwDxGqKrCqEbBsC`A}AVe@dBsCXe@lAmBVa@`EsGdDkFr@iAxBkDjDqFhHaLt@kAdBoCfC}Dr@iAXc@jCcEt@kAv@mARYvHyLhDmFfFgIxCwEt@iAnU__@vF{IpAsBBE`CwDn@cAlAoB@Ar@iAdAcBzBoDxAaCjAgBBEzAaC~AmCxAaCp@cAj@_Ax@qAPYlAkBFKt@kA~@{AjAkBjAkB^i@RYLQPW`@e@^c@@Ab@e@`@c@POZYDEd@_@ROx@m@~A_ATMRKdB{@b@Sz@a@z@a@f@U|@[JEZKj@Od@MXGh@KRCJCHAPCTCXCh@ETAf@CV?f@AX?vA?tA?rA?bA?L?tB?jD?`E@~B?n^?nR@~D?tA?tA?`D@B?nJ?hS@pG?L?lA@|DB`GDh@?pB?vC?L?b@@T?"
+                     },
+                     "start_location" : {
+                        "lat" : 46.4393135,
+                        "lng" : -119.3316077
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "4.4 mi",
+                        "value" : 7128
+                     },
+                     "duration" : {
+                        "text" : "6 mins",
+                        "value" : 364
+                     },
+                     "end_location" : {
+                        "lat" : 46.3089337,
+                        "lng" : -119.2856655
+                     },
+                     "html_instructions" : "Continue onto \u003cb\u003eStevens Dr\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "_e`zGpq`wUr@AbDDr@@nCBrDDrC@dEDpBBzGBjWL`FF~KBbB?pDBnJB`C?~FBhE@xB@tB?\\?bB@vCEfJIz@ArIUxEWhAInF]xHQxTBdD@rD@rMD|H?|MRjA@vIJjEDfEH^B~CH|CH~LZbM\\vBH`GNzLR`A@bB@pB@xCFn@@jEPjBFrENdEFRBJBLDZJPHh@^RPTXdAvA"
+                     },
+                     "start_location" : {
+                        "lat" : 46.3727994,
+                        "lng" : -119.2836078
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "4.2 mi",
+                        "value" : 6698
+                     },
+                     "duration" : {
+                        "text" : "6 mins",
+                        "value" : 368
+                     },
+                     "end_location" : {
+                        "lat" : 46.2595581,
+                        "lng" : -119.2877896
+                     },
+                     "html_instructions" : "Continue onto \u003cb\u003eState Hwy 240\u003c/b\u003e/\u003cb\u003eWA-240 E\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "yusyGl~`wUh@v@`AxAzBlDdA|AV^~@rAl@v@f@r@NTlAbBlAdBjAdBNTzEhHz@nA~@tAlAfB~A|BFHhBnClC|D|A|BPTnBrC\\f@r@dAn@~@xAnB|ArB`ApApAdBpAfBb@j@bArA`AlAl@r@t@z@p@p@j@j@n@h@PNRNd@^rBxAx@l@l@`@hDlBpAf@~Av@~@d@rCfAnA`@LDdAZbAVrAT|@LjBTf@B`AH~@Dh@@xAB`D@`@?lI?nE?fS@tB?rCAlB@pDArD?|E?|H?jB?T@h@Ah@?j@Af@Cl@Gh@If@ITEVGl@Qr@Wh@Uf@Un@]d@Yd@_@^YRQJIb@c@l@o@l@u@RY\\g@NSXe@Xi@@A^w@Zq@f@gAr@yAzHuPbFsKVg@tE}JnAmCrBkEnCaGbBqDBGbBwDxA}CRg@~CyGf@gA"
+                     },
+                     "start_location" : {
+                        "lat" : 46.3089337,
+                        "lng" : -119.2856655
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.7 mi",
+                        "value" : 1112
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 52
+                     },
+                     "end_location" : {
+                        "lat" : 46.2587067,
+                        "lng" : -119.2749273
+                     },
+                     "html_instructions" : "Take the \u003cb\u003eWA-240 E\u003c/b\u003e/\u003cb\u003eInterstate 182\u003c/b\u003e ramp to \u003cb\u003ePasco\u003c/b\u003e/\u003cb\u003eKennewick\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "gajyGtkawUvAaDVg@v@eBXm@P_@z@iBnAiCLYLYJWJ]HYJ]FYFYBKJo@D_@Da@B]B]D_A?c@?_@?[A]Ag@Ca@C[Eg@Kq@?CG[GYG]Kc@Sm@Sw@q@_Ce@}ACOOi@G[I_@G]G[G[E_@E[E_@Ee@CYAYC]AOAo@Ac@C{A?y@AGAII_@"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2595581,
+                        "lng" : -119.2877896
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "2.6 mi",
+                        "value" : 4208
+                     },
+                     "duration" : {
+                        "text" : "2 mins",
+                        "value" : 141
+                     },
+                     "end_location" : {
+                        "lat" : 46.2731128,
+                        "lng" : -119.2273465
+                     },
+                     "html_instructions" : "Merge onto \u003cb\u003eI-182 E\u003c/b\u003e/\u003cb\u003eWA-240 E\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eContinue to follow I-182 E\u003c/div\u003e",
+                     "maneuver" : "merge",
+                     "polyline" : {
+                        "points" : "}{iyGh{~vU@qF?oTFuV@kC?}B@wA@aEDwF@}BDmG@sAB}D@wC?_BCmAAcAGsBGmACk@QkCUeCe@yD?AWaBe@aCi@iCa@_BGUU{@W_ASq@I]{@gC[y@AE]{@Qa@Qg@u@}AYm@q@sA[q@cAyBa@}@k@oAuBeE]o@k@mAs@uAu@_Bm@kA_BqDUi@k@qAUg@mAoCoAiC?AQ[KS[q@sBcE{@cBoAkCwEuJ_DqGyE}JaBgDiJuRm@oA_@y@"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2587067,
+                        "lng" : -119.2749273
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.3 mi",
+                        "value" : 475
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 34
+                     },
+                     "end_location" : {
+                        "lat" : 46.273635,
+                        "lng" : -119.221539
+                     },
+                     "html_instructions" : "Take exit \u003cb\u003e7\u003c/b\u003e for \u003cb\u003eBroadmoor Blvd\u003c/b\u003e",
+                     "maneuver" : "ramp-right",
+                     "polyline" : {
+                        "points" : "}ulyG|quvUCa@?A?AY{@Uq@Ww@Qm@Qi@GYOk@EUE[EUEYC]E]C[A[A]A_@?]?Y?_@@_@Be@Bi@B]Fg@r@}F"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2731128,
+                        "lng" : -119.2273465
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.4 mi",
+                        "value" : 597
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 57
+                     },
+                     "end_location" : {
+                        "lat" : 46.279001,
+                        "lng" : -119.2214145
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eBroadmoor Blvd\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "gylyGrmtvUwDC{@B}@Bq@AyAK{@A_DCoA?]@s@Ak@?m@?qAEgAC"
+                     },
+                     "start_location" : {
+                        "lat" : 46.273635,
+                        "lng" : -119.221539
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.8 mi",
+                        "value" : 1314
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 89
+                     },
+                     "end_location" : {
+                        "lat" : 46.2780719,
+                        "lng" : -119.2048484
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eSandifur Pkwy\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "wzmyGxltvUKSGKEKCIQiAA]@a@@e@FaAJi@Ji@@EJ]Nc@Pa@R]NWTk@P]La@Ja@Ha@Fc@Fe@Bc@@s@?iKBoFBaR@gG?Y?yF?EDuE?iD?s@@oE"
+                     },
+                     "start_location" : {
+                        "lat" : 46.279001,
+                        "lng" : -119.2214145
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.2 mi",
+                        "value" : 344
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 37
+                     },
+                     "end_location" : {
+                        "lat" : 46.2749812,
+                        "lng" : -119.2048206
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eWestminster Ln\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "}tmyGheqvUzBC`D@dDAdDA"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2780719,
+                        "lng" : -119.2048484
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.1 mi",
+                        "value" : 200
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 49
+                     },
+                     "end_location" : {
+                        "lat" : 46.2750034,
+                        "lng" : -119.202225
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eQueensbury Dr\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eDestination will be on the left\u003c/div\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "samyGbeqvUCqM?s@"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2749812,
+                        "lng" : -119.2048206
+                     },
+                     "travel_mode" : "DRIVING"
+                  }
+               ],
+               "traffic_speed_entry" : [],
+               "via_waypoint" : []
+            }
+         ],
+         "overview_polyline" : {
+            "points" : "wprzGrr`wUqCpDaAhAmCtDu@|@eArAYX]f@Sl@Ol@Gr@UfBSb@MRMtEEpEEz@e@hJUvHM~MSfLJ|DfA~Sh@rK\\lGDbBMfo@AlEBzENrBrbAfAnK?`CH|CXpDp@|Cx@zBv@nB~@lCvA~@l@zBdBtMrLpChCjHnHrHlHxGlG|HnHfLzKzA|AnAfBzAvBP^tBcDrEqHpSo\\xE}HlMoSz]mj@p^kk@~k@s~@nN_UfIuMdEwGhE_HlCaEtAcBrBsBxBcBtBmAxBgAbEmBpC}@|Be@|@M`COpDA~Y@`nABv^BzQH~E@zKH~RPf`@P`SJfWFxTF`C@~NOnKWbHa@nF]xHQ~YDfSF|H?|MRbLLrKN|Wr@zPf@|Tb@pLLzPj@xEJXHl@T|@p@zApBjBpC`EjGvArBrDdFnTv[pPlVhHtJjGlInB`CfBlB`CtBxCxBfBnAhDlBpAf@~C|ArCfAnA`@rA`@vCl@hDb@hBLhBFzFDnJ?`b@?pT?hN?tAAtAK~Ba@`Bi@pAk@tAw@dAy@pBoB`AoAl@{@tAiCt]qu@jJgSpJwSnEwJvDaIr@iBd@kBZ}BF{@DcBCaCG}@QyAWwAeBiGaAsDa@uBWaCKaBGiFCQI_@@qF?oTFuV@iGJoSLwTCmDIwDKyBg@qGe@{D}@cFkAiF]qAk@qBeAeDmA}CgAeCkAaCmDyHsFyKcBkDuB{EaAyB}CyGy@cBwMiXeYml@mAiCCc@gAgD{@}CWaBOsBCuBHoCJeAr@}FwDCyBFq@AyAK{EEmB@_FGgACKSMWUsA?_AHgBVsALc@`@eAb@u@f@iAXcAPeAJiA@}LHsb@?_GD_K@cG|GAjICCeO"
+         },
+         "summary" : "Stevens Dr",
+         "warnings" : [],
+         "waypoint_order" : []
+      }
+   ],
+   "status" : "OK"
+}
