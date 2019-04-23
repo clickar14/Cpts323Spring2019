@@ -20,6 +20,8 @@ namespace RideStalk
             // initially no valid login
             valid = false;
             InitializeComponent();
+            // hide registration panel
+            registerPanal.Visible = false;
             this.StyleManager = metroStyleManager1;
         }
 
@@ -34,7 +36,7 @@ namespace RideStalk
         }
 
         // login button on login panel
-        private void loginButton_Click(object sender, EventArgs e)
+        private void loginButton_Click_1(object sender, EventArgs e)
         {
             if (usernameField.Text == "admin" && passwordField.Text == "password")
             {
@@ -51,7 +53,7 @@ namespace RideStalk
         }
 
         // register button on register panel
-        private void registerButton_Click(object sender, EventArgs e)
+        private void registerButton_Click_1(object sender, EventArgs e)
         {
             // check if something was entered into the textboxes
             if ((nameEntry.Text.Length > 0) &&
@@ -66,7 +68,7 @@ namespace RideStalk
                 // close the current window and move to the interface
                 this.Close();
             }
-        }
+        }  
 
         // button to go back to login panel on register panel
         private void back_login_button_Click(object sender, EventArgs e)
