@@ -1,0 +1,109 @@
+﻿{
+   "geocoded_waypoints" : [
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJ19hIbbd6mFQR_ZSsQj9jysI",
+         "types" : [ "street_address" ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJLzK6YLd6mFQRSUTlFvkxsz4",
+         "types" : [ "street_address" ]
+      }
+   ],
+   "routes" : [
+      {
+         "bounds" : {
+            "northeast" : {
+               "lat" : 46.2823101,
+               "lng" : -119.2939958
+            },
+            "southwest" : {
+               "lat" : 46.28092090000001,
+               "lng" : -119.2947304
+            }
+         },
+         "copyrights" : "Map data ©2019 Google",
+         "legs" : [
+            {
+               "distance" : {
+                  "text" : "0.1 mi",
+                  "value" : 195
+               },
+               "duration" : {
+                  "text" : "1 min",
+                  "value" : 27
+               },
+               "end_address" : "1620 Partridge St, Richland, WA 99354, USA",
+               "end_location" : {
+                  "lat" : 46.28092090000001,
+                  "lng" : -119.2947304
+               },
+               "start_address" : "1031 Sanford Ave, Richland, WA 99352, USA",
+               "start_location" : {
+                  "lat" : 46.2823101,
+                  "lng" : -119.2945972
+               },
+               "steps" : [
+                  {
+                     "distance" : {
+                        "text" : "407 ft",
+                        "value" : 124
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 14
+                     },
+                     "end_location" : {
+                        "lat" : 46.2813037,
+                        "lng" : -119.2939958
+                     },
+                     "html_instructions" : "Head \u003cb\u003esouth\u003c/b\u003e on \u003cb\u003eSanford Ave\u003c/b\u003e toward \u003cb\u003ePartridge St\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "monyGfvbwUdAGb@S~A{A"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2823101,
+                        "lng" : -119.2945972
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "233 ft",
+                        "value" : 71
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 13
+                     },
+                     "end_location" : {
+                        "lat" : 46.28092090000001,
+                        "lng" : -119.2947304
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003ePartridge St\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "cinyGnrbwUjApC"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2813037,
+                        "lng" : -119.2939958
+                     },
+                     "travel_mode" : "DRIVING"
+                  }
+               ],
+               "traffic_speed_entry" : [],
+               "via_waypoint" : []
+            }
+         ],
+         "overview_polyline" : {
+            "points" : "monyGfvbwUdAGb@S~A{AjApC"
+         },
+         "summary" : "Sanford Ave and Partridge St",
+         "warnings" : [],
+         "waypoint_order" : []
+      }
+   ],
+   "status" : "OK"
+}

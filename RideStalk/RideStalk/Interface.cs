@@ -43,6 +43,7 @@ using System.Diagnostics;
 
 
 // Video for routes: https://www.youtube.com/watch?v=FF-PJQxpjOY
+// Money 2.25 + x1.56 + 2.65
 
 namespace RideStalk
 {
@@ -86,7 +87,7 @@ namespace RideStalk
             //Create a single list to be used for routes
 
             carActivityFlags = new List<int>(){ 0, 0, 0, 0 };
-            updateTime = 2500;
+            updateTime = 1000;
 
 
         }
@@ -194,13 +195,13 @@ namespace RideStalk
                     serviceLists[x].Rows[7].Cells[0].Value = carList[x - 12].destination.lng;
                 }
                 // Sends information to the server
-                Thread carUpdateThread = new Thread(patchCars);
-                carUpdateThread.Start();
-                carUpdateThread.Join();
+
             };
             this.Invoke(listManage);
-
-            Thread.Sleep(updateTime);
+            Thread carUpdateThread = new Thread(patchCars);
+            carUpdateThread.Start();
+            carUpdateThread.Join();
+                Thread.Sleep(updateTime);
             }
             
         }
@@ -373,7 +374,7 @@ namespace RideStalk
             // Sort in ascending order the distance of each trip from the car.
             tripGeoList.Sort(distanceCompare);
             // For each car assign it to a trip
-            for(int x = 0; x < 2; ++x)
+            for(int x = 0; x < 4; ++x)
             {
                 bool carNotUploaded = true;
                 while (carNotUploaded)
@@ -422,12 +423,10 @@ namespace RideStalk
         }
         private void tripStart(int carNum)
         {
-            MethodInvoker trip = delegate ()
-            {
+
                 Thread paintThread = new Thread(() => runTrip(carNum));
                 paintThread.Start();
-            };
-            this.Invoke(trip);
+
         }
         // Comparison that is used to sort by trip distance.
         static int distanceCompare(tripGeo a, tripGeo b)
@@ -484,7 +483,7 @@ namespace RideStalk
                 double distance = new CarOperations().getDistance(startPoint, endPoint);
                 routeOverlay.Routes.Add(newRoute);
                 mapView.Overlays.Add(routeOverlay);
-                newRoute.Stroke.Width = 3;
+
                 car.ToolTipText = $"Car {car.Tag}";
                 if (carActivityFlags[carNum] == 1)
                 {
@@ -520,7 +519,7 @@ namespace RideStalk
 
                     // 100 is equivalant to running this at 1 sec,
                     // Was changed to 18 to accelerate the time by 5 times.
-                    Thread.Sleep(19);
+                    Thread.Sleep(98);
                 }
                 // For time checking
                 totalticks = triptime.ElapsedMilliseconds;

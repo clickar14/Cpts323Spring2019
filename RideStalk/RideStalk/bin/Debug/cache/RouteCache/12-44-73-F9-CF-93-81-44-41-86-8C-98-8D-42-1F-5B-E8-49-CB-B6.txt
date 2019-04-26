@@ -1,0 +1,157 @@
+﻿{
+   "geocoded_waypoints" : [
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJHffL-bd6mFQR3homPgCdN4k",
+         "types" : [ "street_address" ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJLzK6YLd6mFQRSUTlFvkxsz4",
+         "types" : [ "street_address" ]
+      }
+   ],
+   "routes" : [
+      {
+         "bounds" : {
+            "northeast" : {
+               "lat" : 46.28231,
+               "lng" : -119.2901218
+            },
+            "southwest" : {
+               "lat" : 46.2798071,
+               "lng" : -119.2947913
+            }
+         },
+         "copyrights" : "Map data ©2019 Google",
+         "legs" : [
+            {
+               "distance" : {
+                  "text" : "0.4 mi",
+                  "value" : 625
+               },
+               "duration" : {
+                  "text" : "1 min",
+                  "value" : 76
+               },
+               "end_address" : "1620 Partridge St, Richland, WA 99354, USA",
+               "end_location" : {
+                  "lat" : 46.28092090000001,
+                  "lng" : -119.2947304
+               },
+               "start_address" : "1405 Putnam St, Richland, WA 99354, USA",
+               "start_location" : {
+                  "lat" : 46.28231,
+                  "lng" : -119.2901218
+               },
+               "steps" : [
+                  {
+                     "distance" : {
+                        "text" : "0.1 mi",
+                        "value" : 162
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 16
+                     },
+                     "end_location" : {
+                        "lat" : 46.2808558,
+                        "lng" : -119.2901301
+                     },
+                     "html_instructions" : "Head \u003cb\u003esouth\u003c/b\u003e on \u003cb\u003eThayer Dr\u003c/b\u003e toward \u003cb\u003eBlack Ct\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "monyGfzawUfC@xC?"
+                     },
+                     "start_location" : {
+                        "lat" : 46.28231,
+                        "lng" : -119.2901218
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.2 mi",
+                        "value" : 303
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 27
+                     },
+                     "end_location" : {
+                        "lat" : 46.2798071,
+                        "lng" : -119.2935493
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eSwift Blvd\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "kfnyGhzawU@pF@^BZDVDLBHJVJX@@dA`CJTLH~@vB"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2808558,
+                        "lng" : -119.2901301
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.1 mi",
+                        "value" : 154
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 30
+                     },
+                     "end_location" : {
+                        "lat" : 46.2808892,
+                        "lng" : -119.2947913
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eSmith Ave\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "y_nyGtobwUwEvF"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2798071,
+                        "lng" : -119.2935493
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "20 ft",
+                        "value" : 6
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 3
+                     },
+                     "end_location" : {
+                        "lat" : 46.28092090000001,
+                        "lng" : -119.2947304
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003ePartridge St\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "qfnyGlwbwUEK"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2808892,
+                        "lng" : -119.2947913
+                     },
+                     "travel_mode" : "DRIVING"
+                  }
+               ],
+               "traffic_speed_entry" : [],
+               "via_waypoint" : []
+            }
+         ],
+         "overview_polyline" : {
+            "points" : "monyGfzawU`H@BpGHr@HV~AtDJTLH~@vBwEvFEK"
+         },
+         "summary" : "Thayer Dr and Swift Blvd",
+         "warnings" : [],
+         "waypoint_order" : []
+      }
+   ],
+   "status" : "OK"
+}

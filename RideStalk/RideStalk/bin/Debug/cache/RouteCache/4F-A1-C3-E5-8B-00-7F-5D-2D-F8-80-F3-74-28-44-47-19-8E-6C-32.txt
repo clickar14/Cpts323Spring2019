@@ -1,0 +1,181 @@
+﻿{
+   "geocoded_waypoints" : [
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJLzK6YLd6mFQRSUTlFvkxsz4",
+         "types" : [ "street_address" ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJ5aERALh6mFQRtyUqOX468x8",
+         "types" : [ "premise" ]
+      }
+   ],
+   "routes" : [
+      {
+         "bounds" : {
+            "northeast" : {
+               "lat" : 46.2823094,
+               "lng" : -119.2901218
+            },
+            "southwest" : {
+               "lat" : 46.2802122,
+               "lng" : -119.2947308
+            }
+         },
+         "copyrights" : "Map data ©2019 Google",
+         "legs" : [
+            {
+               "distance" : {
+                  "text" : "0.4 mi",
+                  "value" : 610
+               },
+               "duration" : {
+                  "text" : "1 min",
+                  "value" : 86
+               },
+               "end_address" : "1022 Thayer Dr, Richland, WA 99354, USA",
+               "end_location" : {
+                  "lat" : 46.2823094,
+                  "lng" : -119.2901218
+               },
+               "start_address" : "1620 Partridge St, Richland, WA 99354, USA",
+               "start_location" : {
+                  "lat" : 46.2809207,
+                  "lng" : -119.2947308
+               },
+               "steps" : [
+                  {
+                     "distance" : {
+                        "text" : "233 ft",
+                        "value" : 71
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 10
+                     },
+                     "end_location" : {
+                        "lat" : 46.2813037,
+                        "lng" : -119.2939958
+                     },
+                     "html_instructions" : "Head \u003cb\u003enortheast\u003c/b\u003e on \u003cb\u003ePartridge St\u003c/b\u003e toward \u003cb\u003eSanford Ave\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "wfnyG`wbwUkAqC"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2809207,
+                        "lng" : -119.2947308
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "486 ft",
+                        "value" : 148
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 26
+                     },
+                     "end_location" : {
+                        "lat" : 46.2802626,
+                        "lng" : -119.29279
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eSanford Ave\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "cinyGnrbwUnEqF"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2813037,
+                        "lng" : -119.2939958
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.1 mi",
+                        "value" : 161
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 23
+                     },
+                     "end_location" : {
+                        "lat" : 46.2806852,
+                        "lng" : -119.2909536
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e at the 1st cross street onto \u003cb\u003eSwift Blvd\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "sbnyG|jbwUHIq@wAQ]?CISCICKAKAKAMAM?S?SAeB"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2802626,
+                        "lng" : -119.29279
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "223 ft",
+                        "value" : 68
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 10
+                     },
+                     "end_location" : {
+                        "lat" : 46.2808558,
+                        "lng" : -119.2901301
+                     },
+                     "html_instructions" : "Slight \u003cb\u003eleft\u003c/b\u003e toward \u003cb\u003eThayer Dr\u003c/b\u003e",
+                     "maneuver" : "turn-slight-left",
+                     "polyline" : {
+                        "points" : "ienyGl_bwUMiAAG?G?k@AEAEMQ"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2806852,
+                        "lng" : -119.2909536
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.1 mi",
+                        "value" : 162
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 17
+                     },
+                     "end_location" : {
+                        "lat" : 46.2823094,
+                        "lng" : -119.2901218
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e at the 1st cross street onto \u003cb\u003eThayer Dr\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eDestination will be on the right\u003c/div\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "kfnyGhzawUyC?gCA"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2808558,
+                        "lng" : -119.2901301
+                     },
+                     "travel_mode" : "DRIVING"
+                  }
+               ],
+               "traffic_speed_entry" : [],
+               "via_waypoint" : []
+            }
+         ],
+         "overview_polyline" : {
+            "points" : "wfnyG`wbwUkAqCnEqFHIq@wAQa@M]Iq@C{COqA?s@CKMQyC?gCA"
+         },
+         "summary" : "Sanford Ave, Swift Blvd and Thayer Dr",
+         "warnings" : [],
+         "waypoint_order" : []
+      }
+   ],
+   "status" : "OK"
+}
