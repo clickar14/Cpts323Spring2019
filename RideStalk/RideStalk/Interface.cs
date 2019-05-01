@@ -366,9 +366,7 @@ namespace RideStalk
                     {
                         Key = serviceItem.Key,
                         distance = distanceTo,
-                    });
-
-                
+                    });            
                 
             }
             // Sort in ascending order the distance of each trip from the car.
@@ -483,15 +481,19 @@ namespace RideStalk
                 double distance = new CarOperations().getDistance(startPoint, endPoint);
                 routeOverlay.Routes.Add(newRoute);
                 mapView.Overlays.Add(routeOverlay);
-
-                car.ToolTipText = $"Car {car.Tag}";
-                if (carActivityFlags[carNum] == 1)
+                newRoute.Stroke.Color = Color.BlueViolet;
+                
+                if(carActivityFlags[carNum] == 0)
                 {
-                    newRoute.Stroke.Color = Color.BlueViolet;
+                    car.ToolTipText = $"Car {car.Tag}\nInactive";
                 }
-                else
+                else if (carActivityFlags[carNum] == 1)
                 {
-                    newRoute.Stroke.Color = Color.Green;
+                    car.ToolTipText = $"Car {car.Tag}\nGetting User";
+                }
+                else if (carActivityFlags[carNum] == 2)
+                {
+                    car.ToolTipText = $"Car {car.Tag}\nTransporting User";
                 }
 
                 mapView.UpdateRouteLocalPosition(newRoute);
@@ -519,7 +521,7 @@ namespace RideStalk
 
                     // 100 is equivalant to running this at 1 sec,
                     // Was changed to 18 to accelerate the time by 5 times.
-                    Thread.Sleep(98);
+                    Thread.Sleep(10);
                 }
                 // For time checking
                 totalticks = triptime.ElapsedMilliseconds;

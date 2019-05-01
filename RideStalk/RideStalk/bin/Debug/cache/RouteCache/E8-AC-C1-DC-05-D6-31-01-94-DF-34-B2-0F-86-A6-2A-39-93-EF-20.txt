@@ -1,0 +1,276 @@
+﻿{
+   "geocoded_waypoints" : [
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJHffL-bd6mFQR3homPgCdN4k",
+         "types" : [ "street_address" ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJZToqpv96mFQRRLjC4xiug8Q",
+         "types" : [ "premise" ]
+      }
+   ],
+   "routes" : [
+      {
+         "bounds" : {
+            "northeast" : {
+               "lat" : 46.28231,
+               "lng" : -119.2196646
+            },
+            "southwest" : {
+               "lat" : 46.2571295,
+               "lng" : -119.2901362
+            }
+         },
+         "copyrights" : "Map data ©2019 Google",
+         "legs" : [
+            {
+               "distance" : {
+                  "text" : "6.5 mi",
+                  "value" : 10489
+               },
+               "duration" : {
+                  "text" : "11 mins",
+                  "value" : 646
+               },
+               "end_address" : "11416 W Court St, Pasco, WA 99301, USA",
+               "end_location" : {
+                  "lat" : 46.26655600000001,
+                  "lng" : -119.2394828
+               },
+               "start_address" : "1405 Putnam St, Richland, WA 99354, USA",
+               "start_location" : {
+                  "lat" : 46.28231,
+                  "lng" : -119.2901218
+               },
+               "steps" : [
+                  {
+                     "distance" : {
+                        "text" : "0.5 mi",
+                        "value" : 822
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 76
+                     },
+                     "end_location" : {
+                        "lat" : 46.2749154,
+                        "lng" : -119.2901048
+                     },
+                     "html_instructions" : "Head \u003cb\u003esouth\u003c/b\u003e on \u003cb\u003eThayer Dr\u003c/b\u003e toward \u003cb\u003eBlack Ct\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "monyGfzawUfC@xC?b@@h@?zFCzD?nC?vE?n@?nCAtBA"
+                     },
+                     "start_location" : {
+                        "lat" : 46.28231,
+                        "lng" : -119.2901218
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.7 mi",
+                        "value" : 1145
+                     },
+                     "duration" : {
+                        "text" : "2 mins",
+                        "value" : 123
+                     },
+                     "end_location" : {
+                        "lat" : 46.2748194,
+                        "lng" : -119.2752052
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eLee Blvd\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "gamyGbzawU@oE?gB@{C?oE@{C?s@?}C@qE@{CBwE?W@}I@kJ?uD@_G?Q?_D"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2749154,
+                        "lng" : -119.2901048
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.2 mi",
+                        "value" : 296
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 32
+                     },
+                     "end_location" : {
+                        "lat" : 46.272976,
+                        "lng" : -119.2736324
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eJadwin Ave\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "s`myG`}~vUxB?t@?z@?P?L?DAD?FCHEFEFEJMFQDODOBWF{@B_@Do@@Q?E?G?IAU"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2748194,
+                        "lng" : -119.2752052
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.7 mi",
+                        "value" : 1207
+                     },
+                     "duration" : {
+                        "text" : "2 mins",
+                        "value" : 103
+                     },
+                     "end_location" : {
+                        "lat" : 46.2633997,
+                        "lng" : -119.2672121
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eGeorge Washington Way\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "culyGds~vU?IAMAGCGCGGMZWrAkAj@i@r@s@VW`@a@r@q@PS\\Sb@WTMRKx@a@tAo@jB}@VKhAe@xAo@vAk@xAq@z@]n@[pAo@`Ag@nBcAr@]tC{Ar@[PADAD?^MhDcBRK"
+                     },
+                     "start_location" : {
+                        "lat" : 46.272976,
+                        "lng" : -119.2736324
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "2.6 mi",
+                        "value" : 4135
+                     },
+                     "duration" : {
+                        "text" : "3 mins",
+                        "value" : 151
+                     },
+                     "end_location" : {
+                        "lat" : 46.2731128,
+                        "lng" : -119.2273465
+                     },
+                     "html_instructions" : "Take the exit onto \u003cb\u003eI-182 E\u003c/b\u003e toward \u003cb\u003ePasco\u003c/b\u003e",
+                     "maneuver" : "ramp-right",
+                     "polyline" : {
+                        "points" : "gyjyG`k}vU\\@B?BALGPITITITGh@Kn@Kb@El@EtACl@AbAEj@Cj@Eh@KTGTG\\KHEl@Ud@Ud@[RKRMPOROPQPSX]HKJQNWNWHODMj@kAVo@Vs@J]Ni@TeAHe@Ly@NuA@YDg@D{@@]@c@?}@A{@CiAE{@Iq@Iu@QsAyAcIsCqOEQq@sDMq@a@uB?Ec@sBSiA_@eB_@wAYeAIUMc@GQEIGIS[{@gC[y@AE]{@Qa@Qg@u@}AYm@q@sA[q@cAyBa@}@k@oAuBeE]o@k@mAs@uAu@_Bm@kA_BqDUi@k@qAUg@mAoCoAiC?AQ[KS[q@sBcE{@cBoAkCwEuJ_DqGyE}JaBgDiJuRm@oA_@y@"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2633997,
+                        "lng" : -119.2672121
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.3 mi",
+                        "value" : 475
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 34
+                     },
+                     "end_location" : {
+                        "lat" : 46.273635,
+                        "lng" : -119.221539
+                     },
+                     "html_instructions" : "Take exit \u003cb\u003e7\u003c/b\u003e for \u003cb\u003eBroadmoor Blvd\u003c/b\u003e",
+                     "maneuver" : "ramp-right",
+                     "polyline" : {
+                        "points" : "}ulyG|quvUCa@?A?AY{@Uq@Ww@Qm@Qi@GYOk@EUE[EUEYC]E]C[A[A]A_@?]?Y?_@@_@Be@Bi@B]Fg@r@}F"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2731128,
+                        "lng" : -119.2273465
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.2 mi",
+                        "value" : 283
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 30
+                     },
+                     "end_location" : {
+                        "lat" : 46.2761734,
+                        "lng" : -119.2214792
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eBroadmoor Blvd\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "gylyGrmtvUwDC{@B}@Bq@AyAK{@A"
+                     },
+                     "start_location" : {
+                        "lat" : 46.273635,
+                        "lng" : -119.221539
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.7 mi",
+                        "value" : 1086
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 62
+                     },
+                     "end_location" : {
+                        "lat" : 46.2725355,
+                        "lng" : -119.229086
+                     },
+                     "html_instructions" : "Slight \u003cb\u003eright\u003c/b\u003e onto the \u003cb\u003eInterstate 182 W\u003c/b\u003e/\u003cb\u003eUS 12 W\u003c/b\u003e ramp to \u003cb\u003eRichland\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "aimyGfmtvUSUCACAC?[?MAGACAGCECAACEEGCGEGAIAIAG?IAS?cA@O?M@M@MBMBKDKFKDKDGDGDEFCDEBABAFCFAHAB?BAF@F?F@F@FBD@DBBBFDDFHJDHDHDJBLBH@F?BBLJhA`@rEDj@Hr@Jv@L|@N~@Hf@Lv@Lr@Nr@RfARx@T|@Pr@Rv@\\hAXz@Vt@?B@@BRZx@Pb@Zp@d@bAr@rAh@`ATf@d@~@@??@VJ"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2761734,
+                        "lng" : -119.2214792
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.6 mi",
+                        "value" : 1040
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 35
+                     },
+                     "end_location" : {
+                        "lat" : 46.26655600000001,
+                        "lng" : -119.2394828
+                     },
+                     "html_instructions" : "Merge onto \u003cb\u003eI-182 W\u003c/b\u003e/\u003cb\u003eUS-12 W\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eDestination will be on the right\u003c/div\u003e",
+                     "maneuver" : "merge",
+                     "polyline" : {
+                        "points" : "krlyGx|uvUlBxDdGbMnBbElCtFxFnL@D|CpGfA|BvA~C"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2725355,
+                        "lng" : -119.229086
+                     },
+                     "travel_mode" : "DRIVING"
+                  }
+               ],
+               "traffic_speed_entry" : [],
+               "via_waypoint" : []
+            }
+         ],
+         "overview_polyline" : {
+            "points" : "monyGfzawUnJB~WC~DAtBA@oE@cG@kJB_QFy\\@gRjF?d@A^ORSLa@Hg@J{AFoACw@Qe@nBcB~A}A~B_CjBeArG{CtIsDjBy@rCwAlJyEVCd@M|DoB`@@x@]j@QxAWpAKbCEnBItAQrAa@rAk@x@g@jA_A`AoAn@mAbA{Bb@qAd@oBV_BPoBJcBBaAAyBIeCSgBQsAyAcIyCcPaBaJw@}D_A}Dy@qCMSS[{@gC]_Ao@}AgAeCkAaCmDyHsFyKcBkDuB{EaAyB}CyGy@cBwMiXeYml@mAiCCc@gAgD{@}CWaBOsBCuBHoCJeAr@}FwDCyBFq@AyAK{@ASUGCu@CSKS]E[?qBFw@Vo@XYTMXE^DVL\\b@Rl@PbBf@~FTjBt@|EdAhFxArFr@vBBRZx@l@tAxC`Gf@~@VLpRv`@`NdYvA~C"
+         },
+         "summary" : "I-182 E",
+         "warnings" : [],
+         "waypoint_order" : []
+      }
+   ],
+   "status" : "OK"
+}
