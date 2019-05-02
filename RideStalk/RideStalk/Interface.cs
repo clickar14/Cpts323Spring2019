@@ -61,12 +61,13 @@ namespace RideStalk
         List<int> carActivityFlags;
         List<double> runningProfit;
         bool tripsRunning;
+        string companyName;
         string companyId;
         int updateTime;
         System.Threading.Thread updateList;
-        public Interface()
+        public Interface(string company)
         {
-
+            
             InitializeComponent();
             // Allocate List object for keys
             carKeys = new List<string>();
@@ -88,6 +89,7 @@ namespace RideStalk
 
             carActivityFlags = new List<int>(){ 0, 0, 0, 0 };
             updateTime = 1000;
+            companyName = company;
 
 
         }
@@ -109,7 +111,7 @@ namespace RideStalk
             mapView.Position = new GMap.NET.PointLatLng(lat, lng);
             mapView.Zoom = 13;
             mapView.ShowCenter = false;
-            carList = new CarOperations().generateCars(carList);
+            carList = new CarOperations().generateCars(carList, companyName);
             // Populate car objects and post them to the server.
 
             tripSummariesList.Add(carSumList);
@@ -521,7 +523,7 @@ namespace RideStalk
 
                     // 100 is equivalant to running this at 1 sec,
                     // Was changed to 18 to accelerate the time by 5 times.
-                    Thread.Sleep(10);
+                    Thread.Sleep(93);
                 }
                 // For time checking
                 totalticks = triptime.ElapsedMilliseconds;
@@ -633,9 +635,28 @@ namespace RideStalk
             string responseString = await serverResponse.Content.ReadAsStringAsync();
             serviceFareResponse fareResponse = JsonConvert.DeserializeObject<serviceFareResponse>(responseString);
 
+            double profit = 0.00;
             if (fareResponse.success == "true")
             {
                 runningProfit[carNum] += Convert.ToDouble(fareResponse.fareCost);
+                if(carNum == 0)
+                {
+                    car1Profit.Text = Convert.ToString(runningProfit[carNum]);
+                }
+                else if(carNum == 1)
+                {
+                    car2Profit.Text = Convert.ToString(runningProfit[carNum]);
+                }
+                else if(carNum == 2)
+                {
+                    car3Profit.Text = Convert.ToString(runningProfit[carNum]);
+                }
+                else if(carNum == 3)
+                {
+                    car4Profit.Text = Convert.ToString(runningProfit[carNum]);
+                }
+                profit = runningProfit[0] + runningProfit[1] + runningProfit[2] + runningProfit[3];
+                totalProfit.Text = $"${Convert.ToString(profit)}";
             }
             /* FINAL POSTS COMPLETED, BEGIN NEW SERVICE TRIP*/
             //Get new service for car, make sure to set the activity flag again

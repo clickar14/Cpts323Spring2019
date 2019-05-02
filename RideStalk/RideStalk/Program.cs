@@ -17,10 +17,13 @@ namespace RideStalk
         [STAThread]
         static void Main()
         {
+            
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Interface());
-            Application.Run(new LoginForm());
+            LoginForm login = new LoginForm();
+            Application.Run(login);
+            if (login.is_valid()) // only goes to interface if there is a valid login
+                Application.Run(new Interface("RideStalk"));
         }
     }
 }

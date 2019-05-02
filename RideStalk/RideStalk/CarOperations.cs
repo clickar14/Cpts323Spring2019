@@ -12,7 +12,7 @@ namespace RideStalk
     {
         
         // Generate four car objects
-        public List<serviceData> generateCars(List<serviceData> carList)
+        public List<serviceData> generateCars(List<serviceData> carList, string companyName)
         {
             for (int x = 0; x < 4; ++x)
             {
@@ -20,7 +20,7 @@ namespace RideStalk
                 Random ranNum = new Random();
                 int num = 0;
                 num = ranNum.Next(100, 999);
-                carList[x].driver.Company = "RideStalk";
+                carList[x].driver.Company = companyName;
                 carList[x].driver.did = x + 65;
                 carList[x].driver.car.carPlate = $"AWE{num+x}";
                 carList[x].pointList = new List<point>();
