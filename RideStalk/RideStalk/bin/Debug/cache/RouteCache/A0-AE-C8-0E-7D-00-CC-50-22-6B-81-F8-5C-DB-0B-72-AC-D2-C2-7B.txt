@@ -1,0 +1,133 @@
+﻿{
+   "geocoded_waypoints" : [
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJOSRiidR6mFQRMAR1pLOXTWY",
+         "types" : [ "street_address" ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJTSXzOdt6mFQRpDDqKetc0Qo",
+         "types" : [ "street_address" ]
+      }
+   ],
+   "routes" : [
+      {
+         "bounds" : {
+            "northeast" : {
+               "lat" : 46.2944611,
+               "lng" : -119.2725597
+            },
+            "southwest" : {
+               "lat" : 46.2809025,
+               "lng" : -119.27573
+            }
+         },
+         "copyrights" : "Map data ©2019 Google",
+         "legs" : [
+            {
+               "distance" : {
+                  "text" : "1.2 mi",
+                  "value" : 1902
+               },
+               "duration" : {
+                  "text" : "4 mins",
+                  "value" : 227
+               },
+               "end_address" : "1208 Gowen Ave, Richland, WA 99352, USA",
+               "end_location" : {
+                  "lat" : 46.28268629999999,
+                  "lng" : -119.2727747
+               },
+               "start_address" : "65 Van Giesen St, Richland, WA 99354, USA",
+               "start_location" : {
+                  "lat" : 46.2944589,
+                  "lng" : -119.27573
+               },
+               "steps" : [
+                  {
+                     "distance" : {
+                        "text" : "358 ft",
+                        "value" : 109
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 16
+                     },
+                     "end_location" : {
+                        "lat" : 46.2944611,
+                        "lng" : -119.2743082
+                     },
+                     "html_instructions" : "Head \u003cb\u003eeast\u003c/b\u003e on \u003cb\u003eVan Giesen St\u003c/b\u003e toward \u003cb\u003eGeorge Washington Way\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "k{pyGh`_wU?kA?oE"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2944589,
+                        "lng" : -119.27573
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.9 mi",
+                        "value" : 1513
+                     },
+                     "duration" : {
+                        "text" : "2 mins",
+                        "value" : 127
+                     },
+                     "end_location" : {
+                        "lat" : 46.2809025,
+                        "lng" : -119.2736932
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e at the 1st cross street onto \u003cb\u003eGeorge Washington Way\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "k{pyGlw~vUrD?tG?lCAzD?~BAdC?rH?vA?zCAVA~BA`@E\\GTGPI\\M~@]\\KTGPETERCXAXAV?hB@nA?J?P?hD?xD?"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2944611,
+                        "lng" : -119.2743082
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.2 mi",
+                        "value" : 280
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 84
+                     },
+                     "end_location" : {
+                        "lat" : 46.28268629999999,
+                        "lng" : -119.2727747
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eDestination will be on the right\u003c/div\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "sfnyGps~vU?}@AG?cA?YCYAI?C?CAECCAAICUAw@?m@?w@?}@?SDIBC@IDOHKDIDG@"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2809025,
+                        "lng" : -119.2736932
+                     },
+                     "travel_mode" : "DRIVING"
+                  }
+               ],
+               "traffic_speed_entry" : [],
+               "via_waypoint" : []
+            }
+         ],
+         "overview_polyline" : {
+            "points" : "k{pyGh`_wU?{GhM?nQC~PC~BA`@Er@OlCaAf@Mh@Ir@C`C@vG?xD??}@AkAEaAGO_@EeB?uB?]Hi@VQF"
+         },
+         "summary" : "George Washington Way",
+         "warnings" : [],
+         "waypoint_order" : []
+      }
+   ],
+   "status" : "OK"
+}

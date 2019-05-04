@@ -1,0 +1,181 @@
+﻿{
+   "geocoded_waypoints" : [
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJDV-ZvM16mFQRWI41rcP94c0",
+         "types" : [ "street_address" ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJaaNgUsJ6mFQRdwiVTof2aU0",
+         "types" : [ "bar", "establishment", "food", "point_of_interest", "restaurant" ]
+      }
+   ],
+   "routes" : [
+      {
+         "bounds" : {
+            "northeast" : {
+               "lat" : 46.2906544,
+               "lng" : -119.271316
+            },
+            "southwest" : {
+               "lat" : 46.2787902,
+               "lng" : -119.2848559
+            }
+         },
+         "copyrights" : "Map data ©2019 Google",
+         "legs" : [
+            {
+               "distance" : {
+                  "text" : "1.5 mi",
+                  "value" : 2356
+               },
+               "duration" : {
+                  "text" : "5 mins",
+                  "value" : 316
+               },
+               "end_address" : "890 George Washington Way, Richland, WA 99352, USA",
+               "end_location" : {
+                  "lat" : 46.27879189999999,
+                  "lng" : -119.271316
+               },
+               "start_address" : "910 Torbett St, Richland, WA 99352, USA",
+               "start_location" : {
+                  "lat" : 46.2906544,
+                  "lng" : -119.2843004
+               },
+               "steps" : [
+                  {
+                     "distance" : {
+                        "text" : "135 ft",
+                        "value" : 41
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 6
+                     },
+                     "end_location" : {
+                        "lat" : 46.2906313,
+                        "lng" : -119.2848375
+                     },
+                     "html_instructions" : "Head \u003cb\u003ewest\u003c/b\u003e on \u003cb\u003eTorbett St\u003c/b\u003e toward \u003cb\u003eStevens Dr\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "qcpyGzu`wUBjB"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2906544,
+                        "lng" : -119.2843004
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.3 mi",
+                        "value" : 545
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 57
+                     },
+                     "end_location" : {
+                        "lat" : 46.2857291,
+                        "lng" : -119.2848485
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e at the 1st cross street onto \u003cb\u003eStevens Dr\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "mcpyGfy`wUbI@dD@hE?~GA"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2906313,
+                        "lng" : -119.2848375
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.5 mi",
+                        "value" : 813
+                     },
+                     "duration" : {
+                        "text" : "2 mins",
+                        "value" : 111
+                     },
+                     "end_location" : {
+                        "lat" : 46.2856947,
+                        "lng" : -119.2742636
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e at the 2nd cross street onto \u003cb\u003eWilliams Blvd\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "ydoyGhy`wU@_FAcFA{B?uD?oB?oEBoH?uFAwD@aA@q@B}D"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2857291,
+                        "lng" : -119.2848485
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.5 mi",
+                        "value" : 774
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 68
+                     },
+                     "end_location" : {
+                        "lat" : 46.2787902,
+                        "lng" : -119.2737007
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eGeorge Washington Way\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "qdoyGbw~vU`@E\\GTGPI\\M~@]\\KTGPETERCXAXAV?hB@nA?J?P?hD?xD?~A@zBAhE@"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2856947,
+                        "lng" : -119.2742636
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.1 mi",
+                        "value" : 183
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 74
+                     },
+                     "end_location" : {
+                        "lat" : 46.27879189999999,
+                        "lng" : -119.271316
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eNewton St\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "mymyGrs~vU?iBAoDAgBByA"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2787902,
+                        "lng" : -119.2737007
+                     },
+                     "travel_mode" : "DRIVING"
+                  }
+               ],
+               "traffic_speed_entry" : [],
+               "via_waypoint" : []
+            }
+         ],
+         "overview_polyline" : {
+            "points" : "qcpyGzu`wUBjBbI@nJ@~GA@_FC_J?eHB_O@aPB}D`@Er@OlCaAf@Mh@Ir@C`C@vG?~Q@AyG@aE"
+         },
+         "summary" : "Williams Blvd and George Washington Way",
+         "warnings" : [],
+         "waypoint_order" : []
+      }
+   ],
+   "status" : "OK"
+}

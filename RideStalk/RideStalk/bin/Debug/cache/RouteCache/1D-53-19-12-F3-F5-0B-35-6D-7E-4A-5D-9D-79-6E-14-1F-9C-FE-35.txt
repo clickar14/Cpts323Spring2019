@@ -1,0 +1,133 @@
+﻿{
+   "geocoded_waypoints" : [
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJlx9MddVkmFQR5wGkWUX7AH4",
+         "types" : [ "premise" ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJ0TqD4NRkmFQROcJdPH12Gfg",
+         "types" : [ "street_address" ]
+      }
+   ],
+   "routes" : [
+      {
+         "bounds" : {
+            "northeast" : {
+               "lat" : 46.30024390000001,
+               "lng" : -119.269067
+            },
+            "southwest" : {
+               "lat" : 46.2993862,
+               "lng" : -119.2726399
+            }
+         },
+         "copyrights" : "Map data ©2019 Google",
+         "legs" : [
+            {
+               "distance" : {
+                  "text" : "0.3 mi",
+                  "value" : 411
+               },
+               "duration" : {
+                  "text" : "1 min",
+                  "value" : 62
+               },
+               "end_address" : "72 Whitten St, Richland, WA 99352, USA",
+               "end_location" : {
+                  "lat" : 46.2993862,
+                  "lng" : -119.269731
+               },
+               "start_address" : "1824 Hoxie Ave, Richland, WA 99354, USA",
+               "start_location" : {
+                  "lat" : 46.30024390000001,
+                  "lng" : -119.2726399
+               },
+               "steps" : [
+                  {
+                     "distance" : {
+                        "text" : "0.2 mi",
+                        "value" : 275
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 31
+                     },
+                     "end_location" : {
+                        "lat" : 46.3001957,
+                        "lng" : -119.269067
+                     },
+                     "html_instructions" : "Head \u003cb\u003eeast\u003c/b\u003e on \u003cb\u003eMcMurray St\u003c/b\u003e toward \u003cb\u003eHowell Ave\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "o_ryG~l~vU@}DDkO"
+                     },
+                     "start_location" : {
+                        "lat" : 46.30024390000001,
+                        "lng" : -119.2726399
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "295 ft",
+                        "value" : 90
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 13
+                     },
+                     "end_location" : {
+                        "lat" : 46.2993907,
+                        "lng" : -119.2691358
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eDavison Ave\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "g_ryGtv}vU`DL"
+                     },
+                     "start_location" : {
+                        "lat" : 46.3001957,
+                        "lng" : -119.269067
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "151 ft",
+                        "value" : 46
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 18
+                     },
+                     "end_location" : {
+                        "lat" : 46.2993862,
+                        "lng" : -119.269731
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eWhitten St\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eDestination will be on the right\u003c/div\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "ezqyGbw}vU?tB"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2993907,
+                        "lng" : -119.2691358
+                     },
+                     "travel_mode" : "DRIVING"
+                  }
+               ],
+               "traffic_speed_entry" : [],
+               "via_waypoint" : []
+            }
+         ],
+         "overview_polyline" : {
+            "points" : "o_ryG~l~vUFiU`DL?tB"
+         },
+         "summary" : "McMurray St",
+         "warnings" : [],
+         "waypoint_order" : []
+      }
+   ],
+   "status" : "OK"
+}

@@ -1,0 +1,253 @@
+﻿{
+   "geocoded_waypoints" : [
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJ1fKrbNB6mFQRzTuLRP16wuM",
+         "types" : [ "street_address" ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJ_7K2My5lmFQRbh_WvXiE91Y",
+         "types" : [ "premise" ]
+      }
+   ],
+   "routes" : [
+      {
+         "bounds" : {
+            "northeast" : {
+               "lat" : 46.3003557,
+               "lng" : -119.2742735
+            },
+            "southwest" : {
+               "lat" : 46.2863264,
+               "lng" : -119.2918025
+            }
+         },
+         "copyrights" : "Map data ©2019 Google",
+         "legs" : [
+            {
+               "distance" : {
+                  "text" : "2.1 mi",
+                  "value" : 3352
+               },
+               "duration" : {
+                  "text" : "6 mins",
+                  "value" : 383
+               },
+               "end_address" : "1909 Poplar St, Richland, WA 99354, USA",
+               "end_location" : {
+                  "lat" : 46.3000216,
+                  "lng" : -119.2911245
+               },
+               "start_address" : "1317 George Washington Way, Richland, WA 99354, USA",
+               "start_location" : {
+                  "lat" : 46.286952,
+                  "lng" : -119.2758768
+               },
+               "steps" : [
+                  {
+                     "distance" : {
+                        "text" : "174 ft",
+                        "value" : 53
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 19
+                     },
+                     "end_location" : {
+                        "lat" : 46.2869349,
+                        "lng" : -119.2751971
+                     },
+                     "html_instructions" : "Head \u003cb\u003eeast\u003c/b\u003e toward \u003cb\u003eGeorge Washington Way\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "mloyGfa_wU@E@I?wB"
+                     },
+                     "start_location" : {
+                        "lat" : 46.286952,
+                        "lng" : -119.2758768
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "200 ft",
+                        "value" : 61
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 28
+                     },
+                     "end_location" : {
+                        "lat" : 46.2874854,
+                        "lng" : -119.2751967
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "iloyG~|~vUoB?"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2869349,
+                        "lng" : -119.2751971
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.1 mi",
+                        "value" : 168
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 26
+                     },
+                     "end_location" : {
+                        "lat" : 46.28633259999999,
+                        "lng" : -119.2746024
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e toward \u003cb\u003eGeorge Washington Way\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "yooyG~|~vUBaB@IBEDCvAC~B@"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2874854,
+                        "lng" : -119.2751967
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "82 ft",
+                        "value" : 25
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 11
+                     },
+                     "end_location" : {
+                        "lat" : 46.2863264,
+                        "lng" : -119.2742735
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e toward \u003cb\u003eGeorge Washington Way\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "qhoyGfy~vU?E?{@"
+                     },
+                     "start_location" : {
+                        "lat" : 46.28633259999999,
+                        "lng" : -119.2746024
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "1.0 mi",
+                        "value" : 1549
+                     },
+                     "duration" : {
+                        "text" : "2 mins",
+                        "value" : 123
+                     },
+                     "end_location" : {
+                        "lat" : 46.3002605,
+                        "lng" : -119.2743427
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eGeorge Washington Way\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "qhoyGdw~vUW@{C@wA?sH?eC?_C@{D?mC@uG?sD?eD?{C?kDBkE@eC@gA?_GA"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2863264,
+                        "lng" : -119.2742735
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.8 mi",
+                        "value" : 1326
+                     },
+                     "duration" : {
+                        "text" : "2 mins",
+                        "value" : 148
+                     },
+                     "end_location" : {
+                        "lat" : 46.2989293,
+                        "lng" : -119.2909205
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eMcMurray St\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "s_ryGrw~vUAbC?lA?b@?hDAnE?jEA~F?`IGpTC~FAnE?@BfBL`Bv@~DXnAVl@BFj@~@pB`D"
+                     },
+                     "start_location" : {
+                        "lat" : 46.3002605,
+                        "lng" : -119.2743427
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "305 ft",
+                        "value" : 93
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 13
+                     },
+                     "end_location" : {
+                        "lat" : 46.2995082,
+                        "lng" : -119.2918025
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eThayer Dr\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "iwqyGf_bwUsBnD"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2989293,
+                        "lng" : -119.2909205
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "253 ft",
+                        "value" : 77
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 15
+                     },
+                     "end_location" : {
+                        "lat" : 46.3000216,
+                        "lng" : -119.2911245
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003ePoplar St\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "}zqyGvdbwUeBgC"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2995082,
+                        "lng" : -119.2918025
+                     },
+                     "travel_mode" : "DRIVING"
+                  }
+               ],
+               "traffic_speed_entry" : [],
+               "via_waypoint" : []
+            }
+         ],
+         "overview_polyline" : {
+            "points" : "mloyGfa_wU@E@aCoB?BaBDODCvAC~B@?E?{@W@sF@uV@}V@ySFgIAApEAhRA`QKp\\ApEBfBL`BpAnGZt@|C`FsBnDeBgC"
+         },
+         "summary" : "George Washington Way and McMurray St",
+         "warnings" : [],
+         "waypoint_order" : []
+      }
+   ],
+   "status" : "OK"
+}

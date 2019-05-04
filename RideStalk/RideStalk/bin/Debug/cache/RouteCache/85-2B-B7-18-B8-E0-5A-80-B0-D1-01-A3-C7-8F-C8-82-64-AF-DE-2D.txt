@@ -1,0 +1,181 @@
+﻿{
+   "geocoded_waypoints" : [
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJCdRer8V6mFQRsewvTD1tzoo",
+         "types" : [ "street_address" ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJW2pJxtJ6mFQRDpgHgKbyX9g",
+         "types" : [ "street_address" ]
+      }
+   ],
+   "routes" : [
+      {
+         "bounds" : {
+            "northeast" : {
+               "lat" : 46.2943024,
+               "lng" : -119.2768381
+            },
+            "southwest" : {
+               "lat" : 46.2830637,
+               "lng" : -119.2831515
+            }
+         },
+         "copyrights" : "Map data ©2019 Google",
+         "legs" : [
+            {
+               "distance" : {
+                  "text" : "1.1 mi",
+                  "value" : 1742
+               },
+               "duration" : {
+                  "text" : "3 mins",
+                  "value" : 190
+               },
+               "end_address" : "1604 Goethals Dr, Richland, WA 99352, USA",
+               "end_location" : {
+                  "lat" : 46.2937727,
+                  "lng" : -119.2831515
+               },
+               "start_address" : "1105 Gilmore St, Richland, WA 99352, USA",
+               "start_location" : {
+                  "lat" : 46.2836316,
+                  "lng" : -119.2783944
+               },
+               "steps" : [
+                  {
+                     "distance" : {
+                        "text" : "223 ft",
+                        "value" : 68
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 8
+                     },
+                     "end_location" : {
+                        "lat" : 46.2830637,
+                        "lng" : -119.2780522
+                     },
+                     "html_instructions" : "Head \u003cb\u003esouth\u003c/b\u003e on \u003cb\u003eGilmore St\u003c/b\u003e toward \u003cb\u003eKadlec Way\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "uwnyG|p_wUfAi@h@Y"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2836316,
+                        "lng" : -119.2783944
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "328 ft",
+                        "value" : 100
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 19
+                     },
+                     "end_location" : {
+                        "lat" : 46.2833987,
+                        "lng" : -119.2768381
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eKadlec Way\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "ctnyGxn_wU]iBKm@YyA"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2830637,
+                        "lng" : -119.2780522
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.8 mi",
+                        "value" : 1269
+                     },
+                     "duration" : {
+                        "text" : "2 mins",
+                        "value" : 123
+                     },
+                     "end_location" : {
+                        "lat" : 46.2943024,
+                        "lng" : -119.2797732
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eJadwin Ave\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "gvnyGfg_wUQPc@\\_@Vc@TaAd@sBbAQHUHMBQ@O?S?s@EeCg@qAYkAScB]YE_AOUCO?S?i@Bs@HwARyB`@oBZG@aARUFSFSFk@RmClAuLjG"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2833987,
+                        "lng" : -119.2768381
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.2 mi",
+                        "value" : 260
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 30
+                     },
+                     "end_location" : {
+                        "lat" : 46.2934096,
+                        "lng" : -119.2828987
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eVan Giesen St\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "kzpyGpy_wUx@tEx@hE|@pE"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2943024,
+                        "lng" : -119.2797732
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "148 ft",
+                        "value" : 45
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 10
+                     },
+                     "end_location" : {
+                        "lat" : 46.2937727,
+                        "lng" : -119.2831515
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e at the 3rd cross street onto \u003cb\u003eGoethals Dr\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eDestination will be on the right\u003c/div\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "ytpyGbm`wUgAp@"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2934096,
+                        "lng" : -119.2828987
+                     },
+                     "travel_mode" : "DRIVING"
+                  }
+               ],
+               "traffic_speed_entry" : [],
+               "via_waypoint" : []
+            }
+         ],
+         "overview_polyline" : {
+            "points" : "uwnyG|p_wUpBcAi@wCYyAQPcAt@kFhCc@La@@gAEwEaAiGgAe@C}@BkC\\iF|@sBd@_AZmClAuLjGrB~K|@pEgAp@"
+         },
+         "summary" : "Jadwin Ave",
+         "warnings" : [],
+         "waypoint_order" : []
+      }
+   ],
+   "status" : "OK"
+}

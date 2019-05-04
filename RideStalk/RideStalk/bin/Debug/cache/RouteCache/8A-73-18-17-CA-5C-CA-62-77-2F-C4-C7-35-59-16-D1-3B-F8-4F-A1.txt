@@ -1,0 +1,181 @@
+﻿{
+   "geocoded_waypoints" : [
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJBy5MCMN6mFQRQI6sp_gK6xg",
+         "types" : [ "establishment", "food", "point_of_interest", "restaurant" ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJbTWtekplmFQR9-nIoR3fqPA",
+         "types" : [ "premise" ]
+      }
+   ],
+   "routes" : [
+      {
+         "bounds" : {
+            "northeast" : {
+               "lat" : 46.29446919999999,
+               "lng" : -119.2717688
+            },
+            "southwest" : {
+               "lat" : 46.2787902,
+               "lng" : -119.3024223
+            }
+         },
+         "copyrights" : "Map data ©2019 Google",
+         "legs" : [
+            {
+               "distance" : {
+                  "text" : "2.6 mi",
+                  "value" : 4228
+               },
+               "duration" : {
+                  "text" : "7 mins",
+                  "value" : 430
+               },
+               "end_address" : "1516 Birch Ave, Richland, WA 99354, USA",
+               "end_location" : {
+                  "lat" : 46.2924836,
+                  "lng" : -119.3024223
+               },
+               "start_address" : "930 George Washington Way, Richland, WA 99352, USA",
+               "start_location" : {
+                  "lat" : 46.2794604,
+                  "lng" : -119.2719451
+               },
+               "steps" : [
+                  {
+                     "distance" : {
+                        "text" : "243 ft",
+                        "value" : 74
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 18
+                     },
+                     "end_location" : {
+                        "lat" : 46.2788058,
+                        "lng" : -119.2717688
+                     },
+                     "html_instructions" : "Head \u003cb\u003esouth\u003c/b\u003e on \u003cb\u003eAmon Park Dr\u003c/b\u003e toward \u003cb\u003eNewton St\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "s}myGth~vU|@KbAW"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2794604,
+                        "lng" : -119.2719451
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "486 ft",
+                        "value" : 148
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 35
+                     },
+                     "end_location" : {
+                        "lat" : 46.2787902,
+                        "lng" : -119.2737007
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eNewton St\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "qymyGpg~vU@fB@nD?hB"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2788058,
+                        "lng" : -119.2717688
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "1.1 mi",
+                        "value" : 1748
+                     },
+                     "duration" : {
+                        "text" : "2 mins",
+                        "value" : 140
+                     },
+                     "end_location" : {
+                        "lat" : 46.2944611,
+                        "lng" : -119.2743082
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eGeorge Washington Way\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "mymyGrs~vUiEA{B@_BAyD?iD?Q?K?oA?iBAW?Y@Y@SBUDQDUF]J_A\\]LQHUF]Fa@D_C@W@{C@wA?sH?eC?_C@{D?mC@uG?sD?"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2787902,
+                        "lng" : -119.2737007
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "1.4 mi",
+                        "value" : 2192
+                     },
+                     "duration" : {
+                        "text" : "4 mins",
+                        "value" : 228
+                     },
+                     "end_location" : {
+                        "lat" : 46.2930788,
+                        "lng" : -119.3024086
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eVan Giesen St\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "k{pyGlw~vU?nE?fG?lA?vAAnGB|@Fr@TbAx@tEx@hE|@pEv@fERbAFZDZ@J?L?JATIzEAlCAnF?t@?tDApE?tE?vGA~OCrHApCAxC?dC?tB?fBBjF?|@?zBAl@"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2944611,
+                        "lng" : -119.2743082
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "217 ft",
+                        "value" : 66
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 9
+                     },
+                     "end_location" : {
+                        "lat" : 46.2924836,
+                        "lng" : -119.3024223
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eBirch Ave\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eDestination will be on the left\u003c/div\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "wrpyG`gdwUvB@"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2930788,
+                        "lng" : -119.3024086
+                     },
+                     "travel_mode" : "DRIVING"
+                  }
+               ],
+               "traffic_speed_entry" : [],
+               "via_waypoint" : []
+            }
+         ],
+         "overview_polyline" : {
+            "points" : "s}myGth~vU|@KbAWBvG?hBiEA{E?aK?kF?uAPqC~@g@P_ALkKDuV@cL@sD??nE?tIAfJJpBnAxGbEfTNpAA`@KhJClT?lNErYCjH?zFBlOAl@vB@"
+         },
+         "summary" : "George Washington Way and Van Giesen St",
+         "warnings" : [],
+         "waypoint_order" : []
+      }
+   ],
+   "status" : "OK"
+}

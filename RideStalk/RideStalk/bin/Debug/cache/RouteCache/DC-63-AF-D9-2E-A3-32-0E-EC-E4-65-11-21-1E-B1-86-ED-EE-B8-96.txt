@@ -1,0 +1,181 @@
+﻿{
+   "geocoded_waypoints" : [
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJrd1luDdlmFQR70jwotmviYQ",
+         "types" : [ "street_address" ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJDec2s7F6mFQRiaeR_xB07lo",
+         "types" : [ "street_address" ]
+      }
+   ],
+   "routes" : [
+      {
+         "bounds" : {
+            "northeast" : {
+               "lat" : 46.2973339,
+               "lng" : -119.3024195
+            },
+            "southwest" : {
+               "lat" : 46.2789593,
+               "lng" : -119.3066352
+            }
+         },
+         "copyrights" : "Map data ©2019 Google",
+         "legs" : [
+            {
+               "distance" : {
+                  "text" : "1.7 mi",
+                  "value" : 2722
+               },
+               "duration" : {
+                  "text" : "4 mins",
+                  "value" : 226
+               },
+               "end_address" : "2403 Richmond Blvd, Richland, WA 99354, USA",
+               "end_location" : {
+                  "lat" : 46.28106,
+                  "lng" : -119.3025197
+               },
+               "start_address" : "1838 Terminal Dr, Richland, WA 99354, USA",
+               "start_location" : {
+                  "lat" : 46.2973339,
+                  "lng" : -119.3044825
+               },
+               "steps" : [
+                  {
+                     "distance" : {
+                        "text" : "0.3 mi",
+                        "value" : 512
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 63
+                     },
+                     "end_location" : {
+                        "lat" : 46.2931397,
+                        "lng" : -119.3059686
+                     },
+                     "html_instructions" : "Head \u003cb\u003esouthwest\u003c/b\u003e on \u003cb\u003eTerminal Dr\u003c/b\u003e toward \u003cb\u003eAileron Ln\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "imqyG~sdwUHb@^p@l@p@v@|@l@\\d@Hp@Id@GjB_@v@Ol@AJAhATn@V|A|@HBFDDBH@F@J@\\@"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2973339,
+                        "lng" : -119.3044825
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "161 ft",
+                        "value" : 49
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 14
+                     },
+                     "end_location" : {
+                        "lat" : 46.29313690000001,
+                        "lng" : -119.3053331
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eVan Giesen St\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "cspyGh}dwU?gB?W"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2931397,
+                        "lng" : -119.3059686
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "1.0 mi",
+                        "value" : 1605
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 79
+                     },
+                     "end_location" : {
+                        "lat" : 46.2789761,
+                        "lng" : -119.3066337
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eState Hwy 240\u003c/b\u003e/\u003cb\u003eWA-240 E\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "cspyGhydwUNQ?AJQDKBEBC@CBABCNGNE~Av@~@d@rCfAnA`@LDdAZbAVrAT|@LjBTf@B`AH~@Dh@@xAB`D@`@?lI?nE?fS@tB?rCA"
+                     },
+                     "start_location" : {
+                        "lat" : 46.29313690000001,
+                        "lng" : -119.3053331
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.2 mi",
+                        "value" : 322
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 45
+                     },
+                     "end_location" : {
+                        "lat" : 46.2789593,
+                        "lng" : -119.3024435
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eSwift Blvd\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "szmyGlaewU@e@@c@?cA?oC?wI?oE"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2789761,
+                        "lng" : -119.3066337
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.1 mi",
+                        "value" : 234
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 25
+                     },
+                     "end_location" : {
+                        "lat" : 46.28106,
+                        "lng" : -119.3025197
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eCottonwood Dr\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eDestination will be on the left\u003c/div\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "ozmyGfgdwUcDCkD@o@Dc@J"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2789593,
+                        "lng" : -119.3024435
+                     },
+                     "travel_mode" : "DRIVING"
+                  }
+               ],
+               "traffic_speed_entry" : [],
+               "via_waypoint" : []
+            }
+         ],
+         "overview_polyline" : {
+            "points" : "imqyG~sdwUHb@^p@dBnBl@\\d@HvAQbDo@x@ChATn@VfB`A^Lh@B?_C`@q@LORKNE~Av@~@d@rCfA|Af@hCr@pCb@rCX`CNfIFzg@@rCA@e@@gB?gN?oEcDCkD@o@Dc@J"
+         },
+         "summary" : "State Hwy 240/WA-240 E",
+         "warnings" : [],
+         "waypoint_order" : []
+      }
+   ],
+   "status" : "OK"
+}

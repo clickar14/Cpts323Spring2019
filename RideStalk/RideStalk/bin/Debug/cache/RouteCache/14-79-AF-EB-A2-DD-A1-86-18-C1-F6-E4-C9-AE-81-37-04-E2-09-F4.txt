@@ -1,0 +1,133 @@
+﻿{
+   "geocoded_waypoints" : [
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJ9xtSNC5lmFQRFYvKxFgkVOs",
+         "types" : [ "street_address" ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJqTDZjL96mFQR-I2ZSlzEw6g",
+         "types" : [ "premise" ]
+      }
+   ],
+   "routes" : [
+      {
+         "bounds" : {
+            "northeast" : {
+               "lat" : 46.300407,
+               "lng" : -119.2826861
+            },
+            "southwest" : {
+               "lat" : 46.2748603,
+               "lng" : -119.2918025
+            }
+         },
+         "copyrights" : "Map data ©2019 Google",
+         "legs" : [
+            {
+               "distance" : {
+                  "text" : "2.2 mi",
+                  "value" : 3498
+               },
+               "duration" : {
+                  "text" : "6 mins",
+                  "value" : 358
+               },
+               "end_address" : "701 Stevens Dr, Richland, WA 99352, USA",
+               "end_location" : {
+                  "lat" : 46.2748603,
+                  "lng" : -119.2826861
+               },
+               "start_address" : "1913 Poplar St, Richland, WA 99352, USA",
+               "start_location" : {
+                  "lat" : 46.300407,
+                  "lng" : -119.2905856
+               },
+               "steps" : [
+                  {
+                     "distance" : {
+                        "text" : "449 ft",
+                        "value" : 137
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 22
+                     },
+                     "end_location" : {
+                        "lat" : 46.2995082,
+                        "lng" : -119.2918025
+                     },
+                     "html_instructions" : "Head \u003cb\u003esouthwest\u003c/b\u003e on \u003cb\u003ePoplar St\u003c/b\u003e toward \u003cb\u003eMc Pherson Ave\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "q`ryGd}awUt@hA|BfD"
+                     },
+                     "start_location" : {
+                        "lat" : 46.300407,
+                        "lng" : -119.2905856
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "1.7 mi",
+                        "value" : 2791
+                     },
+                     "duration" : {
+                        "text" : "5 mins",
+                        "value" : 279
+                     },
+                     "end_location" : {
+                        "lat" : 46.2749154,
+                        "lng" : -119.2901048
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eThayer Dr\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "}zqyGvdbwUrBoDzAiC^]b@Ob@ArA?pD@|EBxC?nCBfEBj@C|A?xE@~B@lFBvF@xC@rD@zC?fD@fDAtC@tD?xC@xC?b@@h@?zFCzD?nC?vE?n@?nCAtBA"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2995082,
+                        "lng" : -119.2918025
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.4 mi",
+                        "value" : 570
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 57
+                     },
+                     "end_location" : {
+                        "lat" : 46.2748603,
+                        "lng" : -119.2826861
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eLee Blvd\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eDestination will be on the left\u003c/div\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "gamyGbzawU@oE?gB@{C?oE@{C?s@?}C@qE@{C@iA"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2749154,
+                        "lng" : -119.2901048
+                     },
+                     "travel_mode" : "DRIVING"
+                  }
+               ],
+               "traffic_speed_entry" : [],
+               "via_waypoint" : []
+            }
+         ],
+         "overview_polyline" : {
+            "points" : "q`ryGd}awUrDpFnEyH^]b@OvBAxTHjP@~VH~S@~RBdOAfPAtBA@oE@cG@}PDwL"
+         },
+         "summary" : "Thayer Dr",
+         "warnings" : [],
+         "waypoint_order" : []
+      }
+   ],
+   "status" : "OK"
+}

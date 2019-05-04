@@ -1,0 +1,157 @@
+﻿{
+   "geocoded_waypoints" : [
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJp4kxJct6mFQR_15VWqlAGMQ",
+         "types" : [ "premise" ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJb1fKis96mFQRU0JlKKdyy0k",
+         "types" : [ "street_address" ]
+      }
+   ],
+   "routes" : [
+      {
+         "bounds" : {
+            "northeast" : {
+               "lat" : 46.29073,
+               "lng" : -119.2782735
+            },
+            "southwest" : {
+               "lat" : 46.285726,
+               "lng" : -119.2940768
+            }
+         },
+         "copyrights" : "Map data ©2019 Google",
+         "legs" : [
+            {
+               "distance" : {
+                  "text" : "1.1 mi",
+                  "value" : 1775
+               },
+               "duration" : {
+                  "text" : "4 mins",
+                  "value" : 213
+               },
+               "end_address" : "407 Williams Blvd, Richland, WA 99354, USA",
+               "end_location" : {
+                  "lat" : 46.285726,
+                  "lng" : -119.2782735
+               },
+               "start_address" : "1502 Potter Ave, Richland, WA 99354, USA",
+               "start_location" : {
+                  "lat" : 46.29073,
+                  "lng" : -119.294075
+               },
+               "steps" : [
+                  {
+                     "distance" : {
+                        "text" : "49 ft",
+                        "value" : 15
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 4
+                     },
+                     "end_location" : {
+                        "lat" : 46.290591,
+                        "lng" : -119.2940768
+                     },
+                     "html_instructions" : "Head \u003cb\u003esouth\u003c/b\u003e on \u003cb\u003ePotter Ave\u003c/b\u003e toward \u003cb\u003eTorbett St\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "adpyG~rbwUZ?"
+                     },
+                     "start_location" : {
+                        "lat" : 46.29073,
+                        "lng" : -119.294075
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.2 mi",
+                        "value" : 308
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 60
+                     },
+                     "end_location" : {
+                        "lat" : 46.2906175,
+                        "lng" : -119.2900647
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e at the 1st cross street onto \u003cb\u003eTorbett St\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "ecpyG~rbwUCaIC{BCsCDqE"
+                     },
+                     "start_location" : {
+                        "lat" : 46.290591,
+                        "lng" : -119.2940768
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.3 mi",
+                        "value" : 542
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 52
+                     },
+                     "end_location" : {
+                        "lat" : 46.2857402,
+                        "lng" : -119.2901123
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eThayer Dr\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "kcpyGzyawUlFBvF@xC@rD@zC?"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2906175,
+                        "lng" : -119.2900647
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.6 mi",
+                        "value" : 910
+                     },
+                     "duration" : {
+                        "text" : "2 mins",
+                        "value" : 97
+                     },
+                     "end_location" : {
+                        "lat" : 46.285726,
+                        "lng" : -119.2782735
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eWilliams Blvd\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eDestination will be on the right\u003c/div\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "{doyGdzawU@sIEeFBoF@qF@_FAcFA{B?uD?oB?oE@mF"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2857402,
+                        "lng" : -119.2901123
+                     },
+                     "travel_mode" : "DRIVING"
+                  }
+               ],
+               "traffic_speed_entry" : [],
+               "via_waypoint" : []
+            }
+         ],
+         "overview_polyline" : {
+            "points" : "adpyG~rbwUZ?CaIGoGDqElFBpKBnI@@sIEeFDaN?cMAqR@mF"
+         },
+         "summary" : "Thayer Dr and Williams Blvd",
+         "warnings" : [],
+         "waypoint_order" : []
+      }
+   ],
+   "status" : "OK"
+}

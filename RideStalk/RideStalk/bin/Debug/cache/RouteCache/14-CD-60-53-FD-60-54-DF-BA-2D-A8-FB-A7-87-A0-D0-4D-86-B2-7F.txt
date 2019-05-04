@@ -1,0 +1,109 @@
+﻿{
+   "geocoded_waypoints" : [
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJ53XUXbB6mFQRYh5MPERcNZY",
+         "types" : [ "street_address" ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJZ7ReULt6mFQRjJbMuGTdO6I",
+         "types" : [ "premise" ]
+      }
+   ],
+   "routes" : [
+      {
+         "bounds" : {
+            "northeast" : {
+               "lat" : 46.2813624,
+               "lng" : -119.2976905
+            },
+            "southwest" : {
+               "lat" : 46.27523619999999,
+               "lng" : -119.3013501
+            }
+         },
+         "copyrights" : "Map data ©2019 Google",
+         "legs" : [
+            {
+               "distance" : {
+                  "text" : "0.6 mi",
+                  "value" : 976
+               },
+               "duration" : {
+                  "text" : "2 mins",
+                  "value" : 136
+               },
+               "end_address" : "2104 Lee Blvd, Richland, WA 99352, USA",
+               "end_location" : {
+                  "lat" : 46.27523619999999,
+                  "lng" : -119.2976993
+               },
+               "start_address" : "2307 Pullen St, Richland, WA 99354, USA",
+               "start_location" : {
+                  "lat" : 46.2806506,
+                  "lng" : -119.3013501
+               },
+               "steps" : [
+                  {
+                     "distance" : {
+                        "text" : "0.2 mi",
+                        "value" : 295
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 53
+                     },
+                     "end_location" : {
+                        "lat" : 46.2813624,
+                        "lng" : -119.2976921
+                     },
+                     "html_instructions" : "Head \u003cb\u003eeast\u003c/b\u003e on \u003cb\u003ePullen St\u003c/b\u003e toward \u003cb\u003eCedar Ave\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "aenyGl`dwUC_Am@yDw@sEc@aDAg@@cA"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2806506,
+                        "lng" : -119.3013501
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.4 mi",
+                        "value" : 681
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 83
+                     },
+                     "end_location" : {
+                        "lat" : 46.27523619999999,
+                        "lng" : -119.2976993
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e at the 3rd cross street onto \u003cb\u003eWright Ave\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eDestination will be on the right\u003c/div\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "oinyGpicwUfF@vF?|G?~FAhE@"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2813624,
+                        "lng" : -119.2976921
+                     },
+                     "travel_mode" : "DRIVING"
+                  }
+               ],
+               "traffic_speed_entry" : [],
+               "via_waypoint" : []
+            }
+         ],
+         "overview_polyline" : {
+            "points" : "aenyGl`dwUC_Am@yDw@sEc@aD?kB~M@|OAhE@"
+         },
+         "summary" : "Pullen St and Wright Ave",
+         "warnings" : [],
+         "waypoint_order" : []
+      }
+   ],
+   "status" : "OK"
+}

@@ -1,0 +1,85 @@
+﻿{
+   "geocoded_waypoints" : [
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJLdZW2jdlmFQRDlDgRhozFZ0",
+         "types" : [ "street_address" ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJrd1luDdlmFQR70jwotmviYQ",
+         "types" : [ "street_address" ]
+      }
+   ],
+   "routes" : [
+      {
+         "bounds" : {
+            "northeast" : {
+               "lat" : 46.29733479999999,
+               "lng" : -119.3044793
+            },
+            "southwest" : {
+               "lat" : 46.2967386,
+               "lng" : -119.3053275
+            }
+         },
+         "copyrights" : "Map data ©2019 Google",
+         "legs" : [
+            {
+               "distance" : {
+                  "text" : "312 ft",
+                  "value" : 95
+               },
+               "duration" : {
+                  "text" : "1 min",
+                  "value" : 12
+               },
+               "end_address" : "1838 Terminal Dr, Richland, WA 99354, USA",
+               "end_location" : {
+                  "lat" : 46.29733479999999,
+                  "lng" : -119.3044793
+               },
+               "start_address" : "1779 Terminal Dr, Richland, WA 99354, USA",
+               "start_location" : {
+                  "lat" : 46.2967386,
+                  "lng" : -119.3053275
+               },
+               "steps" : [
+                  {
+                     "distance" : {
+                        "text" : "312 ft",
+                        "value" : 95
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 12
+                     },
+                     "end_location" : {
+                        "lat" : 46.29733479999999,
+                        "lng" : -119.3044793
+                     },
+                     "html_instructions" : "Head \u003cb\u003enortheast\u003c/b\u003e on \u003cb\u003eTerminal Dr\u003c/b\u003e toward \u003cb\u003eAileron Ln\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eDestination will be on the left\u003c/div\u003e",
+                     "polyline" : {
+                        "points" : "siqyGhydwU]a@m@q@_@q@Ic@"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2967386,
+                        "lng" : -119.3053275
+                     },
+                     "travel_mode" : "DRIVING"
+                  }
+               ],
+               "traffic_speed_entry" : [],
+               "via_waypoint" : []
+            }
+         ],
+         "overview_polyline" : {
+            "points" : "siqyGhydwUkAsA_@q@Ic@"
+         },
+         "summary" : "Terminal Dr",
+         "warnings" : [],
+         "waypoint_order" : []
+      }
+   ],
+   "status" : "OK"
+}

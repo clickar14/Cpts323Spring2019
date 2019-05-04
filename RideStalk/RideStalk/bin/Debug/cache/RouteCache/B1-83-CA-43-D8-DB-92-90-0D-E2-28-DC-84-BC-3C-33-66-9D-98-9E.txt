@@ -1,0 +1,157 @@
+﻿{
+   "geocoded_waypoints" : [
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJk7nCrMx6mFQR44z21ogOqog",
+         "types" : [ "premise" ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJyejvnTRlmFQRpFX5p_d2nac",
+         "types" : [ "street_address" ]
+      }
+   ],
+   "routes" : [
+      {
+         "bounds" : {
+            "northeast" : {
+               "lat" : 46.2930421,
+               "lng" : -119.2900419
+            },
+            "southwest" : {
+               "lat" : 46.29208999999999,
+               "lng" : -119.2936232
+            }
+         },
+         "copyrights" : "Map data ©2019 Google",
+         "legs" : [
+            {
+               "distance" : {
+                  "text" : "0.3 mi",
+                  "value" : 458
+               },
+               "duration" : {
+                  "text" : "2 mins",
+                  "value" : 92
+               },
+               "end_address" : "1702 Van Giesen St, Richland, WA 99354, USA",
+               "end_location" : {
+                  "lat" : 46.2930421,
+                  "lng" : -119.2936232
+               },
+               "start_address" : "1517 Torthay Pl, Richland, WA 99354, USA",
+               "start_location" : {
+                  "lat" : 46.29208999999999,
+                  "lng" : -119.2910505
+               },
+               "steps" : [
+                  {
+                     "distance" : {
+                        "text" : "102 ft",
+                        "value" : 31
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 9
+                     },
+                     "end_location" : {
+                        "lat" : 46.2923678,
+                        "lng" : -119.2910465
+                     },
+                     "html_instructions" : "Head \u003cb\u003enorth\u003c/b\u003e on \u003cb\u003eTorthay Pl\u003c/b\u003e toward \u003cb\u003eTorthay Ct\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "qlpyG``bwUw@?"
+                     },
+                     "start_location" : {
+                        "lat" : 46.29208999999999,
+                        "lng" : -119.2910505
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "253 ft",
+                        "value" : 77
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 14
+                     },
+                     "end_location" : {
+                        "lat" : 46.2923544,
+                        "lng" : -119.2900419
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eTorthay Ct\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "inpyG``bwUBiE"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2923678,
+                        "lng" : -119.2910465
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "249 ft",
+                        "value" : 76
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 42
+                     },
+                     "end_location" : {
+                        "lat" : 46.2930356,
+                        "lng" : -119.2900558
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eThayer Dr\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "enpyGvyawU}A?k@B"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2923544,
+                        "lng" : -119.2900419
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.2 mi",
+                        "value" : 274
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 27
+                     },
+                     "end_location" : {
+                        "lat" : 46.2930421,
+                        "lng" : -119.2936232
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e at the 1st cross street onto \u003cb\u003eVan Giesen St\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eDestination will be on the right\u003c/div\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "orpyGzyawU?tE?vG?xE"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2930356,
+                        "lng" : -119.2900558
+                     },
+                     "travel_mode" : "DRIVING"
+                  }
+               ],
+               "traffic_speed_entry" : [],
+               "via_waypoint" : []
+            }
+         ],
+         "overview_polyline" : {
+            "points" : "qlpyG``bwUw@?BiEiCB?fU"
+         },
+         "summary" : "Van Giesen St",
+         "warnings" : [],
+         "waypoint_order" : []
+      }
+   ],
+   "status" : "OK"
+}

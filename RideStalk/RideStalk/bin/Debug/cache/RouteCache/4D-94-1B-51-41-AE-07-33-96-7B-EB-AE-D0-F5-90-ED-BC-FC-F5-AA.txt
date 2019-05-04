@@ -1,0 +1,157 @@
+﻿{
+   "geocoded_waypoints" : [
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJt5AbKMd6mFQRHJmXNl0AMtw",
+         "types" : [ "premise" ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJOUmLhjNlmFQRkCT9nvozhqA",
+         "types" : [ "establishment", "point_of_interest", "school" ]
+      }
+   ],
+   "routes" : [
+      {
+         "bounds" : {
+            "northeast" : {
+               "lat" : 46.2953255,
+               "lng" : -119.2828118
+            },
+            "southwest" : {
+               "lat" : 46.2796496,
+               "lng" : -119.2954433
+            }
+         },
+         "copyrights" : "Map data ©2019 Google",
+         "legs" : [
+            {
+               "distance" : {
+                  "text" : "1.6 mi",
+                  "value" : 2571
+               },
+               "duration" : {
+                  "text" : "5 mins",
+                  "value" : 275
+               },
+               "end_address" : "1750 McMurray Ave, Richland, WA 99354, USA",
+               "end_location" : {
+                  "lat" : 46.2953255,
+                  "lng" : -119.2952707
+               },
+               "start_address" : "948 Stevens Dr, Richland, WA 99352, USA",
+               "start_location" : {
+                  "lat" : 46.2796496,
+                  "lng" : -119.2828118
+               },
+               "steps" : [
+                  {
+                     "distance" : {
+                        "text" : "0.9 mi",
+                        "value" : 1504
+                     },
+                     "duration" : {
+                        "text" : "2 mins",
+                        "value" : 140
+                     },
+                     "end_location" : {
+                        "lat" : 46.2929581,
+                        "lng" : -119.2848169
+                     },
+                     "html_instructions" : "Head \u003cb\u003enorth\u003c/b\u003e on \u003cb\u003eStevens Dr\u003c/b\u003e toward \u003cb\u003eSwift Blvd\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "y~myGpl`wUm@RYJqAb@qAd@iErAw@VeA^gC`AYJg@PqAd@e@LgATaGG_H@iE?eDAcIAqMC"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2796496,
+                        "lng" : -119.2828118
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.5 mi",
+                        "value" : 802
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 70
+                     },
+                     "end_location" : {
+                        "lat" : 46.29304519999999,
+                        "lng" : -119.2952549
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eVan Giesen St\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "_rpyGby`wUIzEAlCAnF?t@?tDApE?tE?vGA~O"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2929581,
+                        "lng" : -119.2848169
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "390 ft",
+                        "value" : 119
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 23
+                     },
+                     "end_location" : {
+                        "lat" : 46.294054,
+                        "lng" : -119.2954433
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eSanford Ave\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "qrpyGhzbwUgDE_@j@"
+                     },
+                     "start_location" : {
+                        "lat" : 46.29304519999999,
+                        "lng" : -119.2952549
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "479 ft",
+                        "value" : 146
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 42
+                     },
+                     "end_location" : {
+                        "lat" : 46.2953255,
+                        "lng" : -119.2952707
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eDestination will be on the right\u003c/div\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "yxpyGn{bwUOSCGEAkCA_@?y@A"
+                     },
+                     "start_location" : {
+                        "lat" : 46.294054,
+                        "lng" : -119.2954433
+                     },
+                     "travel_mode" : "DRIVING"
+                  }
+               ],
+               "traffic_speed_entry" : [],
+               "via_waypoint" : []
+            }
+         ],
+         "overview_polyline" : {
+            "points" : "y~myGpl`wUkFhBaGjBmE`BaA\\wBr@gATaGGiN@iNCqMCIzEC|J?jFC~e@gDE_@j@S[qCCyAA"
+         },
+         "summary" : "Stevens Dr and Van Giesen St",
+         "warnings" : [],
+         "waypoint_order" : []
+      }
+   ],
+   "status" : "OK"
+}

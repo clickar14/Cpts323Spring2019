@@ -1,0 +1,133 @@
+﻿{
+   "geocoded_waypoints" : [
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJT5QBDcV6mFQRu6-ECvvOR2M",
+         "types" : [ "premise" ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJ0dUOS8t6mFQR9EeTmzCPtag",
+         "types" : [ "premise" ]
+      }
+   ],
+   "routes" : [
+      {
+         "bounds" : {
+            "northeast" : {
+               "lat" : 46.2943024,
+               "lng" : -119.2772269
+            },
+            "southwest" : {
+               "lat" : 46.2844893,
+               "lng" : -119.2925255
+            }
+         },
+         "copyrights" : "Map data ©2019 Google",
+         "legs" : [
+            {
+               "distance" : {
+                  "text" : "1.4 mi",
+                  "value" : 2309
+               },
+               "duration" : {
+                  "text" : "4 mins",
+                  "value" : 227
+               },
+               "end_address" : "1510 Potter Ave, Richland, WA 99354, USA",
+               "end_location" : {
+                  "lat" : 46.2915578,
+                  "lng" : -119.2924911
+               },
+               "start_address" : "1201 Jadwin Ave, Richland, WA 99352, USA",
+               "start_location" : {
+                  "lat" : 46.2844893,
+                  "lng" : -119.2775926
+               },
+               "steps" : [
+                  {
+                     "distance" : {
+                        "text" : "0.7 mi",
+                        "value" : 1135
+                     },
+                     "duration" : {
+                        "text" : "2 mins",
+                        "value" : 107
+                     },
+                     "end_location" : {
+                        "lat" : 46.2943024,
+                        "lng" : -119.2797732
+                     },
+                     "html_instructions" : "Head \u003cb\u003enorth\u003c/b\u003e on \u003cb\u003eJadwin Ave\u003c/b\u003e toward \u003cb\u003eWilliams Blvd\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "a}nyG|k_wUuAp@QHUHMBQ@O?S?s@EeCg@qAYkAScB]YE_AOUCO?S?i@Bs@HwARyB`@oBZG@aARUFSFSFk@RmClAuLjG"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2844893,
+                        "lng" : -119.2775926
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.6 mi",
+                        "value" : 1009
+                     },
+                     "duration" : {
+                        "text" : "2 mins",
+                        "value" : 96
+                     },
+                     "end_location" : {
+                        "lat" : 46.29304,
+                        "lng" : -119.2925255
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eVan Giesen St\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "kzpyGpy_wUx@tEx@hE|@pEv@fERbAFZDZ@J?L?JATIzEAlCAnF?t@?tDApE?tE?vG"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2943024,
+                        "lng" : -119.2797732
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.1 mi",
+                        "value" : 165
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 24
+                     },
+                     "end_location" : {
+                        "lat" : 46.2915578,
+                        "lng" : -119.2924911
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003ePerkins Ave\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eDestination will be on the right\u003c/div\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "orpyGhibwUnDCvBC"
+                     },
+                     "start_location" : {
+                        "lat" : 46.29304,
+                        "lng" : -119.2925255
+                     },
+                     "travel_mode" : "DRIVING"
+                  }
+               ],
+               "traffic_speed_entry" : [],
+               "via_waypoint" : []
+            }
+         ],
+         "overview_polyline" : {
+            "points" : "a}nyG|k_wUgBz@c@La@@gAEgKsByAUe@C}@BkC\\sHrAiBj@mClAuLjGrB~KpCxNFf@?XKpFC|JArS?vGnDCvBC"
+         },
+         "summary" : "Jadwin Ave and Van Giesen St",
+         "warnings" : [],
+         "waypoint_order" : []
+      }
+   ],
+   "status" : "OK"
+}

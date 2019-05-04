@@ -1,0 +1,157 @@
+﻿{
+   "geocoded_waypoints" : [
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJAzrjaMp6mFQRCICpBu9qN8M",
+         "types" : [ "street_address" ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJLVL0fbB6mFQRgCdB4dmQhx4",
+         "types" : [ "street_address" ]
+      }
+   ],
+   "routes" : [
+      {
+         "bounds" : {
+            "northeast" : {
+               "lat" : 46.2881898,
+               "lng" : -119.29397
+            },
+            "southwest" : {
+               "lat" : 46.2789583,
+               "lng" : -119.3000715
+            }
+         },
+         "copyrights" : "Map data ©2019 Google",
+         "legs" : [
+            {
+               "distance" : {
+                  "text" : "1.0 mi",
+                  "value" : 1581
+               },
+               "duration" : {
+                  "text" : "3 mins",
+                  "value" : 175
+               },
+               "end_address" : "1008 Cedar Ave, Richland, WA 99354, USA",
+               "end_location" : {
+                  "lat" : 46.2797519,
+                  "lng" : -119.3000406
+               },
+               "start_address" : "1328 Sanford Ave, Richland, WA 99352, USA",
+               "start_location" : {
+                  "lat" : 46.2881898,
+                  "lng" : -119.29397
+               },
+               "steps" : [
+                  {
+                     "distance" : {
+                        "text" : "0.2 mi",
+                        "value" : 285
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 44
+                     },
+                     "end_location" : {
+                        "lat" : 46.2881837,
+                        "lng" : -119.2976812
+                     },
+                     "html_instructions" : "Head \u003cb\u003ewest\u003c/b\u003e on \u003cb\u003eSymons St\u003c/b\u003e toward \u003cb\u003eSanford Ave\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "etoyGhrbwU?~BAdE@rE@jE"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2881898,
+                        "lng" : -119.29397
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.6 mi",
+                        "value" : 1026
+                     },
+                     "duration" : {
+                        "text" : "2 mins",
+                        "value" : 96
+                     },
+                     "end_location" : {
+                        "lat" : 46.2789586,
+                        "lng" : -119.2976994
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eWright Ave\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "ctoyGnicwUjG?vE?rI@dD?dD?nE?fF@vF?"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2881837,
+                        "lng" : -119.2976812
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.1 mi",
+                        "value" : 182
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 18
+                     },
+                     "end_location" : {
+                        "lat" : 46.2789583,
+                        "lng" : -119.3000715
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eSwift Blvd\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "ozmyGricwUAlF@jF"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2789586,
+                        "lng" : -119.2976994
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "289 ft",
+                        "value" : 88
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 17
+                     },
+                     "end_location" : {
+                        "lat" : 46.2797519,
+                        "lng" : -119.3000406
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e at the 2nd cross street onto \u003cb\u003eCedar Ave\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "ozmyGlxcwU}CE"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2789583,
+                        "lng" : -119.3000715
+                     },
+                     "travel_mode" : "DRIVING"
+                  }
+               ],
+               "traffic_speed_entry" : [],
+               "via_waypoint" : []
+            }
+         ],
+         "overview_polyline" : {
+            "points" : "etoyGhrbwU@dV|]@tY@?xM}CE"
+         },
+         "summary" : "Wright Ave",
+         "warnings" : [],
+         "waypoint_order" : []
+      }
+   ],
+   "status" : "OK"
+}

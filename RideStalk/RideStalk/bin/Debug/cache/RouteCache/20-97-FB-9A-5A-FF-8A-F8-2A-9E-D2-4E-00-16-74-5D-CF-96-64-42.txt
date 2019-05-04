@@ -1,0 +1,109 @@
+﻿{
+   "geocoded_waypoints" : [
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJ41XMXsV6mFQRaTJFuD-g-8c",
+         "types" : [ "street_address" ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJMfY24LR6mFQRLGd65ZXGe4A",
+         "types" : [ "premise" ]
+      }
+   ],
+   "routes" : [
+      {
+         "bounds" : {
+            "northeast" : {
+               "lat" : 46.28795419999999,
+               "lng" : -119.27765
+            },
+            "southwest" : {
+               "lat" : 46.2857218,
+               "lng" : -119.3007757
+            }
+         },
+         "copyrights" : "Map data ©2019 Google",
+         "legs" : [
+            {
+               "distance" : {
+                  "text" : "1.2 mi",
+                  "value" : 1930
+               },
+               "duration" : {
+                  "text" : "4 mins",
+                  "value" : 221
+               },
+               "end_address" : "1326 Sacramento Blvd, Richland, WA 99354, USA",
+               "end_location" : {
+                  "lat" : 46.28795419999999,
+                  "lng" : -119.3007757
+               },
+               "start_address" : "295 Williams Blvd, Richland, WA 99354, USA",
+               "start_location" : {
+                  "lat" : 46.2857218,
+                  "lng" : -119.27765
+               },
+               "steps" : [
+                  {
+                     "distance" : {
+                        "text" : "1.0 mi",
+                        "value" : 1631
+                     },
+                     "duration" : {
+                        "text" : "3 mins",
+                        "value" : 183
+                     },
+                     "end_location" : {
+                        "lat" : 46.2857688,
+                        "lng" : -119.2988785
+                     },
+                     "html_instructions" : "Head \u003cb\u003ewest\u003c/b\u003e on \u003cb\u003eWilliams Blvd\u003c/b\u003e toward \u003cb\u003eJadwin Ave\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "wdoyGhl_wU?x@CnH?nE?nB?tD@zB@bFA~EApFCnFDdFArIAnEC|F?tEBzEAjD?pF?jEAnF"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2857218,
+                        "lng" : -119.27765
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.2 mi",
+                        "value" : 299
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 38
+                     },
+                     "end_location" : {
+                        "lat" : 46.28795419999999,
+                        "lng" : -119.3007757
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eSacramento Blvd\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eDestination will be on the right\u003c/div\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "aeoyG~pcwUk@?kAAQBe@PSRoFrI"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2857688,
+                        "lng" : -119.2988785
+                     },
+                     "travel_mode" : "DRIVING"
+                  }
+               ],
+               "traffic_speed_entry" : [],
+               "via_waypoint" : []
+            }
+         ],
+         "overview_polyline" : {
+            "points" : "wdoyGhl_wUChJ?~H@pH?bME`NDdFArIElMBpLCxYwBAQBe@PSRoFrI"
+         },
+         "summary" : "Williams Blvd",
+         "warnings" : [],
+         "waypoint_order" : []
+      }
+   ],
+   "status" : "OK"
+}

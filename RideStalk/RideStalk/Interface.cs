@@ -106,10 +106,10 @@ namespace RideStalk
             
             //Loading map
             mapView.MapProvider = GMapProviders.GoogleMap;
-            double lat = 46.289428;
-            double lng = -119.291794;
+            double lat = 46.282166;
+            double lng = -119.297242;
             mapView.Position = new GMap.NET.PointLatLng(lat, lng);
-            mapView.Zoom = 13;
+            mapView.Zoom = 14;
             mapView.ShowCenter = false;
             carList = new CarOperations().generateCars(carList, companyName);
             // Populate car objects and post them to the server.
@@ -462,8 +462,24 @@ namespace RideStalk
                     endPoint.Lat = carList[carNum].destination.lat;
                     endPoint.Lng = carList[carNum].destination.lng;
                 }
-                // Load image
                 Bitmap carImage = new Bitmap("car-icon-top-view-1.png");
+                // Load image
+                if (carNum == 0)
+                {
+                    carImage = new Bitmap("car-icon-top-view-1.png");
+                }
+                else if(carNum == 1)
+                {
+                    carImage = new Bitmap("car-icon-top-view-2.png");
+                }
+                else if(carNum == 2)
+                {
+                    carImage = new Bitmap("car-icon-top-view-3.png");
+                }
+                else if(carNum == 3)
+                {
+                    carImage = new Bitmap("car-icon-top-view-4.png");
+                }
 
                 // Create marker
                 customImageMarker car = new customImageMarker(
@@ -523,7 +539,7 @@ namespace RideStalk
 
                     // 100 is equivalant to running this at 1 sec,
                     // Was changed to 18 to accelerate the time by 5 times.
-                    Thread.Sleep(93);
+                    Thread.Sleep(84);
                 }
                 // For time checking
                 totalticks = triptime.ElapsedMilliseconds;
@@ -635,29 +651,33 @@ namespace RideStalk
             string responseString = await serverResponse.Content.ReadAsStringAsync();
             serviceFareResponse fareResponse = JsonConvert.DeserializeObject<serviceFareResponse>(responseString);
 
-            double profit = 0.00;
-            if (fareResponse.success == "true")
+            MethodInvoker profitManage = delegate ()
             {
-                runningProfit[carNum] += Convert.ToDouble(fareResponse.fareCost);
-                if(carNum == 0)
+                double profit = 0.00;
+                if (fareResponse.success == "true")
                 {
-                    car1Profit.Text = Convert.ToString(runningProfit[carNum]);
+                    runningProfit[carNum] += Convert.ToDouble(fareResponse.fareCost);
+                    if (carNum == 0)
+                    {
+                        car1Profit.Text = $"${Convert.ToString(runningProfit[carNum])}";
+                    }
+                    else if (carNum == 1)
+                    {
+                        car2Profit.Text = $"${Convert.ToString(runningProfit[carNum])}";
+                    }
+                    else if (carNum == 2)
+                    {
+                        car3Profit.Text = $"${Convert.ToString(runningProfit[carNum])}";
+                    }
+                    else if (carNum == 3)
+                    {
+                        car4Profit.Text = $"${Convert.ToString(runningProfit[carNum])}";
+                    }
+                    profit = runningProfit[0] + runningProfit[1] + runningProfit[2] + runningProfit[3];
+                    totalProfit.Text = $"${Convert.ToString(profit)}";
                 }
-                else if(carNum == 1)
-                {
-                    car2Profit.Text = Convert.ToString(runningProfit[carNum]);
-                }
-                else if(carNum == 2)
-                {
-                    car3Profit.Text = Convert.ToString(runningProfit[carNum]);
-                }
-                else if(carNum == 3)
-                {
-                    car4Profit.Text = Convert.ToString(runningProfit[carNum]);
-                }
-                profit = runningProfit[0] + runningProfit[1] + runningProfit[2] + runningProfit[3];
-                totalProfit.Text = $"${Convert.ToString(profit)}";
-            }
+            };
+            this.Invoke(profitManage);
             /* FINAL POSTS COMPLETED, BEGIN NEW SERVICE TRIP*/
             //Get new service for car, make sure to set the activity flag again
             // TODO: Add better trip selection algorithm.
@@ -669,6 +689,7 @@ namespace RideStalk
             PointLatLng carPickup = new PointLatLng();
             // Loop through the services and add them to a list for algorithm selection.
             // TODO: Improve this method
+            
             foreach (var serviceItem in services)
             {
                 if (serviceItem.Object.acepted == "false")
@@ -698,22 +719,28 @@ namespace RideStalk
                     { "image", carList[carNum].driver.image }
                 };
             bool carNotUploaded = true;
-            while (carNotUploaded)
+            try
             {
-                carUpload["key"] = tripGeoList[0].Key;
-
-                FormUrlEncodedContent uploadService = new FormUrlEncodedContent(carUpload);
-                serverResponse = await httpclient.PostAsync("https://us-central1-cpts323battle.cloudfunctions.net/selectServiceById", uploadService);
-                responseString = await serverResponse.Content.ReadAsStringAsync();
-                serviceSelectionResponse tripResponse = JsonConvert.DeserializeObject<serviceSelectionResponse>(responseString);
-                // If the selection was successful, break out of the loop.
-                if (tripResponse.success == "true")
+                while (carNotUploaded)
                 {
-                    carKeys[carNum] = (tripGeoList[0].Key);
-                    carNotUploaded = false;
+                    carUpload["key"] = tripGeoList[0].Key;
+
+                    FormUrlEncodedContent uploadService = new FormUrlEncodedContent(carUpload);
+                    serverResponse = await httpclient.PostAsync("https://us-central1-cpts323battle.cloudfunctions.net/selectServiceById", uploadService);
+                    responseString = await serverResponse.Content.ReadAsStringAsync();
+                    serviceSelectionResponse tripResponse = JsonConvert.DeserializeObject<serviceSelectionResponse>(responseString);
+                    // If the selection was successful, break out of the loop.
+                    if (tripResponse.success == "true")
+                    {
+                        carKeys[carNum] = (tripGeoList[0].Key);
+                        carNotUploaded = false;
+                    }
+                    // Remove the key from the list
+                    tripGeoList.RemoveAt(0);
                 }
-                // Remove the key from the list
-                tripGeoList.RemoveAt(0);
+            }
+            catch
+            {
             }
             // Pull the trip information from the selected service and store it in the car list
             Firebase.Database.FirebaseObject<serverData> servicePull = serviceList.Where(i => i.Key == $"{carKeys[carNum]}").FirstOrDefault();

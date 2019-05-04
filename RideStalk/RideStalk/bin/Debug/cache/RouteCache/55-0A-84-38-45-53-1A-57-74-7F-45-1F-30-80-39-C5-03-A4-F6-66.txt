@@ -1,0 +1,133 @@
+﻿{
+   "geocoded_waypoints" : [
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJ5687S9VkmFQRAn9m3LRrEKA",
+         "types" : [ "street_address" ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJo_i1tip7mFQRxKJseka7sPU",
+         "types" : [ "premise" ]
+      }
+   ],
+   "routes" : [
+      {
+         "bounds" : {
+            "northeast" : {
+               "lat" : 46.2981698,
+               "lng" : -119.270264
+            },
+            "southwest" : {
+               "lat" : 46.2973545,
+               "lng" : -119.2714943
+            }
+         },
+         "copyrights" : "Map data ©2019 Google",
+         "legs" : [
+            {
+               "distance" : {
+                  "text" : "0.1 mi",
+                  "value" : 174
+               },
+               "duration" : {
+                  "text" : "1 min",
+                  "value" : 64
+               },
+               "end_address" : "1723 Davison Ave, Richland, WA 99354, USA",
+               "end_location" : {
+                  "lat" : 46.2975893,
+                  "lng" : -119.270264
+               },
+               "start_address" : "1726 Horn Ave, Richland, WA 99352, USA",
+               "start_location" : {
+                  "lat" : 46.2981698,
+                  "lng" : -119.2711694
+               },
+               "steps" : [
+                  {
+                     "distance" : {
+                        "text" : "171 ft",
+                        "value" : 52
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 12
+                     },
+                     "end_location" : {
+                        "lat" : 46.2977642,
+                        "lng" : -119.2714943
+                     },
+                     "html_instructions" : "Head \u003cb\u003esouthwest\u003c/b\u003e on \u003cb\u003eHorn Ave\u003c/b\u003e toward \u003cb\u003eWordrop St\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "qrqyGxc~vUpA~@"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2981698,
+                        "lng" : -119.2711694
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "302 ft",
+                        "value" : 92
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 18
+                     },
+                     "end_location" : {
+                        "lat" : 46.2973545,
+                        "lng" : -119.2704478
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e at the 1st cross street onto \u003cb\u003eWordrop St\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "_pqyGxe~vUpAoE"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2977642,
+                        "lng" : -119.2714943
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "98 ft",
+                        "value" : 30
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 34
+                     },
+                     "end_location" : {
+                        "lat" : 46.2975893,
+                        "lng" : -119.270264
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e at the 1st cross street onto \u003cb\u003eDavison Ave\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eDestination will be on the left\u003c/div\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "mmqyGh_~vUo@e@"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2973545,
+                        "lng" : -119.2704478
+                     },
+                     "travel_mode" : "DRIVING"
+                  }
+               ],
+               "traffic_speed_entry" : [],
+               "via_waypoint" : []
+            }
+         ],
+         "overview_polyline" : {
+            "points" : "qrqyGxc~vUpA~@pAoEo@e@"
+         },
+         "summary" : "Horn Ave and Wordrop St",
+         "warnings" : [],
+         "waypoint_order" : []
+      }
+   ],
+   "status" : "OK"
+}

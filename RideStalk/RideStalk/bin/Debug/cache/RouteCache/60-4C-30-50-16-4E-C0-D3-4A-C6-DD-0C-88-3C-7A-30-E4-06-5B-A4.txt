@@ -1,0 +1,133 @@
+﻿{
+   "geocoded_waypoints" : [
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJeQ01rNZ6mFQR2TUWPVTmt4M",
+         "types" : [ "street_address" ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJzR4ng7l6mFQRKLiJn2JywFs",
+         "types" : [ "premise" ]
+      }
+   ],
+   "routes" : [
+      {
+         "bounds" : {
+            "northeast" : {
+               "lat" : 46.2917,
+               "lng" : -119.2736811
+            },
+            "southwest" : {
+               "lat" : 46.27867149999999,
+               "lng" : -119.2944047
+            }
+         },
+         "copyrights" : "Map data ©2019 Google",
+         "legs" : [
+            {
+               "distance" : {
+                  "text" : "1.9 mi",
+                  "value" : 3014
+               },
+               "duration" : {
+                  "text" : "5 mins",
+                  "value" : 327
+               },
+               "end_address" : "914 Snow Ave, Richland, WA 99352, USA",
+               "end_location" : {
+                  "lat" : 46.27867149999999,
+                  "lng" : -119.2936071
+               },
+               "start_address" : "1498 George Washington Way, Richland, WA 99354, USA",
+               "start_location" : {
+                  "lat" : 46.2917,
+                  "lng" : -119.2743046
+               },
+               "steps" : [
+                  {
+                     "distance" : {
+                        "text" : "0.8 mi",
+                        "value" : 1260
+                     },
+                     "duration" : {
+                        "text" : "2 mins",
+                        "value" : 101
+                     },
+                     "end_location" : {
+                        "lat" : 46.2804181,
+                        "lng" : -119.2736951
+                     },
+                     "html_instructions" : "Head \u003cb\u003esouth\u003c/b\u003e on \u003cb\u003eGeorge Washington Way\u003c/b\u003e toward \u003cb\u003eSymons St\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "cjpyGjw~vUn@?zD?~BAdC?rH?vA?zCAVA~BA`@E\\GTGPI\\M~@]\\KTGPETERCXAXAV?hB@nA?J?P?hD?xD?~A@"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2917,
+                        "lng" : -119.2743046
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "1.0 mi",
+                        "value" : 1656
+                     },
+                     "duration" : {
+                        "text" : "3 mins",
+                        "value" : 189
+                     },
+                     "end_location" : {
+                        "lat" : 46.2793538,
+                        "lng" : -119.2944047
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eSwift Blvd\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "scnyGrs~vU?dD?dC?xE@lBAhF?lJ?x@?xB?pA?X?`@?L?tB?nEAjB?j@A^A\\CTGZCTQv@Kp@IZEXEZEj@C|@Ah@?n@?fB?dDA|D@nBAxC@pF@^BZDVDLBHJVJX@@dA`CJTLH~@vBzAhD"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2804181,
+                        "lng" : -119.2736951
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "322 ft",
+                        "value" : 98
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 37
+                     },
+                     "end_location" : {
+                        "lat" : 46.27867149999999,
+                        "lng" : -119.2936071
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eSnow Ave\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eDestination will be on the left\u003c/div\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "}|myG~tbwUfC}C"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2793538,
+                        "lng" : -119.2944047
+                     },
+                     "travel_mode" : "DRIVING"
+                  }
+               ],
+               "traffic_speed_entry" : [],
+               "via_waypoint" : []
+            }
+         ],
+         "overview_polyline" : {
+            "points" : "cjpyGjw~vUp`@E~BA`@Er@OlCaAf@Mh@Ir@C`C@vG?xG@?jH?~[?~G?tJAvCC|@Kp@UlAUlAKt@IhBAxA?zP?jKDz@Jd@N`@~ArDLH~@vBzAhDfC}C"
+         },
+         "summary" : "George Washington Way and Swift Blvd",
+         "warnings" : [],
+         "waypoint_order" : []
+      }
+   ],
+   "status" : "OK"
+}

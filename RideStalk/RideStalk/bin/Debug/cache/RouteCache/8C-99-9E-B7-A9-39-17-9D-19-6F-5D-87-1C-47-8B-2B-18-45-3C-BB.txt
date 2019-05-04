@@ -1,0 +1,133 @@
+﻿{
+   "geocoded_waypoints" : [
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJZT_hStF6mFQRic7q8E7pcZo",
+         "types" : [ "street_address" ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJ8YaMz856mFQRdy14R1mGsGo",
+         "types" : [ "premise" ]
+      }
+   ],
+   "routes" : [
+      {
+         "bounds" : {
+            "northeast" : {
+               "lat" : 46.29105999999999,
+               "lng" : -119.2742636
+            },
+            "southwest" : {
+               "lat" : 46.2856947,
+               "lng" : -119.284855
+            }
+         },
+         "copyrights" : "Map data ©2019 Google",
+         "legs" : [
+            {
+               "distance" : {
+                  "text" : "1.0 mi",
+                  "value" : 1551
+               },
+               "duration" : {
+                  "text" : "3 mins",
+                  "value" : 189
+               },
+               "end_address" : "1317 Stevens Dr, Richland, WA 99354, USA",
+               "end_location" : {
+                  "lat" : 46.286995,
+                  "lng" : -119.284855
+               },
+               "start_address" : "1402 George Washington Way, Richland, WA 99354, USA",
+               "start_location" : {
+                  "lat" : 46.29105999999999,
+                  "lng" : -119.2743012
+               },
+               "steps" : [
+                  {
+                     "distance" : {
+                        "text" : "0.4 mi",
+                        "value" : 597
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 48
+                     },
+                     "end_location" : {
+                        "lat" : 46.2856947,
+                        "lng" : -119.2742636
+                     },
+                     "html_instructions" : "Head \u003cb\u003esouth\u003c/b\u003e on \u003cb\u003eGeorge Washington Way\u003c/b\u003e toward \u003cb\u003eSymons St\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "cfpyGjw~vUjB?~BAdC?rH?vA?zCAVA~BA"
+                     },
+                     "start_location" : {
+                        "lat" : 46.29105999999999,
+                        "lng" : -119.2743012
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.5 mi",
+                        "value" : 813
+                     },
+                     "duration" : {
+                        "text" : "2 mins",
+                        "value" : 128
+                     },
+                     "end_location" : {
+                        "lat" : 46.2857291,
+                        "lng" : -119.2848485
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eWilliams Blvd\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "qdoyGbw~vUC|DAp@A`A@vD?tFCnH?nE?nB?tD@zB@bFA~E"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2856947,
+                        "lng" : -119.2742636
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "463 ft",
+                        "value" : 141
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 13
+                     },
+                     "end_location" : {
+                        "lat" : 46.286995,
+                        "lng" : -119.284855
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eStevens Dr\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eDestination will be on the left\u003c/div\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "ydoyGhy`wU}F@"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2857291,
+                        "lng" : -119.2848485
+                     },
+                     "travel_mode" : "DRIVING"
+                  }
+               ],
+               "traffic_speed_entry" : [],
+               "via_waypoint" : []
+            }
+         ],
+         "overview_polyline" : {
+            "points" : "cfpyGjw~vUdTAjKEEnF?xFCdP?~H@pH?bM}F@"
+         },
+         "summary" : "George Washington Way and Williams Blvd",
+         "warnings" : [],
+         "waypoint_order" : []
+      }
+   ],
+   "status" : "OK"
+}

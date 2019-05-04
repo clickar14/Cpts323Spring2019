@@ -1,0 +1,157 @@
+﻿{
+   "geocoded_waypoints" : [
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJl4N7gSxlmFQRU4ox-9S9k7w",
+         "types" : [ "street_address" ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJT4jIlMl6mFQRCFLcALbyPi0",
+         "types" : [ "street_address" ]
+      }
+   ],
+   "routes" : [
+      {
+         "bounds" : {
+            "northeast" : {
+               "lat" : 46.29743999999999,
+               "lng" : -119.2797732
+            },
+            "southwest" : {
+               "lat" : 46.2857402,
+               "lng" : -119.2917405
+            }
+         },
+         "copyrights" : "Map data ©2019 Google",
+         "legs" : [
+            {
+               "distance" : {
+                  "text" : "1.3 mi",
+                  "value" : 2127
+               },
+               "duration" : {
+                  "text" : "3 mins",
+                  "value" : 207
+               },
+               "end_address" : "1414 Williams Blvd, Richland, WA 99354, USA",
+               "end_location" : {
+                  "lat" : 46.285759,
+                  "lng" : -119.2917405
+               },
+               "start_address" : "1724 Jadwin Ave, Richland, WA 99354, USA",
+               "start_location" : {
+                  "lat" : 46.29743999999999,
+                  "lng" : -119.2813391
+               },
+               "steps" : [
+                  {
+                     "distance" : {
+                        "text" : "0.2 mi",
+                        "value" : 371
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 31
+                     },
+                     "end_location" : {
+                        "lat" : 46.2943024,
+                        "lng" : -119.2797732
+                     },
+                     "html_instructions" : "Head \u003cb\u003esouth\u003c/b\u003e on \u003cb\u003eJadwin Ave\u003c/b\u003e toward \u003cb\u003eWilson St\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "_nqyGjc`wUNAb@Ed@Id@KBAd@On@Y~@c@PKbBy@`Ag@`D}A"
+                     },
+                     "start_location" : {
+                        "lat" : 46.29743999999999,
+                        "lng" : -119.2813391
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.5 mi",
+                        "value" : 820
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 80
+                     },
+                     "end_location" : {
+                        "lat" : 46.2930356,
+                        "lng" : -119.2900558
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eVan Giesen St\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "kzpyGpy_wUx@tEx@hE|@pEv@fERbAFZDZ@J?L?JATIzEAlCAnF?t@?tDApE"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2943024,
+                        "lng" : -119.2797732
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.5 mi",
+                        "value" : 811
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 76
+                     },
+                     "end_location" : {
+                        "lat" : 46.2857402,
+                        "lng" : -119.2901123
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eThayer Dr\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "orpyGzyawUj@C|A?xE@~B@lFBvF@xC@rD@zC?"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2930356,
+                        "lng" : -119.2900558
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "410 ft",
+                        "value" : 125
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 20
+                     },
+                     "end_location" : {
+                        "lat" : 46.285759,
+                        "lng" : -119.2917405
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eWilliams Blvd\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eDestination will be on the right\u003c/div\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "{doyGdzawUAnEAtB"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2857402,
+                        "lng" : -119.2901123
+                     },
+                     "travel_mode" : "DRIVING"
+                  }
+               ],
+               "traffic_speed_entry" : [],
+               "via_waypoint" : []
+            }
+         ],
+         "overview_polyline" : {
+            "points" : "_nqyGjc`wUr@GjAUh@QnB}@xIkErB~KtBxKZ~AFf@KjGChRApEj@CvH@~VHnI@CdI"
+         },
+         "summary" : "Van Giesen St and Thayer Dr",
+         "warnings" : [],
+         "waypoint_order" : []
+      }
+   ],
+   "status" : "OK"
+}

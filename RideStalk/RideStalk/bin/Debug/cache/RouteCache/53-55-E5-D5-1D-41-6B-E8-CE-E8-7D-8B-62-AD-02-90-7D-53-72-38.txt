@@ -1,0 +1,157 @@
+﻿{
+   "geocoded_waypoints" : [
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJ10YTkMl6mFQRH5w3flKvoMQ",
+         "types" : [ "street_address" ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJ_bThJTZlmFQRKwr2-TWbm4c",
+         "types" : [ "premise" ]
+      }
+   ],
+   "routes" : [
+      {
+         "bounds" : {
+            "northeast" : {
+               "lat" : 46.2967368,
+               "lng" : -119.2900427
+            },
+            "southwest" : {
+               "lat" : 46.2865169,
+               "lng" : -119.3059686
+            }
+         },
+         "copyrights" : "Map data ©2019 Google",
+         "legs" : [
+            {
+               "distance" : {
+                  "text" : "1.5 mi",
+                  "value" : 2421
+               },
+               "duration" : {
+                  "text" : "5 mins",
+                  "value" : 292
+               },
+               "end_address" : "1776 Terminal Dr, Richland, WA 99354, USA",
+               "end_location" : {
+                  "lat" : 46.2967368,
+                  "lng" : -119.3053297
+               },
+               "start_address" : "1411 Merrill Ct, Richland, WA 99354, USA",
+               "start_location" : {
+                  "lat" : 46.2865569,
+                  "lng" : -119.290829
+               },
+               "steps" : [
+                  {
+                     "distance" : {
+                        "text" : "180 ft",
+                        "value" : 55
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 10
+                     },
+                     "end_location" : {
+                        "lat" : 46.2865169,
+                        "lng" : -119.290113
+                     },
+                     "html_instructions" : "Head \u003cb\u003eeast\u003c/b\u003e on \u003cb\u003eMerrill Ct\u003c/b\u003e toward \u003cb\u003eThayer Dr\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "_joyGt~awUFoC"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2865569,
+                        "lng" : -119.290829
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.5 mi",
+                        "value" : 725
+                     },
+                     "duration" : {
+                        "text" : "2 mins",
+                        "value" : 96
+                     },
+                     "end_location" : {
+                        "lat" : 46.2930356,
+                        "lng" : -119.2900558
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eThayer Dr\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "wioyGdzawUsDAyCAwFAmFC_CAyEA}A?k@B"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2865169,
+                        "lng" : -119.290113
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.8 mi",
+                        "value" : 1223
+                     },
+                     "duration" : {
+                        "text" : "2 mins",
+                        "value" : 137
+                     },
+                     "end_location" : {
+                        "lat" : 46.2931397,
+                        "lng" : -119.3059686
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eVan Giesen St\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "orpyGzyawU?tE?vGA~OCrHApCAxC?dC?tB?fBBjF?|@?zBAl@EnC?t@?hB?bBCv@?`BAX?V?fB"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2930356,
+                        "lng" : -119.2900558
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.3 mi",
+                        "value" : 418
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 49
+                     },
+                     "end_location" : {
+                        "lat" : 46.2967368,
+                        "lng" : -119.3053297
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eTerminal Dr\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "cspyGh}dwU]AKAGAIAECGEIC}A}@o@WiAUK@m@@w@NkB^e@Fq@He@Im@]Y["
+                     },
+                     "start_location" : {
+                        "lat" : 46.2931397,
+                        "lng" : -119.3059686
+                     },
+                     "travel_mode" : "DRIVING"
+                  }
+               ],
+               "traffic_speed_entry" : [],
+               "via_waypoint" : []
+            }
+         ],
+         "overview_polyline" : {
+            "points" : "_joyGt~awUFoCsDAqKCeTGk@B?tEAvXEdMA~GBfOAhDEdE?lECxCAp@?fB]ASCOEQI}A}@o@WiAUK@m@@w@NqCf@q@He@Im@]Y["
+         },
+         "summary" : "Thayer Dr and Van Giesen St",
+         "warnings" : [],
+         "waypoint_order" : []
+      }
+   ],
+   "status" : "OK"
+}

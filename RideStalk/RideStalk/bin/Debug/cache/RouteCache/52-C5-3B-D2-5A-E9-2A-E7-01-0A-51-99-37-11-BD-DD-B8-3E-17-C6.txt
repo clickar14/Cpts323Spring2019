@@ -1,0 +1,85 @@
+﻿{
+   "geocoded_waypoints" : [
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJLVL0fbB6mFQRgCdB4dmQhx4",
+         "types" : [ "street_address" ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJLV4ojLB6mFQR7Hk7dM-3DtE",
+         "types" : [ "premise" ]
+      }
+   ],
+   "routes" : [
+      {
+         "bounds" : {
+            "northeast" : {
+               "lat" : 46.2804529,
+               "lng" : -119.3000406
+            },
+            "southwest" : {
+               "lat" : 46.27975,
+               "lng" : -119.3000767
+            }
+         },
+         "copyrights" : "Map data ©2019 Google",
+         "legs" : [
+            {
+               "distance" : {
+                  "text" : "256 ft",
+                  "value" : 78
+               },
+               "duration" : {
+                  "text" : "1 min",
+                  "value" : 14
+               },
+               "end_address" : "1014 Cedar Ave, Richland, WA 99354, USA",
+               "end_location" : {
+                  "lat" : 46.2804529,
+                  "lng" : -119.3000767
+               },
+               "start_address" : "1008 Cedar Ave, Richland, WA 99354, USA",
+               "start_location" : {
+                  "lat" : 46.27975,
+                  "lng" : -119.3000406
+               },
+               "steps" : [
+                  {
+                     "distance" : {
+                        "text" : "256 ft",
+                        "value" : 78
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 14
+                     },
+                     "end_location" : {
+                        "lat" : 46.2804529,
+                        "lng" : -119.3000767
+                     },
+                     "html_instructions" : "Head \u003cb\u003enorth\u003c/b\u003e on \u003cb\u003eCedar Ave\u003c/b\u003e toward \u003cb\u003eOlympia St\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eDestination will be on the right\u003c/div\u003e",
+                     "polyline" : {
+                        "points" : "m_nyGfxcwUI?aCF"
+                     },
+                     "start_location" : {
+                        "lat" : 46.27975,
+                        "lng" : -119.3000406
+                     },
+                     "travel_mode" : "DRIVING"
+                  }
+               ],
+               "traffic_speed_entry" : [],
+               "via_waypoint" : []
+            }
+         ],
+         "overview_polyline" : {
+            "points" : "m_nyGfxcwUkCF"
+         },
+         "summary" : "Cedar Ave",
+         "warnings" : [],
+         "waypoint_order" : []
+      }
+   ],
+   "status" : "OK"
+}

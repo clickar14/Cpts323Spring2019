@@ -1,0 +1,157 @@
+﻿{
+   "geocoded_waypoints" : [
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJyYpP2bh6mFQRMIW33S2ws10",
+         "types" : [ "establishment", "point_of_interest", "school" ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJlx9MddVkmFQR5wGkWUX7AH4",
+         "types" : [ "premise" ]
+      }
+   ],
+   "routes" : [
+      {
+         "bounds" : {
+            "northeast" : {
+               "lat" : 46.30033359999999,
+               "lng" : -119.272639
+            },
+            "southwest" : {
+               "lat" : 46.2790397,
+               "lng" : -119.2876106
+            }
+         },
+         "copyrights" : "Map data ©2019 Google",
+         "legs" : [
+            {
+               "distance" : {
+                  "text" : "2.1 mi",
+                  "value" : 3385
+               },
+               "duration" : {
+                  "text" : "7 mins",
+                  "value" : 425
+               },
+               "end_address" : "1824 Hoxie Ave, Richland, WA 99354, USA",
+               "end_location" : {
+                  "lat" : 46.30024390000001,
+                  "lng" : -119.272639
+               },
+               "start_address" : "930 Long Ave, Richland, WA 99352, USA",
+               "start_location" : {
+                  "lat" : 46.2790397,
+                  "lng" : -119.2871697
+               },
+               "steps" : [
+                  {
+                     "distance" : {
+                        "text" : "423 ft",
+                        "value" : 129
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 49
+                     },
+                     "end_location" : {
+                        "lat" : 46.2798403,
+                        "lng" : -119.2876106
+                     },
+                     "html_instructions" : "Head \u003cb\u003enortheast\u003c/b\u003e toward \u003cb\u003eLong Ave\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "_{myGxgawUGGYKcAc@CAE@CBCD?@[~AKb@"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2790397,
+                        "lng" : -119.2871697
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.3 mi",
+                        "value" : 552
+                     },
+                     "duration" : {
+                        "text" : "2 mins",
+                        "value" : 94
+                     },
+                     "end_location" : {
+                        "lat" : 46.2844352,
+                        "lng" : -119.2848934
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eLong Ave\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "_`nyGpjawU]OiCoAa@UwFuCmIoEgCcA"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2798403,
+                        "lng" : -119.2876106
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "1.1 mi",
+                        "value" : 1768
+                     },
+                     "duration" : {
+                        "text" : "3 mins",
+                        "value" : 160
+                     },
+                     "end_location" : {
+                        "lat" : 46.30033359999999,
+                        "lng" : -119.2848214
+                     },
+                     "html_instructions" : "Slight \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eStevens Dr\u003c/b\u003e",
+                     "maneuver" : "turn-slight-left",
+                     "polyline" : {
+                        "points" : "w|nyGpy`wUaGG_H@iE?eDAcIAqMC{EAqC@sDCsD@eB?iK@{F?"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2844352,
+                        "lng" : -119.2848934
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.6 mi",
+                        "value" : 936
+                     },
+                     "duration" : {
+                        "text" : "2 mins",
+                        "value" : 122
+                     },
+                     "end_location" : {
+                        "lat" : 46.30024390000001,
+                        "lng" : -119.272639
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eMcMurray St\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eDestination will be on the right\u003c/div\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "a`ryGby`wUFqT?aI@_G?kE@oE?iD?c@?mA@cC@kG@gA"
+                     },
+                     "start_location" : {
+                        "lat" : 46.30033359999999,
+                        "lng" : -119.2848214
+                     },
+                     "travel_mode" : "DRIVING"
+                  }
+               ],
+               "traffic_speed_entry" : [],
+               "via_waypoint" : []
+            }
+         ],
+         "overview_polyline" : {
+            "points" : "_{myGxgawUeBw@I?GH[`BKb@]OkDeBeQeJgCcAaGGiN@wc@IeIAyG@eS@Fs^BeYBaO@gA"
+         },
+         "summary" : "Stevens Dr and McMurray St",
+         "warnings" : [],
+         "waypoint_order" : []
+      }
+   ],
+   "status" : "OK"
+}

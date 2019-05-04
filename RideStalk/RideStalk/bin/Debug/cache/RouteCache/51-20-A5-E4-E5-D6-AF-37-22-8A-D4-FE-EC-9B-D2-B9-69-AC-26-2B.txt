@@ -1,0 +1,157 @@
+﻿{
+   "geocoded_waypoints" : [
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJb87zmNR6mFQRmq7qZ4XzCKo",
+         "types" : [ "premise" ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJmy2SW7N6mFQRsAGeakEjeQ0",
+         "types" : [ "premise" ]
+      }
+   ],
+   "routes" : [
+      {
+         "bounds" : {
+            "northeast" : {
+               "lat" : 46.29472000000001,
+               "lng" : -119.2766657
+            },
+            "southwest" : {
+               "lat" : 46.2875741,
+               "lng" : -119.3051842
+            }
+         },
+         "copyrights" : "Map data ©2019 Google",
+         "legs" : [
+            {
+               "distance" : {
+                  "text" : "1.7 mi",
+                  "value" : 2731
+               },
+               "duration" : {
+                  "text" : "5 mins",
+                  "value" : 312
+               },
+               "end_address" : "1312 Cottonwood Dr, Richland, WA 99354, USA",
+               "end_location" : {
+                  "lat" : 46.2875741,
+                  "lng" : -119.3051842
+               },
+               "start_address" : "160 Van Giesen St, Richland, WA 99354, USA",
+               "start_location" : {
+                  "lat" : 46.29472000000001,
+                  "lng" : -119.2766713
+               },
+               "steps" : [
+                  {
+                     "distance" : {
+                        "text" : "95 ft",
+                        "value" : 29
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 8
+                     },
+                     "end_location" : {
+                        "lat" : 46.2944575,
+                        "lng" : -119.2766657
+                     },
+                     "html_instructions" : "Head \u003cb\u003esouth\u003c/b\u003e on \u003cb\u003eCherry Ln\u003c/b\u003e toward \u003cb\u003eVan Giesen St\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "_}pyGdf_wUr@?"
+                     },
+                     "start_location" : {
+                        "lat" : 46.29472000000001,
+                        "lng" : -119.2766713
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "1.2 mi",
+                        "value" : 2011
+                     },
+                     "duration" : {
+                        "text" : "4 mins",
+                        "value" : 220
+                     },
+                     "end_location" : {
+                        "lat" : 46.2930788,
+                        "lng" : -119.3024086
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eVan Giesen St\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "k{pyGdf_wU?lA?vAAnGB|@Fr@TbAx@tEx@hE|@pEv@fERbAFZDZ@J?L?JATIzEAlCAnF?t@?tDApE?tE?vGA~OCrHApCAxC?dC?tB?fBBjF?|@?zBAl@"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2944575,
+                        "lng" : -119.2766657
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "289 ft",
+                        "value" : 88
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 12
+                     },
+                     "end_location" : {
+                        "lat" : 46.2922851,
+                        "lng" : -119.3024269
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eBirch Ave\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "wrpyG`gdwU|CB"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2930788,
+                        "lng" : -119.3024086
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.4 mi",
+                        "value" : 603
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 72
+                     },
+                     "end_location" : {
+                        "lat" : 46.2875741,
+                        "lng" : -119.3051842
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eCottonwood Dr\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "ympyGdgdwUBv@FZJ\\h@z@jAjBzBtB|C|@`Dh@vAPhFZF?Z?"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2922851,
+                        "lng" : -119.3024269
+                     },
+                     "travel_mode" : "DRIVING"
+                  }
+               ],
+               "traffic_speed_entry" : [],
+               "via_waypoint" : []
+            }
+         ],
+         "overview_polyline" : {
+            "points" : "_}pyGdf_wUr@??lAAfJJpBnAxGbEfTNpAA`@KhJClT?lNErYCjH?zFBlOAl@|CBBv@FZJ\\h@z@jAjBzBtB|C|@`Dh@vAPhFZb@?"
+         },
+         "summary" : "Van Giesen St",
+         "warnings" : [],
+         "waypoint_order" : []
+      }
+   ],
+   "status" : "OK"
+}

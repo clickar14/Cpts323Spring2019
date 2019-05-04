@@ -1,0 +1,133 @@
+﻿{
+   "geocoded_waypoints" : [
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJ79M3CL96mFQRrM-zVn5vRXo",
+         "types" : [ "street_address" ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJ79M3CL96mFQRrM-zVn5vRXo",
+         "types" : [ "street_address" ]
+      }
+   ],
+   "routes" : [
+      {
+         "bounds" : {
+            "northeast" : {
+               "lat" : 46.2756417,
+               "lng" : -119.2848812
+            },
+            "southwest" : {
+               "lat" : 46.2748864,
+               "lng" : -119.2862127
+            }
+         },
+         "copyrights" : "Map data ©2019 Google",
+         "legs" : [
+            {
+               "distance" : {
+                  "text" : "0.1 mi",
+                  "value" : 232
+               },
+               "duration" : {
+                  "text" : "1 min",
+                  "value" : 64
+               },
+               "end_address" : "1300 Lee Blvd, Richland, WA 99352, USA",
+               "end_location" : {
+                  "lat" : 46.2748937,
+                  "lng" : -119.2862127
+               },
+               "start_address" : "1300 Lee Blvd, Richland, WA 99352, USA",
+               "start_location" : {
+                  "lat" : 46.2756417,
+                  "lng" : -119.28504
+               },
+               "steps" : [
+                  {
+                     "distance" : {
+                        "text" : "289 ft",
+                        "value" : 88
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 25
+                     },
+                     "end_location" : {
+                        "lat" : 46.2752702,
+                        "lng" : -119.2848812
+                     },
+                     "html_instructions" : "Head \u003cb\u003ewest\u003c/b\u003e toward \u003cb\u003eLee Blvd\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "wemyGnz`wU?T?JDHFDV?b@??qA"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2756417,
+                        "lng" : -119.28504
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "141 ft",
+                        "value" : 43
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 22
+                     },
+                     "end_location" : {
+                        "lat" : 46.2748864,
+                        "lng" : -119.2848945
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e toward \u003cb\u003eLee Blvd\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "mcmyGny`wUd@@d@?"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2752702,
+                        "lng" : -119.2848812
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "331 ft",
+                        "value" : 101
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 17
+                     },
+                     "end_location" : {
+                        "lat" : 46.2748937,
+                        "lng" : -119.2862127
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eLee Blvd\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eDestination will be on the right\u003c/div\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "aamyGpy`wU?|C?r@?t@"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2748864,
+                        "lng" : -119.2848945
+                     },
+                     "travel_mode" : "DRIVING"
+                  }
+               ],
+               "traffic_speed_entry" : [],
+               "via_waypoint" : []
+            }
+         ],
+         "overview_polyline" : {
+            "points" : "wemyGnz`wU?`@LNz@??qAd@@d@??|C?hB"
+         },
+         "summary" : "Lee Blvd",
+         "warnings" : [],
+         "waypoint_order" : []
+      }
+   ],
+   "status" : "OK"
+}

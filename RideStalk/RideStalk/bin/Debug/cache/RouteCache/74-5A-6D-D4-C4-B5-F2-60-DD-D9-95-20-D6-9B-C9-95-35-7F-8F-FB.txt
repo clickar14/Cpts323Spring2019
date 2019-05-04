@@ -1,0 +1,180 @@
+﻿{
+   "geocoded_waypoints" : [
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJgxhZNTRlmFQRgrnzyL3hmC8",
+         "types" : [ "premise" ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJdfRkCTVlmFQRSB4XuSAlTSs",
+         "types" : [ "street_address" ]
+      }
+   ],
+   "routes" : [
+      {
+         "bounds" : {
+            "northeast" : {
+               "lat" : 46.2941799,
+               "lng" : -119.2972893
+            },
+            "southwest" : {
+               "lat" : 46.292204,
+               "lng" : -119.2982432
+            }
+         },
+         "copyrights" : "Map data ©2019 Google",
+         "legs" : [
+            {
+               "distance" : {
+                  "text" : "0.2 mi",
+                  "value" : 336
+               },
+               "duration" : {
+                  "text" : "1 min",
+                  "value" : 86
+               },
+               "end_address" : "2135 Van Giesen St, Richland, WA 99354, USA",
+               "end_location" : {
+                  "lat" : 46.29222009999999,
+                  "lng" : -119.2981159
+               },
+               "start_address" : "2112 Austin St, Richland, WA 99354, USA",
+               "start_location" : {
+                  "lat" : 46.2941799,
+                  "lng" : -119.2982354
+               },
+               "steps" : [
+                  {
+                     "distance" : {
+                        "text" : "82 ft",
+                        "value" : 25
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 8
+                     },
+                     "end_location" : {
+                        "lat" : 46.29395239999999,
+                        "lng" : -119.2982432
+                     },
+                     "html_instructions" : "Head \u003cb\u003esouth\u003c/b\u003e on \u003cb\u003eAustin Ct\u003c/b\u003e toward \u003cb\u003eAustin St\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "sypyG~lcwUl@?"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2941799,
+                        "lng" : -119.2982354
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "240 ft",
+                        "value" : 73
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 15
+                     },
+                     "end_location" : {
+                        "lat" : 46.2939435,
+                        "lng" : -119.2972893
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eAustin St\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "expyG~lcwU@}D"
+                     },
+                     "start_location" : {
+                        "lat" : 46.29395239999999,
+                        "lng" : -119.2982432
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "322 ft",
+                        "value" : 98
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 37
+                     },
+                     "end_location" : {
+                        "lat" : 46.293084,
+                        "lng" : -119.2975208
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eMcMurray Ave\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "cxpyG`gcwUbA\\fBN"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2939435,
+                        "lng" : -119.2972893
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "322 ft",
+                        "value" : 98
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 18
+                     },
+                     "end_location" : {
+                        "lat" : 46.292204,
+                        "lng" : -119.2975749
+                     },
+                     "html_instructions" : "Continue onto \u003cb\u003eWright Ave\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "wrpyGnhcwUnDH"
+                     },
+                     "start_location" : {
+                        "lat" : 46.293084,
+                        "lng" : -119.2975208
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "138 ft",
+                        "value" : 42
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 8
+                     },
+                     "end_location" : {
+                        "lat" : 46.29222009999999,
+                        "lng" : -119.2981159
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eTurner St\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eDestination will be on the right\u003c/div\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "gmpyGxhcwUClB"
+                     },
+                     "start_location" : {
+                        "lat" : 46.292204,
+                        "lng" : -119.2975749
+                     },
+                     "travel_mode" : "DRIVING"
+                  }
+               ],
+               "traffic_speed_entry" : [],
+               "via_waypoint" : []
+            }
+         ],
+         "overview_polyline" : {
+            "points" : "sypyG~lcwUl@?@}DbA\\fBNnDHClB"
+         },
+         "summary" : "McMurray Ave and Wright Ave",
+         "warnings" : [],
+         "waypoint_order" : []
+      }
+   ],
+   "status" : "OK"
+}

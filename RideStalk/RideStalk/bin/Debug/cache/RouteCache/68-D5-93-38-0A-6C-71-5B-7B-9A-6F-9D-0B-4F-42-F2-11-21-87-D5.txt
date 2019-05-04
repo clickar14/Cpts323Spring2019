@@ -1,0 +1,205 @@
+﻿{
+   "geocoded_waypoints" : [
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJiQUKf7p6mFQRj8Zjmw6WKZ4",
+         "types" : [ "premise" ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJXYu5c8x6mFQRdB22p4zlNvw",
+         "types" : [ "premise" ]
+      }
+   ],
+   "routes" : [
+      {
+         "bounds" : {
+            "northeast" : {
+               "lat" : 46.2893266,
+               "lng" : -119.2883994
+            },
+            "southwest" : {
+               "lat" : 46.2789563,
+               "lng" : -119.2988993
+            }
+         },
+         "copyrights" : "Map data ©2019 Google",
+         "legs" : [
+            {
+               "distance" : {
+                  "text" : "1.2 mi",
+                  "value" : 1865
+               },
+               "duration" : {
+                  "text" : "3 mins",
+                  "value" : 208
+               },
+               "end_address" : "1416 McPherson Ave, Richland, WA 99354, USA",
+               "end_location" : {
+                  "lat" : 46.2893266,
+                  "lng" : -119.2883994
+               },
+               "start_address" : "1005 Birch Ave, Richland, WA 99354, USA",
+               "start_location" : {
+                  "lat" : 46.27947,
+                  "lng" : -119.2988993
+               },
+               "steps" : [
+                  {
+                     "distance" : {
+                        "text" : "184 ft",
+                        "value" : 56
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 7
+                     },
+                     "end_location" : {
+                        "lat" : 46.27896519999999,
+                        "lng" : -119.2988937
+                     },
+                     "html_instructions" : "Head \u003cb\u003esouth\u003c/b\u003e on \u003cb\u003eBirch Ave\u003c/b\u003e toward \u003cb\u003eSwift Blvd\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "u}myGbqcwUbBA"
+                     },
+                     "start_location" : {
+                        "lat" : 46.27947,
+                        "lng" : -119.2988993
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.4 mi",
+                        "value" : 672
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 72
+                     },
+                     "end_location" : {
+                        "lat" : 46.2806852,
+                        "lng" : -119.2909536
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e at the 1st cross street onto \u003cb\u003eSwift Blvd\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "qzmyG`qcwU@mF?kE?sE?i@AYCSEQEUKW_@}@O]{AiD_AwBCQKWq@wAQ]?CISCICKAKAKAMAM?S?SAeB"
+                     },
+                     "start_location" : {
+                        "lat" : 46.27896519999999,
+                        "lng" : -119.2988937
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "223 ft",
+                        "value" : 68
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 10
+                     },
+                     "end_location" : {
+                        "lat" : 46.2808558,
+                        "lng" : -119.2901301
+                     },
+                     "html_instructions" : "Slight \u003cb\u003eleft\u003c/b\u003e toward \u003cb\u003eThayer Dr\u003c/b\u003e",
+                     "maneuver" : "turn-slight-left",
+                     "polyline" : {
+                        "points" : "ienyGl_bwUMiAAG?G?k@AEAEMQ"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2806852,
+                        "lng" : -119.2909536
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.5 mi",
+                        "value" : 816
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 70
+                     },
+                     "end_location" : {
+                        "lat" : 46.2881903,
+                        "lng" : -119.2900939
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e at the 1st cross street onto \u003cb\u003eThayer Dr\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "kfnyGhzawUyC?yCAuD?uCAgD@gDA{C?sDAyCA"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2808558,
+                        "lng" : -119.2901301
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "410 ft",
+                        "value" : 125
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 18
+                     },
+                     "end_location" : {
+                        "lat" : 46.2881752,
+                        "lng" : -119.2884691
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eSymons St\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "etoyG`zawU@cI"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2881903,
+                        "lng" : -119.2900939
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "420 ft",
+                        "value" : 128
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 31
+                     },
+                     "end_location" : {
+                        "lat" : 46.2893266,
+                        "lng" : -119.2883994
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e at the 1st cross street onto \u003cb\u003eMcPherson Ave\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "ctoyG|oawUeFM"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2881752,
+                        "lng" : -119.2884691
+                     },
+                     "travel_mode" : "DRIVING"
+                  }
+               ],
+               "traffic_speed_entry" : [],
+               "via_waypoint" : []
+            }
+         ],
+         "overview_polyline" : {
+            "points" : "u}myGbqcwUbBA@mF?_LAcAIe@Qm@o@{A{CaHOi@mAmCKm@CcAAeBMiAAOAq@OW_SC_TAyCA@cIeFM"
+         },
+         "summary" : "Swift Blvd and Thayer Dr",
+         "warnings" : [],
+         "waypoint_order" : []
+      }
+   ],
+   "status" : "OK"
+}

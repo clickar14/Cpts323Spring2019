@@ -1,0 +1,109 @@
+﻿{
+   "geocoded_waypoints" : [
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJ6WYo8TdlmFQR_k70dX2GExA",
+         "types" : [ "street_address" ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJrd1luDdlmFQR70jwotmviYQ",
+         "types" : [ "street_address" ]
+      }
+   ],
+   "routes" : [
+      {
+         "bounds" : {
+            "northeast" : {
+               "lat" : 46.2989001,
+               "lng" : -119.3024393
+            },
+            "southwest" : {
+               "lat" : 46.29733479999999,
+               "lng" : -119.306656
+            }
+         },
+         "copyrights" : "Map data ©2019 Google",
+         "legs" : [
+            {
+               "distance" : {
+                  "text" : "0.3 mi",
+                  "value" : 555
+               },
+               "duration" : {
+                  "text" : "1 min",
+                  "value" : 72
+               },
+               "end_address" : "1838 Terminal Dr, Richland, WA 99354, USA",
+               "end_location" : {
+                  "lat" : 46.29733479999999,
+                  "lng" : -119.3044793
+               },
+               "start_address" : "1830 Bronco Ln, Richland, WA 99354, USA",
+               "start_location" : {
+                  "lat" : 46.298396,
+                  "lng" : -119.306656
+               },
+               "steps" : [
+                  {
+                     "distance" : {
+                        "text" : "0.2 mi",
+                        "value" : 349
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 44
+                     },
+                     "end_location" : {
+                        "lat" : 46.2984504,
+                        "lng" : -119.3024393
+                     },
+                     "html_instructions" : "Head \u003cb\u003enortheast\u003c/b\u003e on \u003cb\u003eBronco Ln\u003c/b\u003e toward \u003cb\u003eTerminal Dr\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "_tqyGraewUOe@S_AM}@G_AQyCQ}CEw@@q@Fs@HY@CTc@Vi@Te@"
+                     },
+                     "start_location" : {
+                        "lat" : 46.298396,
+                        "lng" : -119.306656
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.1 mi",
+                        "value" : 206
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 28
+                     },
+                     "end_location" : {
+                        "lat" : 46.29733479999999,
+                        "lng" : -119.3044793
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eTerminal Dr\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eDestination will be on the right\u003c/div\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "itqyGfgdwUnCpDRXBBL`@N`AHn@Nr@"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2984504,
+                        "lng" : -119.3024393
+                     },
+                     "travel_mode" : "DRIVING"
+                  }
+               ],
+               "traffic_speed_entry" : [],
+               "via_waypoint" : []
+            }
+         ],
+         "overview_polyline" : {
+            "points" : "_tqyGraewUOe@S_AM}@G_Ac@wHEw@@q@Fs@HYVg@l@oAbDjEPd@XpBNr@"
+         },
+         "summary" : "Bronco Ln and Terminal Dr",
+         "warnings" : [],
+         "waypoint_order" : []
+      }
+   ],
+   "status" : "OK"
+}

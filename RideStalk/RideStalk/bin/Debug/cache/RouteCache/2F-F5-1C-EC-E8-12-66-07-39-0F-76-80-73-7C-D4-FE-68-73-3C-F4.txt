@@ -1,0 +1,133 @@
+﻿{
+   "geocoded_waypoints" : [
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJZeYlzzFlmFQRYIuTuUM24kw",
+         "types" : [ "premise" ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJ4ygjf8B6mFQRTCphLO3S5BM",
+         "types" : [ "street_address" ]
+      }
+   ],
+   "routes" : [
+      {
+         "bounds" : {
+            "northeast" : {
+               "lat" : 46.3003557,
+               "lng" : -119.2818889
+            },
+            "southwest" : {
+               "lat" : 46.276333,
+               "lng" : -119.2929981
+            }
+         },
+         "copyrights" : "Map data ©2019 Google",
+         "legs" : [
+            {
+               "distance" : {
+                  "text" : "2.1 mi",
+                  "value" : 3448
+               },
+               "duration" : {
+                  "text" : "6 mins",
+                  "value" : 358
+               },
+               "end_address" : "765 Stevens Dr, Richland, WA 99352, USA",
+               "end_location" : {
+                  "lat" : 46.276333,
+                  "lng" : -119.2818937
+               },
+               "start_address" : "1748 Duluth St, Richland, WA 99354, USA",
+               "start_location" : {
+                  "lat" : 46.2990413,
+                  "lng" : -119.2929981
+               },
+               "steps" : [
+                  {
+                     "distance" : {
+                        "text" : "394 ft",
+                        "value" : 120
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 21
+                     },
+                     "end_location" : {
+                        "lat" : 46.2982724,
+                        "lng" : -119.2919059
+                     },
+                     "html_instructions" : "Head \u003cb\u003esoutheast\u003c/b\u003e on \u003cb\u003eDuluth St\u003c/b\u003e toward \u003cb\u003eMcMurray Ave\u003c/b\u003e/\u003cb\u003eWright Ave\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "_xqyGflbwUxCyE"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2990413,
+                        "lng" : -119.2929981
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.4 mi",
+                        "value" : 626
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 83
+                     },
+                     "end_location" : {
+                        "lat" : 46.30033359999999,
+                        "lng" : -119.2848214
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eMcMurray Ave\u003c/b\u003e/\u003cb\u003eWright Ave\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eContinue to follow McMurray Ave\u003c/div\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "esqyGlebwUcCeEqBaDk@_ACGWm@YoAw@_EMaBCgB?A@oEB_G"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2982724,
+                        "lng" : -119.2919059
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "1.7 mi",
+                        "value" : 2702
+                     },
+                     "duration" : {
+                        "text" : "4 mins",
+                        "value" : 254
+                     },
+                     "end_location" : {
+                        "lat" : 46.276333,
+                        "lng" : -119.2818937
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eStevens Dr\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eDestination will be on the right\u003c/div\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "a`ryGby`wUzF?hKAdB?rDArDBpCAzE@pMBbI@dD@hE?~GA`GFfAUd@MpAe@f@QXKfCaAdA_@v@WhEsApAe@pAc@XKrAc@XKlDmAvCw@rCQdACv@?"
+                     },
+                     "start_location" : {
+                        "lat" : 46.30033359999999,
+                        "lng" : -119.2848214
+                     },
+                     "travel_mode" : "DRIVING"
+                  }
+               ],
+               "traffic_speed_entry" : [],
+               "via_waypoint" : []
+            }
+         ],
+         "overview_polyline" : {
+            "points" : "_xqyGflbwUxCyEcCeE}CaF[u@qAoGMaBCgB@qEB_GzF?nNAfJ@lJ?tWDnJ@~GA`GFlBc@zGeC|Bw@zGyBxE_BlDmAvCw@rCQdACv@?"
+         },
+         "summary" : "Stevens Dr",
+         "warnings" : [],
+         "waypoint_order" : []
+      }
+   ],
+   "status" : "OK"
+}

@@ -1,0 +1,157 @@
+﻿{
+   "geocoded_waypoints" : [
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJu0a_VCllmFQR5cx9XD1uFfA",
+         "types" : [ "street_address" ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJTSXzOdt6mFQRpDDqKetc0Qo",
+         "types" : [ "street_address" ]
+      }
+   ],
+   "routes" : [
+      {
+         "bounds" : {
+            "northeast" : {
+               "lat" : 46.3003222,
+               "lng" : -119.2717688
+            },
+            "southwest" : {
+               "lat" : 46.2787902,
+               "lng" : -119.2838099
+            }
+         },
+         "copyrights" : "Map data ©2019 Google",
+         "legs" : [
+            {
+               "distance" : {
+                  "text" : "2.2 mi",
+                  "value" : 3620
+               },
+               "duration" : {
+                  "text" : "7 mins",
+                  "value" : 427
+               },
+               "end_address" : "1208 Gowen Ave, Richland, WA 99352, USA",
+               "end_location" : {
+                  "lat" : 46.2819538,
+                  "lng" : -119.2720483
+               },
+               "start_address" : "777 McMurray St, Richland, WA 99352, USA",
+               "start_location" : {
+                  "lat" : 46.3003222,
+                  "lng" : -119.2838099
+               },
+               "steps" : [
+                  {
+                     "distance" : {
+                        "text" : "0.5 mi",
+                        "value" : 727
+                     },
+                     "duration" : {
+                        "text" : "2 mins",
+                        "value" : 91
+                     },
+                     "end_location" : {
+                        "lat" : 46.3002605,
+                        "lng" : -119.2743427
+                     },
+                     "html_instructions" : "Head \u003cb\u003eeast\u003c/b\u003e on \u003cb\u003eMcMurray St\u003c/b\u003e toward \u003cb\u003eJadwin Ave\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "_`ryGxr`wUDgN?aI@_G?kE@oE?iD?c@?mA@cC"
+                     },
+                     "start_location" : {
+                        "lat" : 46.3003222,
+                        "lng" : -119.2838099
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "1.5 mi",
+                        "value" : 2393
+                     },
+                     "duration" : {
+                        "text" : "3 mins",
+                        "value" : 194
+                     },
+                     "end_location" : {
+                        "lat" : 46.2787902,
+                        "lng" : -119.2737007
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eGeorge Washington Way\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "s_ryGrw~vU~F@fA?dCAjEAjDCzC?dD?rD?tG?lCAzD?~BAdC?rH?vA?zCAVA~BA`@E\\GTGPI\\M~@]\\KTGPETERCXAXAV?hB@nA?J?P?hD?xD?~A@zBAhE@"
+                     },
+                     "start_location" : {
+                        "lat" : 46.3002605,
+                        "lng" : -119.2743427
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "486 ft",
+                        "value" : 148
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 36
+                     },
+                     "end_location" : {
+                        "lat" : 46.2788058,
+                        "lng" : -119.2717688
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eNewton St\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "mymyGrs~vU?iBAoDAgB"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2787902,
+                        "lng" : -119.2737007
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.2 mi",
+                        "value" : 352
+                     },
+                     "duration" : {
+                        "text" : "2 mins",
+                        "value" : 106
+                     },
+                     "end_location" : {
+                        "lat" : 46.2819538,
+                        "lng" : -119.2720483
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e at the 1st cross street onto \u003cb\u003eAmon Park Dr\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "qymyGpg~vUcAVgAJkBTqCFiFI"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2788058,
+                        "lng" : -119.2717688
+                     },
+                     "travel_mode" : "DRIVING"
+                  }
+               ],
+               "traffic_speed_entry" : [],
+               "via_waypoint" : []
+            }
+         ],
+         "overview_polyline" : {
+            "points" : "_`ryGxr`wUFuf@@kN@cC~F@lEAxTEdl@CrDC~BA`@Er@On@W|Ai@f@Mh@Ir@C|E@tM@dI?AyGAgBcAVsD`@qCFiFI"
+         },
+         "summary" : "George Washington Way",
+         "warnings" : [],
+         "waypoint_order" : []
+      }
+   ],
+   "status" : "OK"
+}

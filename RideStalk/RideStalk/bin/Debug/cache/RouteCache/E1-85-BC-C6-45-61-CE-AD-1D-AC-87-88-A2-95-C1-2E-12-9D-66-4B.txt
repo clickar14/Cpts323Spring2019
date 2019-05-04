@@ -1,0 +1,157 @@
+﻿{
+   "geocoded_waypoints" : [
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJt27B8zNlmFQR9zD1CpVGVts",
+         "types" : [ "street_address" ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJ6fhK7TNlmFQRC20XgI-9znI",
+         "types" : [ "establishment", "point_of_interest", "school" ]
+      }
+   ],
+   "routes" : [
+      {
+         "bounds" : {
+            "northeast" : {
+               "lat" : 46.2957463,
+               "lng" : -119.2952706
+            },
+            "southwest" : {
+               "lat" : 46.294054,
+               "lng" : -119.2964899
+            }
+         },
+         "copyrights" : "Map data ©2019 Google",
+         "legs" : [
+            {
+               "distance" : {
+                  "text" : "0.2 mi",
+                  "value" : 395
+               },
+               "duration" : {
+                  "text" : "2 mins",
+                  "value" : 112
+               },
+               "end_address" : "1750 McMurray Ave, Richland, WA 99354, USA",
+               "end_location" : {
+                  "lat" : 46.2948821,
+                  "lng" : -119.295279
+               },
+               "start_address" : "1750 Wright Ave, Richland, WA 99354, USA",
+               "start_location" : {
+                  "lat" : 46.29533,
+                  "lng" : -119.2952706
+               },
+               "steps" : [
+                  {
+                     "distance" : {
+                        "text" : "174 ft",
+                        "value" : 53
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 17
+                     },
+                     "end_location" : {
+                        "lat" : 46.2957463,
+                        "lng" : -119.2955114
+                     },
+                     "html_instructions" : "Head \u003cb\u003enorth\u003c/b\u003e toward \u003cb\u003eMcMurray Ave\u003c/b\u003e/\u003cb\u003eWright Ave\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "y`qyGlzbwUk@?C@IHYb@"
+                     },
+                     "start_location" : {
+                        "lat" : 46.29533,
+                        "lng" : -119.2952706
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "420 ft",
+                        "value" : 128
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 40
+                     },
+                     "end_location" : {
+                        "lat" : 46.2948202,
+                        "lng" : -119.2964899
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e at the 1st cross street onto \u003cb\u003eMcMurray Ave\u003c/b\u003e/\u003cb\u003eWright Ave\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "mcqyG|{bwU`BjBvAvA"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2957463,
+                        "lng" : -119.2955114
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "384 ft",
+                        "value" : 117
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 24
+                     },
+                     "end_location" : {
+                        "lat" : 46.294054,
+                        "lng" : -119.2954433
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eSanford Ave\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "s}pyG`bcwUxCqE"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2948202,
+                        "lng" : -119.2964899
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "318 ft",
+                        "value" : 97
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 31
+                     },
+                     "end_location" : {
+                        "lat" : 46.2948821,
+                        "lng" : -119.295279
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "yxpyGn{bwUOSCGEAkCA"
+                     },
+                     "start_location" : {
+                        "lat" : 46.294054,
+                        "lng" : -119.2954433
+                     },
+                     "travel_mode" : "DRIVING"
+                  }
+               ],
+               "traffic_speed_entry" : [],
+               "via_waypoint" : []
+            }
+         ],
+         "overview_polyline" : {
+            "points" : "y`qyGlzbwUo@@c@l@`BjBvAvAxCqEOSIIkCA"
+         },
+         "summary" : "McMurray Ave/Wright Ave and Sanford Ave",
+         "warnings" : [],
+         "waypoint_order" : []
+      }
+   ],
+   "status" : "OK"
+}

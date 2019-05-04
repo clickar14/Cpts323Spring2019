@@ -1,0 +1,92 @@
+﻿{
+   "geocoded_waypoints" : [
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJ6WYo8TdlmFQR_k70dX2GExA",
+         "types" : [ "street_address" ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJUzouPjhlmFQREj2P26SWezM",
+         "types" : [
+            "establishment",
+            "furniture_store",
+            "general_contractor",
+            "home_goods_store",
+            "point_of_interest",
+            "store"
+         ]
+      }
+   ],
+   "routes" : [
+      {
+         "bounds" : {
+            "northeast" : {
+               "lat" : 46.298396,
+               "lng" : -119.306656
+            },
+            "southwest" : {
+               "lat" : 46.2983456,
+               "lng" : -119.3067325
+            }
+         },
+         "copyrights" : "Map data ©2019 Google",
+         "legs" : [
+            {
+               "distance" : {
+                  "text" : "26 ft",
+                  "value" : 8
+               },
+               "duration" : {
+                  "text" : "1 min",
+                  "value" : 1
+               },
+               "end_address" : "1828 Bronco Ln, Richland, WA 99354, USA",
+               "end_location" : {
+                  "lat" : 46.2983456,
+                  "lng" : -119.3067325
+               },
+               "start_address" : "1830 Bronco Ln, Richland, WA 99354, USA",
+               "start_location" : {
+                  "lat" : 46.298396,
+                  "lng" : -119.306656
+               },
+               "steps" : [
+                  {
+                     "distance" : {
+                        "text" : "26 ft",
+                        "value" : 8
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 1
+                     },
+                     "end_location" : {
+                        "lat" : 46.2983456,
+                        "lng" : -119.3067325
+                     },
+                     "html_instructions" : "Head \u003cb\u003esouthwest\u003c/b\u003e on \u003cb\u003eBronco Ln\u003c/b\u003e toward \u003cb\u003eAileron Ln\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "_tqyGraewUHL"
+                     },
+                     "start_location" : {
+                        "lat" : 46.298396,
+                        "lng" : -119.306656
+                     },
+                     "travel_mode" : "DRIVING"
+                  }
+               ],
+               "traffic_speed_entry" : [],
+               "via_waypoint" : []
+            }
+         ],
+         "overview_polyline" : {
+            "points" : "_tqyGraewUHL"
+         },
+         "summary" : "Bronco Ln",
+         "warnings" : [],
+         "waypoint_order" : []
+      }
+   ],
+   "status" : "OK"
+}

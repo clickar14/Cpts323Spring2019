@@ -1,0 +1,157 @@
+﻿{
+   "geocoded_waypoints" : [
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJBy5MCMN6mFQRQI6sp_gK6xg",
+         "types" : [ "establishment", "food", "point_of_interest", "restaurant" ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJaYJ49tp6mFQRZiFDuRxSpoQ",
+         "types" : [ "premise" ]
+      }
+   ],
+   "routes" : [
+      {
+         "bounds" : {
+            "northeast" : {
+               "lat" : 46.2859714,
+               "lng" : -119.2717688
+            },
+            "southwest" : {
+               "lat" : 46.2787902,
+               "lng" : -119.2742636
+            }
+         },
+         "copyrights" : "Map data ©2019 Google",
+         "legs" : [
+            {
+               "distance" : {
+                  "text" : "0.8 mi",
+                  "value" : 1210
+               },
+               "duration" : {
+                  "text" : "3 mins",
+                  "value" : 150
+               },
+               "end_address" : "1314 Hains Ave, Richland, WA 99354, USA",
+               "end_location" : {
+                  "lat" : 46.2859714,
+                  "lng" : -119.2718321
+               },
+               "start_address" : "930 George Washington Way, Richland, WA 99352, USA",
+               "start_location" : {
+                  "lat" : 46.2795999,
+                  "lng" : -119.271971
+               },
+               "steps" : [
+                  {
+                     "distance" : {
+                        "text" : "295 ft",
+                        "value" : 90
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 22
+                     },
+                     "end_location" : {
+                        "lat" : 46.2788058,
+                        "lng" : -119.2717688
+                     },
+                     "html_instructions" : "Head \u003cb\u003esouth\u003c/b\u003e on \u003cb\u003eAmon Park Dr\u003c/b\u003e toward \u003cb\u003eNewton St\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "o~myGxh~vUPCfAKbAW"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2795999,
+                        "lng" : -119.271971
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "486 ft",
+                        "value" : 148
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 35
+                     },
+                     "end_location" : {
+                        "lat" : 46.2787902,
+                        "lng" : -119.2737007
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eNewton St\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "qymyGpg~vU@fB@nD?hB"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2788058,
+                        "lng" : -119.2717688
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.5 mi",
+                        "value" : 774
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 67
+                     },
+                     "end_location" : {
+                        "lat" : 46.2856947,
+                        "lng" : -119.2742636
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eGeorge Washington Way\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "mymyGrs~vUiEA{B@_BAyD?iD?Q?K?oA?iBAW?Y@Y@SBUDQDUF]J_A\\]LQHUF]Fa@D"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2787902,
+                        "lng" : -119.2737007
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.1 mi",
+                        "value" : 198
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 26
+                     },
+                     "end_location" : {
+                        "lat" : 46.2859714,
+                        "lng" : -119.2718321
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eHains Ave\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "qdoyGbw~vUAeJAa@G[IWMUSS"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2856947,
+                        "lng" : -119.2742636
+                     },
+                     "travel_mode" : "DRIVING"
+                  }
+               ],
+               "traffic_speed_entry" : [],
+               "via_waypoint" : []
+            }
+         ],
+         "overview_polyline" : {
+            "points" : "o~myGxh~vUxAObAW@fB@xGeI?uMA}EAs@Bi@Hg@L}Ah@o@Vs@Na@DAeJI}@Wm@SS"
+         },
+         "summary" : "George Washington Way",
+         "warnings" : [],
+         "waypoint_order" : []
+      }
+   ],
+   "status" : "OK"
+}

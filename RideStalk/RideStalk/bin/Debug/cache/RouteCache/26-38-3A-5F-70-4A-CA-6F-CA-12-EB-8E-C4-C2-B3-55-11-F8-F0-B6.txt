@@ -1,0 +1,181 @@
+﻿{
+   "geocoded_waypoints" : [
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJD60ZArV6mFQRznPrGjBj53k",
+         "types" : [ "street_address" ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJCXbs3C5lmFQRzO0VpbHxb0k",
+         "types" : [ "street_address" ]
+      }
+   ],
+   "routes" : [
+      {
+         "bounds" : {
+            "northeast" : {
+               "lat" : 46.3008509,
+               "lng" : -119.2860599
+            },
+            "southwest" : {
+               "lat" : 46.28743009999999,
+               "lng" : -119.3025892
+            }
+         },
+         "copyrights" : "Map data ©2019 Google",
+         "legs" : [
+            {
+               "distance" : {
+                  "text" : "1.5 mi",
+                  "value" : 2415
+               },
+               "duration" : {
+                  "text" : "4 mins",
+                  "value" : 237
+               },
+               "end_address" : "1911 Mahan Ave, Richland, WA 99354, USA",
+               "end_location" : {
+                  "lat" : 46.3008509,
+                  "lng" : -119.2860599
+               },
+               "start_address" : "1320 Sacramento Blvd, Richland, WA 99352, USA",
+               "start_location" : {
+                  "lat" : 46.28743009999999,
+                  "lng" : -119.3000398
+               },
+               "steps" : [
+                  {
+                     "distance" : {
+                        "text" : "0.2 mi",
+                        "value" : 265
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 29
+                     },
+                     "end_location" : {
+                        "lat" : 46.2889955,
+                        "lng" : -119.3025892
+                     },
+                     "html_instructions" : "Head \u003cb\u003enorthwest\u003c/b\u003e on \u003cb\u003eSacramento Blvd\u003c/b\u003e toward \u003cb\u003eAcacia Ave\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "mooyGfxcwUuD~FeB|CKPGXIr@"
+                     },
+                     "start_location" : {
+                        "lat" : 46.28743009999999,
+                        "lng" : -119.3000398
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.3 mi",
+                        "value" : 455
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 58
+                     },
+                     "end_location" : {
+                        "lat" : 46.2930788,
+                        "lng" : -119.3024086
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eBirch Ave\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "gyoyGdhdwUkAUiAKcDDwIC}CC"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2889955,
+                        "lng" : -119.3025892
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.2 mi",
+                        "value" : 376
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 36
+                     },
+                     "end_location" : {
+                        "lat" : 46.293084,
+                        "lng" : -119.2975208
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eVan Giesen St\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "wrpyG`gdwU@m@?{B?}@CkF?gB?uB?eC@yC"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2930788,
+                        "lng" : -119.3024086
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.8 mi",
+                        "value" : 1263
+                     },
+                     "duration" : {
+                        "text" : "2 mins",
+                        "value" : 106
+                     },
+                     "end_location" : {
+                        "lat" : 46.3003462,
+                        "lng" : -119.2861022
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eMcMurray Ave\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "wrpyGnhcwUgBOcA]oD_DwAwAaBkBoBgDsCoE{BmDwBiDcCeEqBaDk@_ACGWm@YoAw@_EMaBCgB?A@oE"
+                     },
+                     "start_location" : {
+                        "lat" : 46.293084,
+                        "lng" : -119.2975208
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "184 ft",
+                        "value" : 56
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 8
+                     },
+                     "end_location" : {
+                        "lat" : 46.3008509,
+                        "lng" : -119.2860599
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eMahan Ave\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eDestination will be on the left\u003c/div\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "e`ryGbaawUcBG"
+                     },
+                     "start_location" : {
+                        "lat" : 46.3003462,
+                        "lng" : -119.2861022
+                     },
+                     "travel_mode" : "DRIVING"
+                  }
+               ],
+               "traffic_speed_entry" : [],
+               "via_waypoint" : []
+            }
+         ],
+         "overview_polyline" : {
+            "points" : "mooyGfxcwUuD~FeB|CKPGXIr@kAUiAKcDDuNG@iDCgO@_HgBOcA]oD_DwAwAaBkBoBgDsCoEsFwIeHoLWm@YoAw@_EMaBCiB@oEcBG"
+         },
+         "summary" : "McMurray Ave",
+         "warnings" : [],
+         "waypoint_order" : []
+      }
+   ],
+   "status" : "OK"
+}

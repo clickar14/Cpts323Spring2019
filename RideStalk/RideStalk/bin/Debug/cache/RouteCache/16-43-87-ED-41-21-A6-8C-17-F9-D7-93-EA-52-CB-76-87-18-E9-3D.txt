@@ -1,0 +1,109 @@
+﻿{
+   "geocoded_waypoints" : [
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJRT9JacJ6mFQRJDmiVYNsACY",
+         "types" : [ "premise" ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJz1k0xul6mFQRqu6af9tlE0k",
+         "types" : [ "route" ]
+      }
+   ],
+   "routes" : [
+      {
+         "bounds" : {
+            "northeast" : {
+               "lat" : 46.27779899999999,
+               "lng" : -119.2705086
+            },
+            "southwest" : {
+               "lat" : 46.2748293,
+               "lng" : -119.2724224
+            }
+         },
+         "copyrights" : "Map data ©2019 Google",
+         "legs" : [
+            {
+               "distance" : {
+                  "text" : "0.3 mi",
+                  "value" : 496
+               },
+               "duration" : {
+                  "text" : "3 mins",
+                  "value" : 174
+               },
+               "end_address" : "Riverfront Trail, Richland, WA 99352, USA",
+               "end_location" : {
+                  "lat" : 46.2748609,
+                  "lng" : -119.2705086
+               },
+               "start_address" : "802 George Washington Way, Richland, WA 99352, USA",
+               "start_location" : {
+                  "lat" : 46.27779899999999,
+                  "lng" : -119.2717726
+               },
+               "steps" : [
+                  {
+                     "distance" : {
+                        "text" : "0.2 mi",
+                        "value" : 350
+                     },
+                     "duration" : {
+                        "text" : "2 mins",
+                        "value" : 92
+                     },
+                     "end_location" : {
+                        "lat" : 46.2748293,
+                        "lng" : -119.272412
+                     },
+                     "html_instructions" : "Head \u003cb\u003esouth\u003c/b\u003e on \u003cb\u003eAmon Park Dr\u003c/b\u003e toward \u003cb\u003eLee Blvd\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "gsmyGpg~vUjC@|A?L?h@Bh@NDDT\\d@fA\\?dDA"
+                     },
+                     "start_location" : {
+                        "lat" : 46.27779899999999,
+                        "lng" : -119.2717726
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "479 ft",
+                        "value" : 146
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 82
+                     },
+                     "end_location" : {
+                        "lat" : 46.2748609,
+                        "lng" : -119.2705086
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eLee Blvd\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "u`myGpk~vU?KAmBCaG"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2748293,
+                        "lng" : -119.272412
+                     },
+                     "travel_mode" : "DRIVING"
+                  }
+               ],
+               "traffic_speed_entry" : [],
+               "via_waypoint" : []
+            }
+         ],
+         "overview_polyline" : {
+            "points" : "gsmyGpg~vUhF@v@Bn@TT\\d@fAbEAAyBCaG"
+         },
+         "summary" : "Amon Park Dr and Lee Blvd",
+         "warnings" : [],
+         "waypoint_order" : []
+      }
+   ],
+   "status" : "OK"
+}

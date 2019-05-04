@@ -1,0 +1,109 @@
+﻿{
+   "geocoded_waypoints" : [
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJF3AVxS5lmFQRRXvLcYThe14",
+         "types" : [ "street_address" ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJu0a_VCllmFQR5cx9XD1uFfA",
+         "types" : [ "street_address" ]
+      }
+   ],
+   "routes" : [
+      {
+         "bounds" : {
+            "northeast" : {
+               "lat" : 46.30085,
+               "lng" : -119.2838105
+            },
+            "southwest" : {
+               "lat" : 46.3003222,
+               "lng" : -119.2861022
+            }
+         },
+         "copyrights" : "Map data ©2019 Google",
+         "legs" : [
+            {
+               "distance" : {
+                  "text" : "0.1 mi",
+                  "value" : 232
+               },
+               "duration" : {
+                  "text" : "1 min",
+                  "value" : 31
+               },
+               "end_address" : "777 McMurray St, Richland, WA 99352, USA",
+               "end_location" : {
+                  "lat" : 46.3003222,
+                  "lng" : -119.2838105
+               },
+               "start_address" : "1912 Mahan Ave, Richland, WA 99352, USA",
+               "start_location" : {
+                  "lat" : 46.30085,
+                  "lng" : -119.28606
+               },
+               "steps" : [
+                  {
+                     "distance" : {
+                        "text" : "184 ft",
+                        "value" : 56
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 7
+                     },
+                     "end_location" : {
+                        "lat" : 46.3003462,
+                        "lng" : -119.2861022
+                     },
+                     "html_instructions" : "Head \u003cb\u003esouth\u003c/b\u003e on \u003cb\u003eMahan Ave\u003c/b\u003e toward \u003cb\u003eMcMurray St\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "icryGz`awUbBF"
+                     },
+                     "start_location" : {
+                        "lat" : 46.30085,
+                        "lng" : -119.28606
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.1 mi",
+                        "value" : 176
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 24
+                     },
+                     "end_location" : {
+                        "lat" : 46.3003222,
+                        "lng" : -119.2838105
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e at the 1st cross street onto \u003cb\u003eMcMurray St\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eDestination will be on the right\u003c/div\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "e`ryGbaawUB_G@iE"
+                     },
+                     "start_location" : {
+                        "lat" : 46.3003462,
+                        "lng" : -119.2861022
+                     },
+                     "travel_mode" : "DRIVING"
+                  }
+               ],
+               "traffic_speed_entry" : [],
+               "via_waypoint" : []
+            }
+         ],
+         "overview_polyline" : {
+            "points" : "icryGz`awUbBFB_G@iE"
+         },
+         "summary" : "McMurray St",
+         "warnings" : [],
+         "waypoint_order" : []
+      }
+   ],
+   "status" : "OK"
+}

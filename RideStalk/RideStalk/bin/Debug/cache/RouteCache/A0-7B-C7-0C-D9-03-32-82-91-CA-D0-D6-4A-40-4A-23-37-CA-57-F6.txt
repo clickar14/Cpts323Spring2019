@@ -1,0 +1,157 @@
+﻿{
+   "geocoded_waypoints" : [
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJ2xTlscR6mFQRQXcs1H2BRt4",
+         "types" : [ "street_address" ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJT5QBDcV6mFQRu6-ECvvOR2M",
+         "types" : [ "premise" ]
+      }
+   ],
+   "routes" : [
+      {
+         "bounds" : {
+            "northeast" : {
+               "lat" : 46.2857262,
+               "lng" : -119.2727758
+            },
+            "southwest" : {
+               "lat" : 46.2826805,
+               "lng" : -119.2779733
+            }
+         },
+         "copyrights" : "Map data ©2019 Google",
+         "legs" : [
+            {
+               "distance" : {
+                  "text" : "0.5 mi",
+                  "value" : 838
+               },
+               "duration" : {
+                  "text" : "3 mins",
+                  "value" : 169
+               },
+               "end_address" : "1201 Jadwin Ave, Richland, WA 99352, USA",
+               "end_location" : {
+                  "lat" : 46.2844915,
+                  "lng" : -119.2775939
+               },
+               "start_address" : "1080 George Washington Way, Richland, WA 99352, USA",
+               "start_location" : {
+                  "lat" : 46.2826886,
+                  "lng" : -119.2727758
+               },
+               "steps" : [
+                  {
+                     "distance" : {
+                        "text" : "236 ft",
+                        "value" : 72
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 12
+                     },
+                     "end_location" : {
+                        "lat" : 46.2826805,
+                        "lng" : -119.2736862
+                     },
+                     "html_instructions" : "Head \u003cb\u003enorthwest\u003c/b\u003e toward \u003cb\u003eGeorge Washington Way\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "yqnyGzm~vUA?A@A@?BA@?L@x@Bd@B|@"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2826886,
+                        "lng" : -119.2727758
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.2 mi",
+                        "value" : 341
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 55
+                     },
+                     "end_location" : {
+                        "lat" : 46.2856947,
+                        "lng" : -119.2742636
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eGeorge Washington Way\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "wqnyGps~vUQ?K?oA?iBAW?Y@Y@SBUDQDUF]J_A\\]LQHUF]Fa@D"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2826805,
+                        "lng" : -119.2736862
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.2 mi",
+                        "value" : 283
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 80
+                     },
+                     "end_location" : {
+                        "lat" : 46.2857211,
+                        "lng" : -119.2779439
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eWilliams Blvd\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "qdoyGbw~vUC|DAp@A`A@vD?tF"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2856947,
+                        "lng" : -119.2742636
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "466 ft",
+                        "value" : 142
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 22
+                     },
+                     "end_location" : {
+                        "lat" : 46.2844915,
+                        "lng" : -119.2775939
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eJadwin Ave\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eDestination will be on the left\u003c/div\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "wdoyGbn_wUr@DR?N?PALCTIPItAq@"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2857211,
+                        "lng" : -119.2779439
+                     },
+                     "travel_mode" : "DRIVING"
+                  }
+               ],
+               "traffic_speed_entry" : [],
+               "via_waypoint" : []
+            }
+         ],
+         "overview_polyline" : {
+            "points" : "yqnyGzm~vUEFBnBB|@Q?{A?aCAs@Bi@Hg@LmC`As@Na@DC|DCrB@lLfAD`@Ab@MfB{@"
+         },
+         "summary" : "George Washington Way and Williams Blvd",
+         "warnings" : [],
+         "waypoint_order" : []
+      }
+   ],
+   "status" : "OK"
+}

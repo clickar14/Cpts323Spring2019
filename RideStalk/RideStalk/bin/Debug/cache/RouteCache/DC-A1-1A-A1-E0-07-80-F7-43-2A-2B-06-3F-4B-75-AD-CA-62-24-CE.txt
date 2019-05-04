@@ -1,0 +1,85 @@
+﻿{
+   "geocoded_waypoints" : [
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJqe5uojRlmFQRM_3nDX5UouY",
+         "types" : [ "premise" ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJgzPWXNN6mFQRauIffdw3hd8",
+         "types" : [ "street_address" ]
+      }
+   ],
+   "routes" : [
+      {
+         "bounds" : {
+            "northeast" : {
+               "lat" : 46.2944555,
+               "lng" : -119.2790793
+            },
+            "southwest" : {
+               "lat" : 46.2929542,
+               "lng" : -119.29362
+            }
+         },
+         "copyrights" : "Map data ©2019 Google",
+         "legs" : [
+            {
+               "distance" : {
+                  "text" : "0.7 mi",
+                  "value" : 1150
+               },
+               "duration" : {
+                  "text" : "2 mins",
+                  "value" : 114
+               },
+               "end_address" : "354 Van Giesen St, Richland, WA 99354, USA",
+               "end_location" : {
+                  "lat" : 46.2944555,
+                  "lng" : -119.2790793
+               },
+               "start_address" : "1607 Van Giesen St, Richland, WA 99354, USA",
+               "start_location" : {
+                  "lat" : 46.2930421,
+                  "lng" : -119.29362
+               },
+               "steps" : [
+                  {
+                     "distance" : {
+                        "text" : "0.7 mi",
+                        "value" : 1150
+                     },
+                     "duration" : {
+                        "text" : "2 mins",
+                        "value" : 114
+                     },
+                     "end_location" : {
+                        "lat" : 46.2944555,
+                        "lng" : -119.2790793
+                     },
+                     "html_instructions" : "Head \u003cb\u003eeast\u003c/b\u003e on \u003cb\u003eVan Giesen St\u003c/b\u003e toward \u003cb\u003ePerkins Ave\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eDestination will be on the left\u003c/div\u003e",
+                     "polyline" : {
+                        "points" : "orpyGbpbwU?yE?wG?uE@qE?uD?u@@oF@mCH{E@U?K?MAKE[G[ScAw@gE}@qEy@iEy@uEUcAGs@AQ"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2930421,
+                        "lng" : -119.29362
+                     },
+                     "travel_mode" : "DRIVING"
+                  }
+               ],
+               "traffic_speed_entry" : [],
+               "via_waypoint" : []
+            }
+         ],
+         "overview_polyline" : {
+            "points" : "orpyGbpbwU@y[BiRJkGGg@[_BuByKsB_LUcAGs@AQ"
+         },
+         "summary" : "Van Giesen St",
+         "warnings" : [],
+         "waypoint_order" : []
+      }
+   ],
+   "status" : "OK"
+}

@@ -1,0 +1,133 @@
+﻿{
+   "geocoded_waypoints" : [
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJ0RfSzdB6mFQRnQJ3_fQGfCQ",
+         "types" : [ "street_address" ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJ4XRoM9d6mFQR61Lbqow9QiI",
+         "types" : [ "premise" ]
+      }
+   ],
+   "routes" : [
+      {
+         "bounds" : {
+            "northeast" : {
+               "lat" : 46.2896375,
+               "lng" : -119.2706689
+            },
+            "southwest" : {
+               "lat" : 46.28906250000001,
+               "lng" : -119.2719131
+            }
+         },
+         "copyrights" : "Map data ©2019 Google",
+         "legs" : [
+            {
+               "distance" : {
+                  "text" : "0.1 mi",
+                  "value" : 196
+               },
+               "duration" : {
+                  "text" : "1 min",
+                  "value" : 59
+               },
+               "end_address" : "1351 Hains Ave, Richland, WA 99354, USA",
+               "end_location" : {
+                  "lat" : 46.28906250000001,
+                  "lng" : -119.2707795
+               },
+               "start_address" : "1348 Haupt Ave, Richland, WA 99354, USA",
+               "start_location" : {
+                  "lat" : 46.2891104,
+                  "lng" : -119.2719131
+               },
+               "steps" : [
+                  {
+                     "distance" : {
+                        "text" : "197 ft",
+                        "value" : 60
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 13
+                     },
+                     "end_location" : {
+                        "lat" : 46.2896375,
+                        "lng" : -119.271779
+                     },
+                     "html_instructions" : "Head \u003cb\u003enorth\u003c/b\u003e on \u003cb\u003eHaupt Ave\u003c/b\u003e toward \u003cb\u003eSymons St\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "}yoyGlh~vUiBY"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2891104,
+                        "lng" : -119.2719131
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "285 ft",
+                        "value" : 87
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 20
+                     },
+                     "end_location" : {
+                        "lat" : 46.2894923,
+                        "lng" : -119.2706689
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e at the 1st cross street onto \u003cb\u003eSymons St\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "g}oyGrg~vU\\}E"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2896375,
+                        "lng" : -119.271779
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "161 ft",
+                        "value" : 49
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 26
+                     },
+                     "end_location" : {
+                        "lat" : 46.28906250000001,
+                        "lng" : -119.2707795
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eHains Ave\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eDestination will be on the right\u003c/div\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "i|oyGt`~vUtAT"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2894923,
+                        "lng" : -119.2706689
+                     },
+                     "travel_mode" : "DRIVING"
+                  }
+               ],
+               "traffic_speed_entry" : [],
+               "via_waypoint" : []
+            }
+         ],
+         "overview_polyline" : {
+            "points" : "}yoyGlh~vUiBY\\}EtAT"
+         },
+         "summary" : "Haupt Ave and Symons St",
+         "warnings" : [],
+         "waypoint_order" : []
+      }
+   ],
+   "status" : "OK"
+}

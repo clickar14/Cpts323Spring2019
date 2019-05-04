@@ -1,0 +1,157 @@
+﻿{
+   "geocoded_waypoints" : [
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJgV0XVDJlmFQRt7UjxFG_ZBY",
+         "types" : [ "street_address" ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJVWw2cst6mFQRuTm8V8t6ZcM",
+         "types" : [ "street_address" ]
+      }
+   ],
+   "routes" : [
+      {
+         "bounds" : {
+            "northeast" : {
+               "lat" : 46.29553019999999,
+               "lng" : -119.2900191
+            },
+            "southwest" : {
+               "lat" : 46.2894313,
+               "lng" : -119.2911127
+            }
+         },
+         "copyrights" : "Map data ©2019 Google",
+         "legs" : [
+            {
+               "distance" : {
+                  "text" : "0.5 mi",
+                  "value" : 874
+               },
+               "duration" : {
+                  "text" : "2 mins",
+                  "value" : 123
+               },
+               "end_address" : "1424 Riche Ct, Richland, WA 99354, USA",
+               "end_location" : {
+                  "lat" : 46.29005069999999,
+                  "lng" : -119.2911127
+               },
+               "start_address" : "1409 Woodbury St, Richland, WA 99352, USA",
+               "start_location" : {
+                  "lat" : 46.29553019999999,
+                  "lng" : -119.29064
+               },
+               "steps" : [
+                  {
+                     "distance" : {
+                        "text" : "157 ft",
+                        "value" : 48
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 6
+                     },
+                     "end_location" : {
+                        "lat" : 46.2955268,
+                        "lng" : -119.2900191
+                     },
+                     "html_instructions" : "Head \u003cb\u003eeast\u003c/b\u003e on \u003cb\u003eWoodbury St\u003c/b\u003e toward \u003cb\u003eThayer Dr\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "abqyGn}awU?{B"
+                     },
+                     "start_location" : {
+                        "lat" : 46.29553019999999,
+                        "lng" : -119.29064
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.4 mi",
+                        "value" : 678
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 81
+                     },
+                     "end_location" : {
+                        "lat" : 46.2894315,
+                        "lng" : -119.2900818
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eThayer Dr\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "abqyGryawUxC?nCBfEBj@C|A?xE@~B@lFB"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2955268,
+                        "lng" : -119.2900191
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "259 ft",
+                        "value" : 79
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 17
+                     },
+                     "end_location" : {
+                        "lat" : 46.2894313,
+                        "lng" : -119.2911086
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eRiche Ct\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "}{oyG~yawU?lE"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2894315,
+                        "lng" : -119.2900818
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "226 ft",
+                        "value" : 69
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 19
+                     },
+                     "end_location" : {
+                        "lat" : 46.29005069999999,
+                        "lng" : -119.2911127
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e to stay on \u003cb\u003eRiche Ct\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "}{oyGl`bwU{B?"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2894313,
+                        "lng" : -119.2911086
+                     },
+                     "travel_mode" : "DRIVING"
+                  }
+               ],
+               "traffic_speed_entry" : [],
+               "via_waypoint" : []
+            }
+         ],
+         "overview_polyline" : {
+            "points" : "abqyGn}awU?{BxC?vIFhCCxIBlFB?lE{B?"
+         },
+         "summary" : "Thayer Dr",
+         "warnings" : [],
+         "waypoint_order" : []
+      }
+   ],
+   "status" : "OK"
+}

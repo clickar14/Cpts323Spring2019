@@ -1,0 +1,133 @@
+﻿{
+   "geocoded_waypoints" : [
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJ2w69l9N6mFQRGFPdAzkY1Ow",
+         "types" : [ "street_address" ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJeQ01rNZ6mFQR2TUWPVTmt4M",
+         "types" : [ "street_address" ]
+      }
+   ],
+   "routes" : [
+      {
+         "bounds" : {
+            "northeast" : {
+               "lat" : 46.29271,
+               "lng" : -119.2743045
+            },
+            "southwest" : {
+               "lat" : 46.2916968,
+               "lng" : -119.2770892
+            }
+         },
+         "copyrights" : "Map data ©2019 Google",
+         "legs" : [
+            {
+               "distance" : {
+                  "text" : "0.2 mi",
+                  "value" : 327
+               },
+               "duration" : {
+                  "text" : "2 mins",
+                  "value" : 92
+               },
+               "end_address" : "1498 George Washington Way, Richland, WA 99354, USA",
+               "end_location" : {
+                  "lat" : 46.2916968,
+                  "lng" : -119.2743045
+               },
+               "start_address" : "298 Torbett St, Richland, WA 99354, USA",
+               "start_location" : {
+                  "lat" : 46.29271,
+                  "lng" : -119.2770874
+               },
+               "steps" : [
+                  {
+                     "distance" : {
+                        "text" : "197 ft",
+                        "value" : 60
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 22
+                     },
+                     "end_location" : {
+                        "lat" : 46.2921661,
+                        "lng" : -119.2770892
+                     },
+                     "html_instructions" : "Head \u003cb\u003esouth\u003c/b\u003e on \u003cb\u003ePlaza Ave\u003c/b\u003e toward \u003cb\u003eTorbett St\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "mppyGxh_wUjB?"
+                     },
+                     "start_location" : {
+                        "lat" : 46.29271,
+                        "lng" : -119.2770874
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.1 mi",
+                        "value" : 214
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 60
+                     },
+                     "end_location" : {
+                        "lat" : 46.2921742,
+                        "lng" : -119.2743071
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eTorbett St\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "ampyGxh_wU@wA?_BAaC?{A?uC"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2921661,
+                        "lng" : -119.2770892
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "174 ft",
+                        "value" : 53
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 10
+                     },
+                     "end_location" : {
+                        "lat" : 46.2916968,
+                        "lng" : -119.2743045
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eGeorge Washington Way\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eDestination will be on the left\u003c/div\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "ampyGlw~vU|AA"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2921742,
+                        "lng" : -119.2743071
+                     },
+                     "travel_mode" : "DRIVING"
+                  }
+               ],
+               "traffic_speed_entry" : [],
+               "via_waypoint" : []
+            }
+         ],
+         "overview_polyline" : {
+            "points" : "mppyGxh_wUjB?@wAAaF?qF|AA"
+         },
+         "summary" : "Torbett St",
+         "warnings" : [],
+         "waypoint_order" : []
+      }
+   ],
+   "status" : "OK"
+}

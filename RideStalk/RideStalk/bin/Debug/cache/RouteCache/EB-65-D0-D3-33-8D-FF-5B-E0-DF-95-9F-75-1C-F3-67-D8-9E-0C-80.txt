@@ -1,0 +1,85 @@
+﻿{
+   "geocoded_waypoints" : [
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJmy2SW7N6mFQRsAGeakEjeQ0",
+         "types" : [ "premise" ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJncIoa7N6mFQRh-9X7q7oR1Y",
+         "types" : [ "premise" ]
+      }
+   ],
+   "routes" : [
+      {
+         "bounds" : {
+            "northeast" : {
+               "lat" : 46.28757,
+               "lng" : -119.3051843
+            },
+            "southwest" : {
+               "lat" : 46.2867599,
+               "lng" : -119.3052016
+            }
+         },
+         "copyrights" : "Map data ©2019 Google",
+         "legs" : [
+            {
+               "distance" : {
+                  "text" : "295 ft",
+                  "value" : 90
+               },
+               "duration" : {
+                  "text" : "1 min",
+                  "value" : 8
+               },
+               "end_address" : "1305 Cottonwood Dr, Richland, WA 99354, USA",
+               "end_location" : {
+                  "lat" : 46.2867599,
+                  "lng" : -119.3052016
+               },
+               "start_address" : "1312 Cottonwood Dr, Richland, WA 99354, USA",
+               "start_location" : {
+                  "lat" : 46.28757,
+                  "lng" : -119.3051843
+               },
+               "steps" : [
+                  {
+                     "distance" : {
+                        "text" : "295 ft",
+                        "value" : 90
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 8
+                     },
+                     "end_location" : {
+                        "lat" : 46.2867599,
+                        "lng" : -119.3052016
+                     },
+                     "html_instructions" : "Head \u003cb\u003esouth\u003c/b\u003e on \u003cb\u003eCottonwood Dr\u003c/b\u003e toward \u003cb\u003eSalem St\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "ipoyGjxdwU`DB"
+                     },
+                     "start_location" : {
+                        "lat" : 46.28757,
+                        "lng" : -119.3051843
+                     },
+                     "travel_mode" : "DRIVING"
+                  }
+               ],
+               "traffic_speed_entry" : [],
+               "via_waypoint" : []
+            }
+         ],
+         "overview_polyline" : {
+            "points" : "ipoyGjxdwU`DB"
+         },
+         "summary" : "Cottonwood Dr",
+         "warnings" : [],
+         "waypoint_order" : []
+      }
+   ],
+   "status" : "OK"
+}

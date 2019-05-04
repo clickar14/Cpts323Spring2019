@@ -1,0 +1,133 @@
+﻿{
+   "geocoded_waypoints" : [
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJT6zbBsV6mFQRGNgqUekielo",
+         "types" : [ "establishment", "finance", "point_of_interest" ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJWS6SiMF6mFQRj0PKG3bEzcU",
+         "types" : [ "premise" ]
+      }
+   ],
+   "routes" : [
+      {
+         "bounds" : {
+            "northeast" : {
+               "lat" : 46.2833987,
+               "lng" : -119.2751996
+            },
+            "southwest" : {
+               "lat" : 46.2784558,
+               "lng" : -119.277617
+            }
+         },
+         "copyrights" : "Map data ©2019 Google",
+         "legs" : [
+            {
+               "distance" : {
+                  "text" : "0.4 mi",
+                  "value" : 713
+               },
+               "duration" : {
+                  "text" : "1 min",
+                  "value" : 78
+               },
+               "end_address" : "825 Jadwin Ave, Richland, WA 99352, USA",
+               "end_location" : {
+                  "lat" : 46.278457,
+                  "lng" : -119.2761011
+               },
+               "start_address" : "1167 Jadwin Ave, Richland, WA 99352, USA",
+               "start_location" : {
+                  "lat" : 46.28318489999999,
+                  "lng" : -119.277617
+               },
+               "steps" : [
+                  {
+                     "distance" : {
+                        "text" : "210 ft",
+                        "value" : 64
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 11
+                     },
+                     "end_location" : {
+                        "lat" : 46.2833987,
+                        "lng" : -119.2768381
+                     },
+                     "html_instructions" : "Head \u003cb\u003eeast\u003c/b\u003e on \u003cb\u003eKadlec Way\u003c/b\u003e toward \u003cb\u003eJadwin Ave\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "{tnyGbl_wUESKm@YyA"
+                     },
+                     "start_location" : {
+                        "lat" : 46.28318489999999,
+                        "lng" : -119.277617
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.4 mi",
+                        "value" : 582
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 58
+                     },
+                     "end_location" : {
+                        "lat" : 46.2784558,
+                        "lng" : -119.2752337
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eJadwin Ave\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003ePass by Jimmy John's (on the left in 0.2&nbsp;mi)\u003c/div\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "gvnyGfg_wUx@w@xA_Bb@]NOb@]^Ud@Sn@UfAS^E`@EXAlAAhC@tD@p@@T?"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2833987,
+                        "lng" : -119.2768381
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "220 ft",
+                        "value" : 67
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 9
+                     },
+                     "end_location" : {
+                        "lat" : 46.278457,
+                        "lng" : -119.2761011
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eMansfield St\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eDestination will be on the right\u003c/div\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "kwmyGd}~vU?lD"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2784558,
+                        "lng" : -119.2752337
+                     },
+                     "travel_mode" : "DRIVING"
+                  }
+               ],
+               "traffic_speed_entry" : [],
+               "via_waypoint" : []
+            }
+         ],
+         "overview_polyline" : {
+            "points" : "{tnyGbl_wUQaAYyAx@w@|B}Br@m@dAi@n@UfAS`AKfBCfKD?lD"
+         },
+         "summary" : "Jadwin Ave",
+         "warnings" : [],
+         "waypoint_order" : []
+      }
+   ],
+   "status" : "OK"
+}

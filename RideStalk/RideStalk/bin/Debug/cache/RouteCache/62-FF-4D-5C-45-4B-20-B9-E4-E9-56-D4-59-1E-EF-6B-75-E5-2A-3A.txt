@@ -1,0 +1,133 @@
+﻿{
+   "geocoded_waypoints" : [
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJeTiZPNt6mFQRwiqWCWOTePY",
+         "types" : [ "street_address" ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJaYJ49tp6mFQRZiFDuRxSpoQ",
+         "types" : [ "premise" ]
+      }
+   ],
+   "routes" : [
+      {
+         "bounds" : {
+            "northeast" : {
+               "lat" : 46.2858792,
+               "lng" : -119.2719197
+            },
+            "southwest" : {
+               "lat" : 46.2832332,
+               "lng" : -119.2742636
+            }
+         },
+         "copyrights" : "Map data ©2019 Google",
+         "legs" : [
+            {
+               "distance" : {
+                  "text" : "0.4 mi",
+                  "value" : 585
+               },
+               "duration" : {
+                  "text" : "2 mins",
+                  "value" : 90
+               },
+               "end_address" : "1314 Hains Ave, Richland, WA 99354, USA",
+               "end_location" : {
+                  "lat" : 46.2858792,
+                  "lng" : -119.2719197
+               },
+               "start_address" : "1210 Gowen Ave, Richland, WA 99352, USA",
+               "start_location" : {
+                  "lat" : 46.2838501,
+                  "lng" : -119.2725516
+               },
+               "steps" : [
+                  {
+                     "distance" : {
+                        "text" : "394 ft",
+                        "value" : 120
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 18
+                     },
+                     "end_location" : {
+                        "lat" : 46.2832332,
+                        "lng" : -119.2736889
+                     },
+                     "html_instructions" : "Head \u003cb\u003esouthwest\u003c/b\u003e on \u003cb\u003eGowen Ave\u003c/b\u003e toward \u003cb\u003eGeorge Washington Way\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "aynyGll~vU\\P^XTVP^N~@D~@"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2838501,
+                        "lng" : -119.2725516
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.2 mi",
+                        "value" : 279
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 48
+                     },
+                     "end_location" : {
+                        "lat" : 46.2856947,
+                        "lng" : -119.2742636
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eGeorge Washington Way\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "eunyGps~vUiBAW?Y@Y@SBUDQDUF]J_A\\]LQHUF]Fa@D"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2832332,
+                        "lng" : -119.2736889
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.1 mi",
+                        "value" : 186
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 24
+                     },
+                     "end_location" : {
+                        "lat" : 46.2858792,
+                        "lng" : -119.2719197
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eHains Ave\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "qdoyGbw~vUAeJAa@G[IWMUAA"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2856947,
+                        "lng" : -119.2742636
+                     },
+                     "travel_mode" : "DRIVING"
+                  }
+               ],
+               "traffic_speed_entry" : [],
+               "via_waypoint" : []
+            }
+         ],
+         "overview_polyline" : {
+            "points" : "aynyGll~vU\\P^XTVP^N~@D~@iBAq@@m@Dg@Js@ReC|@_ALCgKQs@OW"
+         },
+         "summary" : "George Washington Way and Hains Ave",
+         "warnings" : [],
+         "waypoint_order" : []
+      }
+   ],
+   "status" : "OK"
+}

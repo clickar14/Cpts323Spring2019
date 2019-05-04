@@ -1,0 +1,85 @@
+﻿{
+   "geocoded_waypoints" : [
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJdfRkCTVlmFQRSB4XuSAlTSs",
+         "types" : [ "street_address" ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJdfRkCTVlmFQRSB4XuSAlTSs",
+         "types" : [ "street_address" ]
+      }
+   ],
+   "routes" : [
+      {
+         "bounds" : {
+            "northeast" : {
+               "lat" : 46.292222,
+               "lng" : -119.2981159
+            },
+            "southwest" : {
+               "lat" : 46.29222009999999,
+               "lng" : -119.2981799
+            }
+         },
+         "copyrights" : "Map data ©2019 Google",
+         "legs" : [
+            {
+               "distance" : {
+                  "text" : "16 ft",
+                  "value" : 5
+               },
+               "duration" : {
+                  "text" : "1 min",
+                  "value" : 1
+               },
+               "end_address" : "2135 Van Giesen St, Richland, WA 99354, USA",
+               "end_location" : {
+                  "lat" : 46.29222009999999,
+                  "lng" : -119.2981159
+               },
+               "start_address" : "2135 Van Giesen St, Richland, WA 99354, USA",
+               "start_location" : {
+                  "lat" : 46.292222,
+                  "lng" : -119.2981799
+               },
+               "steps" : [
+                  {
+                     "distance" : {
+                        "text" : "16 ft",
+                        "value" : 5
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 1
+                     },
+                     "end_location" : {
+                        "lat" : 46.29222009999999,
+                        "lng" : -119.2981159
+                     },
+                     "html_instructions" : "Head \u003cb\u003eeast\u003c/b\u003e on \u003cb\u003eTurner St\u003c/b\u003e toward \u003cb\u003eWright Ave\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "kmpyGrlcwU?K"
+                     },
+                     "start_location" : {
+                        "lat" : 46.292222,
+                        "lng" : -119.2981799
+                     },
+                     "travel_mode" : "DRIVING"
+                  }
+               ],
+               "traffic_speed_entry" : [],
+               "via_waypoint" : []
+            }
+         ],
+         "overview_polyline" : {
+            "points" : "kmpyGrlcwU?K"
+         },
+         "summary" : "Turner St",
+         "warnings" : [],
+         "waypoint_order" : []
+      }
+   ],
+   "status" : "OK"
+}

@@ -1,0 +1,229 @@
+﻿{
+   "geocoded_waypoints" : [
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJXwHLgS1lmFQRf2-sVQEsKRY",
+         "types" : [ "street_address" ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJcU61B8N6mFQRyalzO-0nA14",
+         "types" : [ "premise" ]
+      }
+   ],
+   "routes" : [
+      {
+         "bounds" : {
+            "northeast" : {
+               "lat" : 46.2958329,
+               "lng" : -119.2717688
+            },
+            "southwest" : {
+               "lat" : 46.2787902,
+               "lng" : -119.287077
+            }
+         },
+         "copyrights" : "Map data ©2019 Google",
+         "legs" : [
+            {
+               "distance" : {
+                  "text" : "1.9 mi",
+                  "value" : 3130
+               },
+               "duration" : {
+                  "text" : "7 mins",
+                  "value" : 393
+               },
+               "end_address" : "930 George Washington Way, Richland, WA 99352, USA",
+               "end_location" : {
+                  "lat" : 46.2795966,
+                  "lng" : -119.2719704
+               },
+               "start_address" : "1312 Woodbury St, Richland, WA 99352, USA",
+               "start_location" : {
+                  "lat" : 46.2958329,
+                  "lng" : -119.287077
+               },
+               "steps" : [
+                  {
+                     "distance" : {
+                        "text" : "98 ft",
+                        "value" : 30
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 9
+                     },
+                     "end_location" : {
+                        "lat" : 46.2955702,
+                        "lng" : -119.2869731
+                     },
+                     "html_instructions" : "Head \u003cb\u003esouth\u003c/b\u003e toward \u003cb\u003eWoodbury St\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "}cqyGfgawUr@U"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2958329,
+                        "lng" : -119.287077
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.1 mi",
+                        "value" : 168
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 32
+                     },
+                     "end_location" : {
+                        "lat" : 46.2956934,
+                        "lng" : -119.284803
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eWoodbury St\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "ibqyGpfawUY}D@sF"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2955702,
+                        "lng" : -119.2869731
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.7 mi",
+                        "value" : 1108
+                     },
+                     "duration" : {
+                        "text" : "2 mins",
+                        "value" : 110
+                     },
+                     "end_location" : {
+                        "lat" : 46.2857291,
+                        "lng" : -119.2848485
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eStevens Dr\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "acqyG~x`wUrDBpCAzE@pMBbI@dD@hE?~GA"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2956934,
+                        "lng" : -119.284803
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.5 mi",
+                        "value" : 813
+                     },
+                     "duration" : {
+                        "text" : "2 mins",
+                        "value" : 111
+                     },
+                     "end_location" : {
+                        "lat" : 46.2856947,
+                        "lng" : -119.2742636
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eWilliams Blvd\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "ydoyGhy`wU@_FAcFA{B?uD?oB?oEBoH?uFAwD@aA@q@B}D"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2857291,
+                        "lng" : -119.2848485
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.5 mi",
+                        "value" : 774
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 68
+                     },
+                     "end_location" : {
+                        "lat" : 46.2787902,
+                        "lng" : -119.2737007
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eGeorge Washington Way\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "qdoyGbw~vU`@E\\GTGPI\\M~@]\\KTGPETERCXAXAV?hB@nA?J?P?hD?xD?~A@zBAhE@"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2856947,
+                        "lng" : -119.2742636
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "486 ft",
+                        "value" : 148
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 36
+                     },
+                     "end_location" : {
+                        "lat" : 46.2788058,
+                        "lng" : -119.2717688
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eNewton St\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "mymyGrs~vU?iBAoDAgB"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2787902,
+                        "lng" : -119.2737007
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "292 ft",
+                        "value" : 89
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 27
+                     },
+                     "end_location" : {
+                        "lat" : 46.2795966,
+                        "lng" : -119.2719704
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e at the 1st cross street onto \u003cb\u003eAmon Park Dr\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eDestination will be on the left\u003c/div\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "qymyGpg~vUcAVgAJQB"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2788058,
+                        "lng" : -119.2717688
+                     },
+                     "travel_mode" : "DRIVING"
+                  }
+               ],
+               "traffic_speed_entry" : [],
+               "via_waypoint" : []
+            }
+         ],
+         "overview_polyline" : {
+            "points" : "}cqyGfgawUr@UY}D@sFrDBlJ?tWDnJ@~GA@_FC_J?eHB_OAmLBsBB}D`@Er@On@W|Ai@f@Mh@Ir@C|E@tM@dI?AyGAgBcAVyAN"
+         },
+         "summary" : "Stevens Dr and Williams Blvd",
+         "warnings" : [],
+         "waypoint_order" : []
+      }
+   ],
+   "status" : "OK"
+}

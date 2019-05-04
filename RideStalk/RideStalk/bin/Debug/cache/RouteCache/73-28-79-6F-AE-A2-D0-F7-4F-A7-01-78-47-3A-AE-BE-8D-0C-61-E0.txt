@@ -1,0 +1,181 @@
+﻿{
+   "geocoded_waypoints" : [
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJoVwwJNt6mFQR0WI1Is8yTjs",
+         "types" : [ "premise" ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJz0tE-cB6mFQRwYdT39teLm0",
+         "types" : [ "premise" ]
+      }
+   ],
+   "routes" : [
+      {
+         "bounds" : {
+            "northeast" : {
+               "lat" : 46.2839999,
+               "lng" : -119.2725383
+            },
+            "southwest" : {
+               "lat" : 46.2776143,
+               "lng" : -119.2804591
+            }
+         },
+         "copyrights" : "Map data ©2019 Google",
+         "legs" : [
+            {
+               "distance" : {
+                  "text" : "0.8 mi",
+                  "value" : 1292
+               },
+               "duration" : {
+                  "text" : "5 mins",
+                  "value" : 312
+               },
+               "end_address" : "805 Goethals Dr, Richland, WA 99352, USA",
+               "end_location" : {
+                  "lat" : 46.2776143,
+                  "lng" : -119.2804386
+               },
+               "start_address" : "1211 Gowen Ave, Richland, WA 99352, USA",
+               "start_location" : {
+                  "lat" : 46.2839999,
+                  "lng" : -119.2725383
+               },
+               "steps" : [
+                  {
+                     "distance" : {
+                        "text" : "449 ft",
+                        "value" : 137
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 21
+                     },
+                     "end_location" : {
+                        "lat" : 46.2832332,
+                        "lng" : -119.2736889
+                     },
+                     "html_instructions" : "Head \u003cb\u003esouth\u003c/b\u003e on \u003cb\u003eGowen Ave\u003c/b\u003e toward \u003cb\u003eGeorge Washington Way\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "_znyGjl~vU\\@\\P^XTVP^N~@D~@"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2839999,
+                        "lng" : -119.2725383
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.2 mi",
+                        "value" : 313
+                     },
+                     "duration" : {
+                        "text" : "2 mins",
+                        "value" : 100
+                     },
+                     "end_location" : {
+                        "lat" : 46.2804181,
+                        "lng" : -119.2736951
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eGeorge Washington Way\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "eunyGps~vUnA?J?P?hD?xD?~A@"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2832332,
+                        "lng" : -119.2736889
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.3 mi",
+                        "value" : 472
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 71
+                     },
+                     "end_location" : {
+                        "lat" : 46.2804229,
+                        "lng" : -119.2798397
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eSwift Blvd\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "scnyGrs~vU?dD?dC?xE@lBAhF?lJ"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2804181,
+                        "lng" : -119.2736951
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.2 mi",
+                        "value" : 283
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 68
+                     },
+                     "end_location" : {
+                        "lat" : 46.2778868,
+                        "lng" : -119.2797098
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eGoethals Dr\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "scnyG~y_wUhAGxAG|@G|@EhBInBL"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2804229,
+                        "lng" : -119.2798397
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "285 ft",
+                        "value" : 87
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 52
+                     },
+                     "end_location" : {
+                        "lat" : 46.2776143,
+                        "lng" : -119.2804386
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "ysmyGdy_wUAbC?F@DB@B@B?d@AB?@A"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2778868,
+                        "lng" : -119.2797098
+                     },
+                     "travel_mode" : "DRIVING"
+                  }
+               ],
+               "traffic_speed_entry" : [],
+               "via_waypoint" : []
+            }
+         ],
+         "overview_polyline" : {
+            "points" : "_znyGjl~vU\\@\\P^XTVP^N~@D~@nA?\\?bJ?~A@?dD?~I?vI?lJhAGvCOfDOnBLAbC@LFBh@ADA"
+         },
+         "summary" : "Swift Blvd",
+         "warnings" : [],
+         "waypoint_order" : []
+      }
+   ],
+   "status" : "OK"
+}

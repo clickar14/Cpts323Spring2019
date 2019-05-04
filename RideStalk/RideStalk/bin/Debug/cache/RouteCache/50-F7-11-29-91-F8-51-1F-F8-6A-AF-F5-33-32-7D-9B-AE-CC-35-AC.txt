@@ -1,0 +1,157 @@
+﻿{
+   "geocoded_waypoints" : [
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJ8_t4yCp7mFQRstZHnzOr1pk",
+         "types" : [ "street_address" ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJFx89EsZ6mFQRvEr_5fzVtAY",
+         "types" : [ "street_address" ]
+      }
+   ],
+   "routes" : [
+      {
+         "bounds" : {
+            "northeast" : {
+               "lat" : 46.2979108,
+               "lng" : -119.2700122
+            },
+            "southwest" : {
+               "lat" : 46.2821246,
+               "lng" : -119.2848934
+            }
+         },
+         "copyrights" : "Map data ©2019 Google",
+         "legs" : [
+            {
+               "distance" : {
+                  "text" : "1.7 mi",
+                  "value" : 2665
+               },
+               "duration" : {
+                  "text" : "5 mins",
+                  "value" : 297
+               },
+               "end_address" : "1110 Stevens Dr, Richland, WA 99352, USA",
+               "end_location" : {
+                  "lat" : 46.2821246,
+                  "lng" : -119.2838806
+               },
+               "start_address" : "1726 Davison Ave, Richland, WA 99352, USA",
+               "start_location" : {
+                  "lat" : 46.2979108,
+                  "lng" : -119.2700122
+               },
+               "steps" : [
+                  {
+                     "distance" : {
+                        "text" : "0.3 mi",
+                        "value" : 517
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 59
+                     },
+                     "end_location" : {
+                        "lat" : 46.2952885,
+                        "lng" : -119.2743135
+                     },
+                     "html_instructions" : "Head \u003cb\u003esouthwest\u003c/b\u003e on \u003cb\u003eDavison Ave\u003c/b\u003e toward \u003cb\u003eWordrop St\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "}pqyGp|}vUnBvA~CbCVL`A`@fCx@JLHPF^?@?VCzL"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2979108,
+                        "lng" : -119.2700122
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "302 ft",
+                        "value" : 92
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 23
+                     },
+                     "end_location" : {
+                        "lat" : 46.2944611,
+                        "lng" : -119.2743082
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eGeorge Washington Way\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "q`qyGlw~vUdD?"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2952885,
+                        "lng" : -119.2743135
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.5 mi",
+                        "value" : 840
+                     },
+                     "duration" : {
+                        "text" : "2 mins",
+                        "value" : 103
+                     },
+                     "end_location" : {
+                        "lat" : 46.2929581,
+                        "lng" : -119.2848169
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e at the 1st cross street onto \u003cb\u003eVan Giesen St\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "k{pyGlw~vU?nE?fG?lA?vAAnGB|@Fr@TbAx@tEx@hE|@pEv@fERbAFZDZ@J?L?JAT"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2944611,
+                        "lng" : -119.2743082
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.8 mi",
+                        "value" : 1216
+                     },
+                     "duration" : {
+                        "text" : "2 mins",
+                        "value" : 112
+                     },
+                     "end_location" : {
+                        "lat" : 46.2821246,
+                        "lng" : -119.2838806
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eStevens Dr\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "_rpyGby`wUpMBbI@dD@hE?~GA`GFfAUd@MpAe@f@QXKfCaAdA_@"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2929581,
+                        "lng" : -119.2848169
+                     },
+                     "travel_mode" : "DRIVING"
+                  }
+               ],
+               "traffic_speed_entry" : [],
+               "via_waypoint" : []
+            }
+         ],
+         "overview_polyline" : {
+            "points" : "}pqyGp|}vUnGzExAn@fCx@JLPp@?XCzLdD??vM?dDAnGB|@Fr@TbArB~KtBxKZ~AFf@?XATpMBhNBhNA`GFfAUvBs@nG_C"
+         },
+         "summary" : "Van Giesen St and Stevens Dr",
+         "warnings" : [],
+         "waypoint_order" : []
+      }
+   ],
+   "status" : "OK"
+}

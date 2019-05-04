@@ -135,7 +135,6 @@ C:\Users\chancelor.lickar\Documents\GitHub\Cpts323Spring2019\RideStalk\RideStalk
 C:\Users\chancelor.lickar\Documents\GitHub\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\System.Data.SQLite.dll.config
 C:\Users\chancelor.lickar\Documents\GitHub\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\System.Diagnostics.DiagnosticSource.xml
 C:\Users\chancelor.lickar\Documents\GitHub\Cpts323Spring2019\RideStalk\RideStalk\bin\Debug\System.Reactive.xml
-C:\Users\chancelor.lickar\Documents\GitHub\Cpts323Spring2019\RideStalk\RideStalk\obj\Debug\RideStalk.csprojAssemblyReference.cache
 C:\Users\chancelor.lickar\Documents\GitHub\Cpts323Spring2019\RideStalk\RideStalk\obj\Debug\RideStalk.Interface.resources
 C:\Users\chancelor.lickar\Documents\GitHub\Cpts323Spring2019\RideStalk\RideStalk\obj\Debug\RideStalk.LoginForm.resources
 C:\Users\chancelor.lickar\Documents\GitHub\Cpts323Spring2019\RideStalk\RideStalk\obj\Debug\RideStalk.Properties.Resources.resources
@@ -144,3 +143,4 @@ C:\Users\chancelor.lickar\Documents\GitHub\Cpts323Spring2019\RideStalk\RideStalk
 C:\Users\chancelor.lickar\Documents\GitHub\Cpts323Spring2019\RideStalk\RideStalk\obj\Debug\RideStalk.csproj.CopyComplete
 C:\Users\chancelor.lickar\Documents\GitHub\Cpts323Spring2019\RideStalk\RideStalk\obj\Debug\RideStalk.exe
 C:\Users\chancelor.lickar\Documents\GitHub\Cpts323Spring2019\RideStalk\RideStalk\obj\Debug\RideStalk.pdb
+C:\Users\chancelor.lickar\Documents\GitHub\Cpts323Spring2019\RideStalk\RideStalk\obj\Debug\RideStalk.csprojAssemblyReference.cache

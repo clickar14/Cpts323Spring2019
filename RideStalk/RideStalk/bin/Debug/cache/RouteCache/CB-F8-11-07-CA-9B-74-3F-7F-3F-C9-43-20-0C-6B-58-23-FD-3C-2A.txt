@@ -1,0 +1,229 @@
+﻿{
+   "geocoded_waypoints" : [
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJvfQMirB6mFQRrRsrFQWc7hg",
+         "types" : [ "premise" ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJ2w69l9N6mFQRGFPdAzkY1Ow",
+         "types" : [ "street_address" ]
+      }
+   ],
+   "routes" : [
+      {
+         "bounds" : {
+            "northeast" : {
+               "lat" : 46.2943024,
+               "lng" : -119.2770874
+            },
+            "southwest" : {
+               "lat" : 46.2804501,
+               "lng" : -119.3001027
+            }
+         },
+         "copyrights" : "Map data ©2019 Google",
+         "legs" : [
+            {
+               "distance" : {
+                  "text" : "2.1 mi",
+                  "value" : 3371
+               },
+               "duration" : {
+                  "text" : "6 mins",
+                  "value" : 380
+               },
+               "end_address" : "298 Torbett St, Richland, WA 99354, USA",
+               "end_location" : {
+                  "lat" : 46.2927061,
+                  "lng" : -119.2770874
+               },
+               "start_address" : "1013 Cedar Ave, Richland, WA 99354, USA",
+               "start_location" : {
+                  "lat" : 46.2804501,
+                  "lng" : -119.3000765
+               },
+               "steps" : [
+                  {
+                     "distance" : {
+                        "text" : "164 ft",
+                        "value" : 50
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 8
+                     },
+                     "end_location" : {
+                        "lat" : 46.28089689999999,
+                        "lng" : -119.3001027
+                     },
+                     "html_instructions" : "Head \u003cb\u003enorth\u003c/b\u003e on \u003cb\u003eCedar Ave\u003c/b\u003e toward \u003cb\u003ePullen St\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "ycnyGnxcwUyAB"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2804501,
+                        "lng" : -119.3000765
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.1 mi",
+                        "value" : 194
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 38
+                     },
+                     "end_location" : {
+                        "lat" : 46.2813624,
+                        "lng" : -119.2976921
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003ePullen St\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "sfnyGrxcwUw@sEc@aDAg@@cA"
+                     },
+                     "start_location" : {
+                        "lat" : 46.28089689999999,
+                        "lng" : -119.3001027
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.8 mi",
+                        "value" : 1305
+                     },
+                     "duration" : {
+                        "text" : "2 mins",
+                        "value" : 125
+                     },
+                     "end_location" : {
+                        "lat" : 46.293084,
+                        "lng" : -119.2975208
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e at the 2nd cross street onto \u003cb\u003eWright Ave\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "oinyGpicwUoE?eD?eD?sIAwE?kG?{@@Y?S@UBWBUFSBWBM@O?M?UAe@A}COaDOaDOoDI"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2813624,
+                        "lng" : -119.2976921
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.9 mi",
+                        "value" : 1393
+                     },
+                     "duration" : {
+                        "text" : "2 mins",
+                        "value" : 130
+                     },
+                     "end_location" : {
+                        "lat" : 46.2943024,
+                        "lng" : -119.2797732
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eVan Giesen St\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "wrpyGnhcwU@qCBsH@_P?wG?uE@qE?uD?u@@oF@mCH{E@U?K?MAKE[G[ScAw@gE}@qEy@iEy@uE"
+                     },
+                     "start_location" : {
+                        "lat" : 46.293084,
+                        "lng" : -119.2975208
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.2 mi",
+                        "value" : 264
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 25
+                     },
+                     "end_location" : {
+                        "lat" : 46.2921146,
+                        "lng" : -119.2784271
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eJadwin Ave\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "kzpyGpy_wUtLkG"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2943024,
+                        "lng" : -119.2797732
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "344 ft",
+                        "value" : 105
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 28
+                     },
+                     "end_location" : {
+                        "lat" : 46.2921661,
+                        "lng" : -119.2770892
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e at the 1st cross street onto \u003cb\u003eTorbett St\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "ulpyGdq_wUQqAC_@@w@?OFqA"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2921146,
+                        "lng" : -119.2784271
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "197 ft",
+                        "value" : 60
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 26
+                     },
+                     "end_location" : {
+                        "lat" : 46.2927061,
+                        "lng" : -119.2770874
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003ePlaza Ave\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eDestination will be on the left\u003c/div\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "ampyGxh_wUkB?"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2921661,
+                        "lng" : -119.2770892
+                     },
+                     "travel_mode" : "DRIVING"
+                  }
+               ],
+               "traffic_speed_entry" : [],
+               "via_waypoint" : []
+            }
+         ],
+         "overview_polyline" : {
+            "points" : "ycnyGnxcwUyABw@sEc@aDAg@@cAoE?kI?kPAgI@m@@m@Fi@Je@DyAC_I_@qIYDeM@wX@sSB}JJqF?YGg@qCyNsB_LtLkGQqAC_@@w@FaBkB?"
+         },
+         "summary" : "Wright Ave and Van Giesen St",
+         "warnings" : [],
+         "waypoint_order" : []
+      }
+   ],
+   "status" : "OK"
+}

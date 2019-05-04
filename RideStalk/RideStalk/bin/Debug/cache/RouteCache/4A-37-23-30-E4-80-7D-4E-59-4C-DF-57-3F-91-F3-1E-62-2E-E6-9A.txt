@@ -1,0 +1,85 @@
+﻿{
+   "geocoded_waypoints" : [
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJVymz8856mFQRVQvAQcOuu6M",
+         "types" : [ "street_address" ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJwaWp5s56mFQRMgX-cTKcfjs",
+         "types" : [ "premise" ]
+      }
+   ],
+   "routes" : [
+      {
+         "bounds" : {
+            "northeast" : {
+               "lat" : 46.28772,
+               "lng" : -119.2837318
+            },
+            "southwest" : {
+               "lat" : 46.2870154,
+               "lng" : -119.2837328
+            }
+         },
+         "copyrights" : "Map data ©2019 Google",
+         "legs" : [
+            {
+               "distance" : {
+                  "text" : "256 ft",
+                  "value" : 78
+               },
+               "duration" : {
+                  "text" : "1 min",
+                  "value" : 10
+               },
+               "end_address" : "1318 Farrell Ln, Richland, WA 99354, USA",
+               "end_location" : {
+                  "lat" : 46.2870154,
+                  "lng" : -119.2837318
+               },
+               "start_address" : "1328 Farrell Ln, Richland, WA 99354, USA",
+               "start_location" : {
+                  "lat" : 46.28772,
+                  "lng" : -119.2837328
+               },
+               "steps" : [
+                  {
+                     "distance" : {
+                        "text" : "256 ft",
+                        "value" : 78
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 10
+                     },
+                     "end_location" : {
+                        "lat" : 46.2870154,
+                        "lng" : -119.2837318
+                     },
+                     "html_instructions" : "Head \u003cb\u003esouth\u003c/b\u003e on \u003cb\u003eFarrell Ln\u003c/b\u003e toward \u003cb\u003eWilliams Blvd\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "gqoyGhr`wUjC?"
+                     },
+                     "start_location" : {
+                        "lat" : 46.28772,
+                        "lng" : -119.2837328
+                     },
+                     "travel_mode" : "DRIVING"
+                  }
+               ],
+               "traffic_speed_entry" : [],
+               "via_waypoint" : []
+            }
+         ],
+         "overview_polyline" : {
+            "points" : "gqoyGhr`wUjC?"
+         },
+         "summary" : "Farrell Ln",
+         "warnings" : [],
+         "waypoint_order" : []
+      }
+   ],
+   "status" : "OK"
+}

@@ -1,0 +1,157 @@
+﻿{
+   "geocoded_waypoints" : [
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJq9gKJ7Z6mFQRqQM4tMqe6LY",
+         "types" : [ "premise" ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJA8O2AcZ6mFQR2QTVcbjhBQE",
+         "types" : [ "establishment", "health", "point_of_interest" ]
+      }
+   ],
+   "routes" : [
+      {
+         "bounds" : {
+            "northeast" : {
+               "lat" : 46.2857668,
+               "lng" : -119.2825279
+            },
+            "southwest" : {
+               "lat" : 46.2834824,
+               "lng" : -119.2924229
+            }
+         },
+         "copyrights" : "Map data ©2019 Google",
+         "legs" : [
+            {
+               "distance" : {
+                  "text" : "0.7 mi",
+                  "value" : 1078
+               },
+               "duration" : {
+                  "text" : "3 mins",
+                  "value" : 165
+               },
+               "end_address" : "3360, 1124 Stevens Dr, Richland, WA 99354, United States",
+               "end_location" : {
+                  "lat" : 46.2834863,
+                  "lng" : -119.2825279
+               },
+               "start_address" : "1211 Perkins Ave, Richland, WA 99354, USA",
+               "start_location" : {
+                  "lat" : 46.28497,
+                  "lng" : -119.2924229
+               },
+               "steps" : [
+                  {
+                     "distance" : {
+                        "text" : "292 ft",
+                        "value" : 89
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 17
+                     },
+                     "end_location" : {
+                        "lat" : 46.2857668,
+                        "lng" : -119.2924201
+                     },
+                     "html_instructions" : "Head \u003cb\u003enorth\u003c/b\u003e on \u003cb\u003ePerkins Ave\u003c/b\u003e toward \u003cb\u003eWilliams Blvd\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "a`oyGrhbwU_D?"
+                     },
+                     "start_location" : {
+                        "lat" : 46.28497,
+                        "lng" : -119.2924229
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.4 mi",
+                        "value" : 582
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 71
+                     },
+                     "end_location" : {
+                        "lat" : 46.2857291,
+                        "lng" : -119.2848485
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e at the 1st cross street onto \u003cb\u003eWilliams Blvd\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "aeoyGrhbwUB}F@oE@sIEeFBoF@qF"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2857668,
+                        "lng" : -119.2924201
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.2 mi",
+                        "value" : 254
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 25
+                     },
+                     "end_location" : {
+                        "lat" : 46.2834824,
+                        "lng" : -119.2845249
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eStevens Dr\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "ydoyGhy`wU`GFfAUd@MpAe@"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2857291,
+                        "lng" : -119.2848485
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.1 mi",
+                        "value" : 153
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 52
+                     },
+                     "end_location" : {
+                        "lat" : 46.2834863,
+                        "lng" : -119.2825279
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "wvnyGfw`wU?s@?s@?s@A{C?uA"
+                     },
+                     "start_location" : {
+                        "lat" : 46.2834824,
+                        "lng" : -119.2845249
+                     },
+                     "travel_mode" : "DRIVING"
+                  }
+               ],
+               "traffic_speed_entry" : [],
+               "via_waypoint" : []
+            }
+         ],
+         "overview_polyline" : {
+            "points" : "a`oyGrhbwU_D?B}FBcPEeFBoF@qF`GFlBc@pAe@?s@?gBAqF"
+         },
+         "summary" : "Williams Blvd",
+         "warnings" : [],
+         "waypoint_order" : []
+      }
+   ],
+   "status" : "OK"
+}
